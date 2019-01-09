@@ -12,7 +12,10 @@ public class Main {
 //        nioTest.testIO();
 //        nioTest.testNIORead();
 //        nioTest.testNIOWrite();
-        nioTest.testNIOReadAndWrite();
+//        nioTest.testNIOReadAndWrite();
+        NIONetTest nioNetTest = new NIONetTest();
+        nioNetTest.serverTest();
+//        nioNetTest.clientTest();
     }
 
     public void test(){

@@ -14,8 +14,10 @@ public class Main {
 //        main.testSleep1();
 //        main.testSleep2();
 //        main.testJoin();
-        main.testInterrupt();
+//        main.testInterrupt();
 //        main.testUncaught();
+        NIOClient nioClient = new NIOClient();
+        nioClient.clientTest();
     }
 
     private void testUncaught() {
