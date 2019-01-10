@@ -5,7 +5,7 @@ import java.nio.channels.FileChannel;
 /**
  * @author qiaozhe
  */
-public class NioTest {
+public class NIOFileTest {
 
     private String readPath = "E:/github/testRead.txt";
     private String writePath = "E:/github/testWrite.txt";

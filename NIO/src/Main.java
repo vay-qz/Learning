@@ -7,8 +7,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World!");
         Main main = new Main();
-        main.test();
-        NioTest nioTest = new NioTest();
+//        main.test();
+//        NioTest nioTest = new NioTest();
 //        nioTest.testIO();
 //        nioTest.testNIORead();
 //        nioTest.testNIOWrite();

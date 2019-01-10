@@ -1,3 +1,10 @@
+import qz.thread.ServerThread;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
+import java.nio.channels.Selector;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
@@ -6,6 +13,8 @@ public class Main {
     BlockingQueue a = new ArrayBlockingQueue(2);
     BlockingQueue b = new ArrayBlockingQueue(2);
     Object lock = new Object();
+
+    String path = "E:/github/testWrite.txt";
 
     public static void main(String[] args) {
         Main main = new Main();
@@ -16,8 +25,60 @@ public class Main {
 //        main.testJoin();
 //        main.testInterrupt();
 //        main.testUncaught();
-        NIOClient nioClient = new NIOClient();
-        nioClient.clientTest();
+        main.testNIO();
+
+//        NIOClient nioClient = new NIOClient();
+//        nioClient.clientTest();
+    }
+
+    private void testNIO(){
+//        testSelector();
+        testFileChannel();
+    }
+
+    private void testFileChannel() {
+        FileChannel fileChannel = null;
+        FileThread thread = new FileThread(fileChannel);
+        thread.start();
+        waitAMoment();
+        try {
+            fileChannel.close();
+        } catch (IOException e) {
+        }catch (NullPointerException e){
+        }
+    }
+
+    class FileThread extends Thread{
+
+        private FileChannel fileChannel;
+
+        public FileThread(FileChannel fileChannel){
+            this.fileChannel = fileChannel;
+        }
+        @Override
+        public void run() {
+            try{
+                fileChannel = new FileInputStream("").getChannel();
+                while(true);
+            }catch (IOException e){
+                System.out.println("被外部中断了");
+            }
+        }
+    }
+
+    private void testSelector() {
+        Thread selectorTest = new Thread(()->{
+            try {
+                Selector selector = Selector.open();
+                selector.select();
+            } catch (IOException e) {
+                System.out.println("被外部中断");
+            }
+        });
+        selectorTest.start();
+        waitAMoment();
+        selectorTest.interrupt();
+        System.out.println(selectorTest.isInterrupted());
     }
 
     private void testUncaught() {

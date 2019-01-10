@@ -13,6 +13,8 @@ public class ServerThread extends Thread {
 
     private Selector selector;
 
+    private DealThread dealThread;
+
     @Override
     public void run() {
         try {
@@ -23,10 +25,16 @@ public class ServerThread extends Thread {
                 SocketChannel socketChannel = serverSocketChannel.accept();
                 socketChannel.configureBlocking(false);
                 SelectionKey key = socketChannel.register(selector, SelectionKey.OP_WRITE);
-                new DealThread().start();
+                dealThread = new DealThread();
+                dealThread.start();
             }
         } catch (IOException e) {
         }
+    }
+
+    public boolean closeSelector(){
+        dealThread.interrupt();
+        return dealThread.isInterrupted();
     }
 
     class DealThread extends Thread{
@@ -39,6 +47,7 @@ public class ServerThread extends Thread {
                 try {
                     readyChannels = selector.select();
                 } catch (IOException e) {
+                    System.out.println("被外部中断");
                 }
                 if(readyChannels == 0) continue;
 
