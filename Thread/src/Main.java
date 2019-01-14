@@ -1,12 +1,10 @@
-import qz.thread.ServerThread;
-
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.channels.Selector;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.locks.LockSupport;
 
 public class Main {
 
@@ -18,17 +16,15 @@ public class Main {
 
     public static void main(String[] args) {
         Main main = new Main();
-//        main.testState();
+        main.testState();
 //        main.testYield();
 //        main.testSleep1();
 //        main.testSleep2();
 //        main.testJoin();
 //        main.testInterrupt();
 //        main.testUncaught();
-        main.testNIO();
-
-//        NIOClient nioClient = new NIOClient();
-//        nioClient.clientTest();
+//        main.testNIO();
+//        main.testLockSupport();
     }
 
     private void testNIO(){
@@ -277,10 +273,51 @@ public class Main {
         waitAMoment();
         printThreadState(thread);
         b.add("1");
-        waitAMoment();
-        printThreadState(thread);
+//        waitAMoment();
+//        printThreadState(thread);
+//        synchronized (lock){
+//            lock.notifyAll();
+//        }
+//        waitAMoment();
+//        printThreadState(thread);
         thread.interrupt();
 
+        Thread thread332 = new Thread(()->{
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+//            LockSupport.park();
+            LockSupport.park();
+            System.out.println("结束了");
+        });
+        thread332.start();
+        printThreadState(thread332);
+//        LockSupport.unpark(thread2);
+        waitAMoment();
+        printThreadState(thread332);
+        waitAMoment();
+        printThreadState(thread332);
+//        LockSupport.unpark(thread2);
+    }
+
+    private void testLockSupport() {
+        Thread thread2 = new Thread(()->{
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            LockSupport.park();
+            System.out.println("结束了");
+        });
+        thread2.start();
+//        LockSupport.unpark(thread2);
+        waitAMoment();
+        printThreadState(thread2);
+        waitAMoment();
+        LockSupport.unpark(thread2);
     }
 
     private void printThreadState(Thread thread) {
@@ -289,7 +326,7 @@ public class Main {
 
     private void waitAMoment() {
         try {
-            Thread.sleep(500);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
         }
     }
@@ -320,6 +357,7 @@ public class Main {
                 a.take();
                 synchronized (lock){
                     System.out.println("我获取到锁");
+//                    lock.wait();
                 }
                 sleep(5000);
             }catch (InterruptedException e){
