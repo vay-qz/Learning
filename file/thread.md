@@ -4,21 +4,23 @@
 
 #### 线程的域
 
-| 域名                          | 备注               | 发布情况 |
-| :---------------------------- | ------------------ | -------- |
-| name                          | 名字               | √        |
-| priority                      | 优先级             | √        |
-| daemon                        | 守护状态           | √        |
-| stillborn                     | JVM状态            |          |
-| target                        | 将要运行           |          |
-| group                         | 当前线程的线程组   | get      |
-| contextClassLoader            | 当前线程的类加载器 | √        |
-| inheritedAccessControlContext | ？                 |          |
-| threadInitNumber              | 未命名的线程数量   |          |
-| stackSize                     | 栈帧大小           |          |
-| tid                           | 线程id             | get      |
-| threadSeqNumber               | 所有的线程数量     |          |
-| threadStatus                  | java线程状态       |          |
+| 域名                            | 备注               | 发布情况 |
+| :------------------------------ | ------------------ | -------- |
+| name                            | 名字               | √        |
+| priority                        | 优先级             | √        |
+| daemon                          | 守护状态           | √        |
+| stillborn                       | JVM状态            |          |
+| target                          | 将要运行           |          |
+| group                           | 当前线程的线程组   | get      |
+| contextClassLoader              | 当前线程的类加载器 | √        |
+| inheritedAccessControlContext   | ？                 |          |
+| threadInitNumber                | 未命名的线程数量   |          |
+| stackSize                       | 栈帧大小           |          |
+| tid                             | 线程id             | get      |
+| threadSeqNumber                 | 所有的线程数量     |          |
+| threadStatus                    | java线程状态       |          |
+| uncaughtExceptionHandler        | 未捕获异常句柄     | √        |
+| defaultUncaughtExceptionHandler | 默认未捕获异常句柄 | √        |
 
 #### 常用方法
 
@@ -149,7 +151,9 @@
 
 #### 未捕获异常
 
-UncaughtExceptionHandler
+defaultUncaughtExceptionHandler--`static volatile`
+
+uncaughtExceptionHandler--`volatile`
 
 #### 相关类
 
@@ -174,6 +178,8 @@ UncaughtExceptionHandler
 ##### NIO
 
 - Selector.select
+
+  > 从准备好的通道中获取数据
 
 - fileChannel.close
 

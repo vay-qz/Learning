@@ -23,10 +23,12 @@ public class Main {
 //        main.testJoin();
 //        main.testInterrupt();
 //        main.testUncaught();
-        main.testNIO();
+//        main.testNIO();
 //        main.testLockSupport();
-
-        main.testPermitBug();
+        VolatileTest volatileTest = new VolatileTest();
+//        volatileTest.failTest();
+        volatileTest.successTest();
+//        main.testPermitBug();
     }
 
     private void testPermitBug() {
@@ -115,13 +117,15 @@ public class Main {
                 System.out.println(str.charAt(1));
             }
         });
-        testUncaught.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
-            @Override
-            public void uncaughtException(Thread t, Throwable e) {
-                System.out.println(t);
-                e.printStackTrace();
-            }
-        });
+        Thread.setDefaultUncaughtExceptionHandler((t,e)->System.out.println(t));
+        testUncaught.setUncaughtExceptionHandler((t,e)->System.out.println(t + " not default"));
+//        testUncaught.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+//            @Override
+//            public void uncaughtException(Thread t, Throwable e) {
+//                System.out.println(t);
+//                e.printStackTrace();
+//            }
+//        });
         testUncaught.start();
     }
 
