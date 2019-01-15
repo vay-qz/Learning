@@ -16,19 +16,49 @@ public class Main {
 
     public static void main(String[] args) {
         Main main = new Main();
-        main.testState();
+//        main.testState();
 //        main.testYield();
 //        main.testSleep1();
 //        main.testSleep2();
 //        main.testJoin();
 //        main.testInterrupt();
 //        main.testUncaught();
-//        main.testNIO();
+        main.testNIO();
 //        main.testLockSupport();
+
+        main.testPermitBug();
+    }
+
+    private void testPermitBug() {
+        Thread thread1 = new Thread(()->{
+            try {
+                synchronized (lock){
+                }
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                System.out.println("睡眠被中断");
+            }
+        });
+        thread1.start();
+        waitAMoment();
+        thread1.interrupt();
+
+        Thread thread332 = new Thread(()->{
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            LockSupport.park();
+            System.out.println("over");
+        });
+        thread332.start();
+        waitAMoment();
+        printThreadState(thread332);
     }
 
     private void testNIO(){
-//        testSelector();
+        testSelector();
         testFileChannel();
     }
 
@@ -273,33 +303,14 @@ public class Main {
         waitAMoment();
         printThreadState(thread);
         b.add("1");
-//        waitAMoment();
-//        printThreadState(thread);
-//        synchronized (lock){
-//            lock.notifyAll();
-//        }
-//        waitAMoment();
-//        printThreadState(thread);
+        waitAMoment();
+        printThreadState(thread);
+        synchronized (lock){
+            lock.notifyAll();
+        }
+        waitAMoment();
+        printThreadState(thread);
         thread.interrupt();
-
-        Thread thread332 = new Thread(()->{
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-//            LockSupport.park();
-            LockSupport.park();
-            System.out.println("结束了");
-        });
-        thread332.start();
-        printThreadState(thread332);
-//        LockSupport.unpark(thread2);
-        waitAMoment();
-        printThreadState(thread332);
-        waitAMoment();
-        printThreadState(thread332);
-//        LockSupport.unpark(thread2);
     }
 
     private void testLockSupport() {
