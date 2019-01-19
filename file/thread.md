@@ -1,4 +1,10 @@
+
+
 # Java多线程
+
+[TOC]
+
+
 
 
 
@@ -13,7 +19,6 @@
 | target                          | 将要运行           |          |
 | group                           | 当前线程的线程组   | get      |
 | contextClassLoader              | 当前线程的类加载器 | √        |
-| inheritedAccessControlContext   | ？                 |          |
 | threadInitNumber                | 未命名的线程数量   |          |
 | stackSize                       | 栈帧大小           |          |
 | tid                             | 线程id             | get      |
@@ -34,7 +39,6 @@
   >- 检查权限
   >- 线程组操作
   >- 设置线程组、守护线程状态、线程优先级、类加载器继承当前线程
-  >- **？**inheritedAccessControlContex、inheritableThreadLocals
   >- 设置栈桢大小（未指定则为0，0代表受VM自行调配）
   >- 设置线程id为threadSeqNumber++
 
@@ -75,7 +79,7 @@
 
     > 作用：强制线程立即停止执行
     >
-    > 原因：该方法无法释放所有的锁
+    > 原因：该方法会释放所有的锁，不安全
     >
 
   - ~~destroy~~--`public`
@@ -86,9 +90,9 @@
     >
     > - 资源不释放
     >
-    > - 死锁
+    > - 不释放任何锁
 
-  - ~~suspend~~--`public final`
+  - ~~suspend/resume~~--`public final`
 
     > 作用：挂起线程
     >

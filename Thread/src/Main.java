@@ -17,7 +17,6 @@ public class Main {
     public static void main(String[] args) {
         Main main = new Main();
 //        main.testState();
-//        main.testYield();
 //        main.testSleep1();
 //        main.testSleep2();
 //        main.testJoin();
@@ -25,9 +24,11 @@ public class Main {
 //        main.testUncaught();
 //        main.testNIO();
 //        main.testLockSupport();
-        VolatileTest volatileTest = new VolatileTest();
+
+//        VolatileTest volatileTest = new VolatileTest();
 //        volatileTest.failTest();
-        volatileTest.successTest();
+//        volatileTest.successTest();
+
 //        main.testPermitBug();
     }
 
@@ -60,7 +61,7 @@ public class Main {
     }
 
     private void testNIO(){
-        testSelector();
+//        testSelector();
         testFileChannel();
     }
 
@@ -110,29 +111,24 @@ public class Main {
     }
 
     private void testUncaught() {
-        Thread testUncaught = new Thread(new Runnable() {
-            @Override
-            public void run() {
+        Thread testUncaught = new Thread(()->{
                 String str = "";
                 System.out.println(str.charAt(1));
+        });
+//        Thread.setDefaultUncaughtExceptionHandler((t,e)->System.out.println(t));
+        testUncaught.setUncaughtExceptionHandler((t,e)->System.out.println(t + " not default"));
+        testUncaught.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+            @Override
+            public void uncaughtException(Thread t, Throwable e) {
+                System.out.println(t);
+//                e.printStackTrace();
             }
         });
-        Thread.setDefaultUncaughtExceptionHandler((t,e)->System.out.println(t));
-        testUncaught.setUncaughtExceptionHandler((t,e)->System.out.println(t + " not default"));
-//        testUncaught.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
-//            @Override
-//            public void uncaughtException(Thread t, Throwable e) {
-//                System.out.println(t);
-//                e.printStackTrace();
-//            }
-//        });
         testUncaught.start();
     }
 
     private void testInterrupt() {
-        Thread testWait = new Thread(new Runnable() {
-            @Override
-            public void run() {
+        Thread testWait = new Thread(()-> {
                 synchronized (lock){
                     try {
                         lock.wait();
@@ -140,29 +136,22 @@ public class Main {
                         System.out.println("testWait thread be interrupted");
                     }
                 }
-            }
         });
         testWait.start();
         interruptAndPrint(testWait);
 
-        Thread testSleep = new Thread(new Runnable() {
-            @Override
-            public void run() {
+        Thread testSleep = new Thread(()->{
                 try {
                     Thread.sleep(5000);
                 } catch (InterruptedException e) {
                     System.out.println("testSleep thread be interrupted");
                 }
-            }
         });
         testSleep.start();
         interruptAndPrint(testSleep);
 
-        Join testJoin = new Join(new Thread(new Runnable() {
-            @Override
-            public void run() {
+        Join testJoin = new Join(new Thread(()-> {
                 while(true);
-            }
         }));
         testJoin.start();
         interruptAndPrint(testJoin);
@@ -191,36 +180,32 @@ public class Main {
         waitAMoment();
         System.out.println("中断前interrupted状态:" + testWait.isInterrupted());
         testWait.interrupt();
-//        waitAMoment();
-//        System.out.println("中断后interrupted状态:" + testWait.isInterrupted());
+        System.out.println("中断后interrupted状态:" + testWait.isInterrupted());
     }
 
     public void testJoin(){
-        Join testJoin = new Join(new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while(true);
+        Join testJoin = new Join(new Thread(()-> {
+            System.out.println("join");
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }));
         testJoin.start();
         waitAMoment();
         //抛弃领导
-//        testJoin.interrupt();
+        testJoin.interrupt();
     }
 
     public void testSleep2() {
         //场景二：
-        Thread tryGetLock = new Thread(new Runnable() {
-            @Override
-            public void run() {
+        Thread tryGetLock = new Thread(()-> {
                 synchronized (lock){
                     System.out.println("commonPeople:多谢恩赐");
                 }
-            }
         });
-        Thread god = new Thread(new Runnable() {
-            @Override
-            public void run() {
+        Thread god = new Thread(()-> {
                 synchronized (lock){
                     try {
                         System.out.println("god:我睡20分钟，锁睡醒了就能给你");
@@ -228,10 +213,8 @@ public class Main {
                         System.out.println("god:睡醒了给你");
                     } catch (InterruptedException e) {
                         System.out.println("god:锁给你，剩下的活我不干了");
-                        e.printStackTrace();
                     }
                 }
-            }
         });
         god.start();
         tryGetLock.start();
@@ -243,17 +226,12 @@ public class Main {
 
     public void testSleep1(){
         //场景一：
-        Thread tryGetLock1 = new Thread(new Runnable() {
-            @Override
-            public void run() {
+        Thread tryGetLock1 = new Thread(()-> {
                 synchronized (lock){
                     System.out.println("commonPeople:多谢恩赐");
                 }
-            }
         });
-        Thread god = new Thread(new Runnable() {
-            @Override
-            public void run() {
+        Thread god = new Thread(()-> {
                 synchronized (lock){
                     try {
                         System.out.println("god:我先睡一会儿，锁睡醒才能给你");
@@ -263,31 +241,24 @@ public class Main {
                         e.printStackTrace();
                     }
                 }
-            }
         });
         god.start();
         tryGetLock1.start();
     }
 
     public void testYield(){
-        Thread tryGetLock = new Thread(new Runnable() {
-            @Override
-            public void run() {
+        Thread tryGetLock = new Thread(()-> {
                 synchronized (lock){
                     System.out.println("我得到锁了");
                 }
-            }
         });
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
+        Thread thread = new Thread(()-> {
                 synchronized (lock){
                     System.out.println("开始无限循环");
                     while(true){
                         Thread.yield();
                     }
                 }
-            }
         });
         thread.start();
         waitAMoment();
@@ -347,12 +318,7 @@ public class Main {
     }
 
     private void init() {
-        new Thread(new Runnable(){
-            @Override
-            public void run() {
-                addLock();
-            }
-        }).start();
+        new Thread(()->addLock()).start();
     }
 
     private void addLock() {
@@ -372,7 +338,7 @@ public class Main {
                 a.take();
                 synchronized (lock){
                     System.out.println("我获取到锁");
-//                    lock.wait();
+                    lock.wait();
                 }
                 sleep(5000);
             }catch (InterruptedException e){
