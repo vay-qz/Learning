@@ -1,12 +1,6 @@
-
-
-# Java多线程
+# Java多线程----Thread类学习
 
 [TOC]
-
-
-
-
 
 #### 线程的域
 
@@ -194,3 +188,4 @@ uncaughtExceptionHandler--`volatile`
 - park
 - unpark
 
+测试代码
