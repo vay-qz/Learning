@@ -2,7 +2,7 @@
 [TOC]
 #### java内存模型
 
-![img](E:\github\Learning\file\java内存模型.jpg)
+![img](java内存模型.jpg)
 
 ##### Java独立线程的特性
 

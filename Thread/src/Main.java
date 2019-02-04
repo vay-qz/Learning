@@ -16,7 +16,7 @@ public class Main {
 
     public static void main(String[] args) {
         Main main = new Main();
-//        main.testState();
+        main.testState();
 //        main.testSleep1();
 //        main.testSleep2();
 //        main.testJoin();
