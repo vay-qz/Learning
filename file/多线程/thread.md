@@ -28,8 +28,8 @@
 
   >- 设置线程名
   >
-  >  - 有传入名称则为传入名称
-  >  - 无传入名称则为threadInitNumber++
+  >   - 有传入名称则为传入名称
+  >   - 无传入名称则为threadInitNumber++
   >- 检查权限
   >- 线程组操作
   >- 设置线程组、守护线程状态、线程优先级、类加载器继承当前线程
@@ -40,9 +40,10 @@
 
   > 让出当前时间片
   >
-  > 很少有实际的业务场景
+  > 源码提示：
   >
-  > 可能被用于debug或设计并发控制构造器
+  > 1. 很少有实际的业务场景
+  > 2. 可能被用于debug或设计并发控制构造器
 
 - sleep--`public static`
 
@@ -54,6 +55,8 @@
 - join--`puublic final`
 
   > 插队执行
+  >
+  > 调用join方法的线程将阻塞，待join线程结束后继续执行
 
 - start--`public`
 
@@ -63,7 +66,7 @@
   >   - start0
   > - 注释
   >   - 调用start的线程返回，JVM调用run方法
-  >   - 两个现场并发执行
+  >   - 两个线程并发执行
   >   - 每个线程只能start一次，否则会抛出异常
   >
 
@@ -141,7 +144,7 @@
 
 - toString--`public`
 
-  > 线程名+优先级+线程组名
+  > default:线程名+优先级+线程组名
 
 - holdsLock--`public static`
 
@@ -149,9 +152,10 @@
 
 #### 未捕获异常
 
-defaultUncaughtExceptionHandler--`static volatile`
+在抛出未被捕获的异常时执行
 
-uncaughtExceptionHandler--`volatile`
+- defaultUncaughtExceptionHandler--`static volatile`
+- uncaughtExceptionHandler--`volatile
 
 #### 相关类
 
@@ -188,4 +192,14 @@ uncaughtExceptionHandler--`volatile`
 - park
 - unpark
 
-测试代码
+#### 常见问题
+
+- run和start的区别：start方法会执行start0方法，start0方法会启动一个新线程来执行run方法，直接执行run方法并不会新建一个线程，此时run方法就和普通的方法没什么区别了
+
+- sleep和wait方法的区别：
+  1. 调用对象不同，sleep是Thread的static方法，wait是Object的方法
+  2. 对锁的处理不同，sleep不会释放锁，wait会释放锁，唤醒时需要获取锁
+
+
+
+[测试代码](https://github.com/VAS-QZ/Learning/tree/master/Thread)

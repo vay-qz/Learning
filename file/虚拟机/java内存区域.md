@@ -1,5 +1,7 @@
 # java虚拟机之java内存区域
 
+[TOC]
+
 ## jdk8内存区域图
 
 ![](https://img-blog.csdn.net/20180812235058303?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JydWNlMTI4/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
@@ -31,4 +33,4 @@
 
 
 
-测试代码
+[测试代码](https://github.com/VAS-QZ/Learning/tree/master/Jvm)
