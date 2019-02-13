@@ -24,7 +24,86 @@ public class Main {
 //        main.stackOOM();
 //        main.metaSpaceOOM(); //未完成
 //        main.directMemoryOOM();
-        main.testAllocation();
+//        main.testAllocation();
+//        main.testPretenureSizeThreshold();
+//        main.testTenuringThreshold();
+        main.testTenuringThreshold2();
+    }
+
+    /**
+     * 测试年龄
+     * 参数：
+     * -Xms40M
+     * -Xmx40M
+     * -Xmn20M
+     * -XX:+PrintGCDetails
+     * -XX:SurvivorRatio=8
+     * -XX:MaxTenuringThreshold=1
+     * -XX:+UseSerialGC
+     */
+    private void testTenuringThreshold(){
+        byte[] allocation1,allocation2,allocation3;
+
+        allocation1 = new byte[1024*1024/32];
+        allocation2 = new byte[8 * 1024*1024];
+        allocation3 = new byte[8 * 1024*1024];
+        allocation3 = null;
+        allocation3 = new byte[8 * 1024*1024];
+
+    }
+
+    /**
+     * 动态年龄判断
+     * 参数：
+     * -Xms80M
+     * -Xmx80M
+     * -Xmn20M
+     * -XX:+PrintGCDetails
+     * -XX:SurvivorRatio=8
+     * -XX:+UseSerialGC
+     */
+    private void testTenuringThreshold2(){
+        byte[] allocation1,allocation2 = null,allocation3 = null,allocation4, allocation5,allocation6, allocation7 = null, allocation8 = null,allocation9,allocation10;
+        //年龄最大的
+        allocation1 = new byte[1024*1024/16];
+        minorGc(allocation2,allocation3);
+//        //年龄第二大的
+        allocation4 = new byte[1024*1024 / 16];
+        allocation5 = new byte[1024*1024 / 16];
+
+        allocation6 = new byte[1024*1024 * 10];
+        allocation7 = new byte[1024*1024 * 10];
+
+        allocation8 = new byte[1024*1024 / 4];
+
+        allocation9 = new byte[1024*1024 * 10];
+        allocation10 = new byte[1024*1024 * 10];
+
+    }
+
+    /**
+     * 触发minor gc
+     * @param allocation
+     */
+    private void minorGc(byte[] allocation, byte[] allocation2) {
+        allocation = new byte[1024*1024 * 10];
+        allocation2 = new byte[1024*1024 * 10];
+    }
+
+    /**
+     * 测试大对象直接进入老年代
+     * 参数:
+     * -Xms20M
+     * -Xmx20M
+     * -Xmn10M
+     * -XX:+PrintGCDetails
+     * -XX:SurvivorRatio=8
+     * -XX:PretenureSizeThreshold=3145728
+     * -XX:+UseSerialGC
+     */
+    private void testPretenureSizeThreshold(){
+        byte[] allocation1;
+        allocation1 = new byte[4 * 1024*1024];
     }
 
     /**
@@ -36,19 +115,13 @@ public class Main {
      * -XX:+PrintGCDetails
      * -XX:SurvivorRatio=8
      * -XX:+UseSerialGC
-     * -XX:PretenureSizeThreshold=5242880
      */
     private void testAllocation() {
-        byte[] allocation1,allocation2,allocation3,allocation4,allocation5;
+        byte[] allocation1,allocation2,allocation3;
 
-        allocation1 = new byte[4 * 1024*1024];
-        //eden区有8M，只用了4M为什么就要进行minor gc
-        allocation3 = new byte[2 * 1024*1024];
+        allocation2 = new byte[3 * 1024*1024];
 
-
-//        allocation3 = new byte[3*512*1024];
-//        //为什么接近极限时会产生full gc
-//        allocation4 = new byte[512*1024];
+        allocation3 = new byte[5 * 1024*1024];
     }
 
     /**

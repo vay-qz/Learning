@@ -16,7 +16,7 @@ public class Main {
 
     public static void main(String[] args) {
         Main main = new Main();
-        main.testState();
+//        main.testState();
 //        main.testSleep1();
 //        main.testSleep2();
 //        main.testJoin();
@@ -29,14 +29,16 @@ public class Main {
 //        volatileTest.failTest();
 //        volatileTest.successTest();
 
-//        main.testPermitBug();
+        main.testPermitBug();
     }
 
+    /**
+     * 全程没有LockSupport.unpark()代码，但是控制台打印出了over字段
+     * LockSupport.park()在线程中并且之前有线程被中断时无法加锁
+     */
     private void testPermitBug() {
         Thread thread1 = new Thread(()->{
             try {
-                synchronized (lock){
-                }
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
                 System.out.println("睡眠被中断");
@@ -46,18 +48,18 @@ public class Main {
         waitAMoment();
         thread1.interrupt();
 
-        Thread thread332 = new Thread(()->{
+        Thread thread2 = new Thread(()->{
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            LockSupport.park();
+            LockSupport.park(lock);
             System.out.println("over");
         });
-        thread332.start();
+        thread2.start();
         waitAMoment();
-        printThreadState(thread332);
+        printThreadState(thread2);
     }
 
     private void testNIO(){
