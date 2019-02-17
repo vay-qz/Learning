@@ -3,6 +3,8 @@ import sun.misc.Unsafe;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 
 public class Main {
 
@@ -27,7 +29,9 @@ public class Main {
 //        main.testAllocation();
 //        main.testPretenureSizeThreshold();
 //        main.testTenuringThreshold();
-        main.testTenuringThreshold2();
+//        main.testTenuringThreshold2();
+        BlockingQueue a = new ArrayBlockingQueue(1);
+        a.take();
     }
 
     /**
