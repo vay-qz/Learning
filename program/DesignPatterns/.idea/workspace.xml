@@ -1,24 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="637c6165-6230-4fcb-8b03-ac51031a87f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/designPattern/singleton/Singleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/designPattern/singleton/hungry/StaticBlockSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/designPattern/singleton/hungry/StaticVarSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/designPattern/singleton/lazy/DoubleCheckSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/designPattern/singleton/lazy/InnerClassSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/designPattern/singleton/lazy/SimpleSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Jvm/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Jvm/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Jvm/src/com/vay/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Jvm/src/com/vay/load/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Jvm/src/com/vay/load/Load.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Jvm/src/com/vay/load/Parents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="12518090-2a20-4ab1-8241-57a6561ca546" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/connection/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/connection/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/connection/C.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/connection/D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/connection/E.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/AbstractFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/DicosFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/KFCFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/McDFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/DicosHamburger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/DicosHotDog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/IHamburger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/IHotDog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/KFCHamburger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/KFCHogDog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/McDHamburger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/McDHotDog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/AbstractFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/DicosHamburgerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/KFCHamburgerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/McDHamburgerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/simplefactory/SimpleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/hungry/StaticBlockSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/hungry/StaticVarSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/lazy/DoubleCheckSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/lazy/InnerClassSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/lazy/SimpleSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/designPattern/create/factory/FactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thunisoft_dzjz_commons_dzjz_dubbo_dzjz_3_1_5_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a8cc9ab91c8dd6b01e1d9ea412e3e9d1835e7e5e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/b/bb762e219b15d30cd99186a86e9473eae4e99a0d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df02346c837559af0c962939727dd24c2f1faa81" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jvm/src/main/java/JVMToolsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jvm/src/com/vay/JVMToolsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jvm/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jvm/src/com/vay/gc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jvm/src/main/java/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignPatterns.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPatterns.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/connection/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/connection/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/connection/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/connection/D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/connection/E.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/AbstractCarFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BaomaFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BaomaShoe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BaomaWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BenzFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BenzShoe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BenzWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/Shoe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/Window.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/Block.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/ShapeClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/ShapeFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/simple/SimpleFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/singleton/Singleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/singleton/hungry/StaticBlockSingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/singleton/hungry/StaticVarSingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/singleton/lazy/DoubleCheckSingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/singleton/lazy/InnerClassSingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/singleton/lazy/SimpleSingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DesignPatterns-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/connection/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/connection/B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/connection/C.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/connection/D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/connection/E.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/AbstractCarFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/BaomaFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/BaomaShoe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/BaomaWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/BenzFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/BenzShoe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/BenzWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/Shoe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/Window.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/factory/Block.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/factory/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/factory/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/factory/ShapeClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/factory/ShapeFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringMVCMaven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMVCMaven/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,189 +105,162 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CheckStyle-IDEA-workspace">
-    <option name="configuration">
-      <map>
-        <entry key="last-active-plugin-version" value="5.23.0" />
-      </map>
-    </option>
-  </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="-904674723">
+    <session id="-151637254">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.27" value="1" />
-          <entry key="project.open.time.37" value="1" />
-          <entry key="project.open.time.39" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="MODULES/mdl-DesignPatterns" value="2" />
-          <entry key="abstractFactory" value="1" />
-          <entry key="factory" value="3" />
-          <entry key="java" value="18" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="18" />
-          <entry key="UML" value="6" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="36" />
-          <entry key="java" value="657" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="657" />
-          <entry key="PLAIN_TEXT" value="36" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="210171519">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="9" />
+          <entry key="java" value="46" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="46" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="699" />
+          <entry key="dummy" value="2" />
+          <entry key="java" value="549" />
+          <entry key="xml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="699" />
+          <entry key="JAVA" value="549" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="XML" value="10" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/connection/B.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/connection/D.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/connection/E.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/McDHamburgerFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/singleton/hungry/StaticVarSingleton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+              <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="1" />
               <folding>
-                <element signature="e#274#275#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#273#274#0" expanded="true" />
+                <element signature="e#314#315#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/singleton/lazy/SimpleSingleton.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/DicosHamburgerFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/singleton/lazy/DoubleCheckSingleton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/singleton/Singleton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="60">
+              <caret line="3" column="52" lean-forward="true" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
               <folding>
-                <element signature="e#115#116#0" expanded="true" />
-                <element signature="e#146#147#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/singleton/lazy/InnerClassSingleton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-              <folding>
-                <element signature="e#220#221#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#224#225#0" expanded="true" />
                 <element signature="e#251#252#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/singleton/hungry/StaticBlockSingleton.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/DicosFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="140">
+              <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="1" />
               <folding>
-                <element signature="e#326#327#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#262#263#0" expanded="true" />
+                <element signature="e#289#290#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#364#365#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/connection/C.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/KFCFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="140">
+              <caret line="7" selection-start-line="7" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#408#409#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/McDFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#456#457#0" expanded="true" />
+                <element signature="e#494#495#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/AbstractFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/DicosHamburger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/DicosHotDog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/KFCHogDog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/McDHotDog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -221,9 +270,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Arquillian JUnit Test Class" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -233,43 +282,42 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/connection/A.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/connection/B.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/connection/C.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/connection/D.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/connection/E.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/McDHanburger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/hungry/StaticBlockSingleton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/hungry/StaticVarSingleton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/Singleton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/lazy/DoubleCheckSingleton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/lazy/InnerClassSingleton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/lazy/SimpleSingleton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/simple/SimpleFactory.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/ShapeFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/Block.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/Circle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/ShapeClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/Color.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/Window.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/ColorFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/Baoma.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BaomaShoe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/Benz.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BenzShoe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/Green.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BaomaWindow.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/Red.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BenzWindow.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/AbstractCarFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BaomaFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BenzFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/design_pattern/create/factory/Shape.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/Shape.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/connection/C.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/connection/A.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/connection/B.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/connection/D.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/connection/E.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/singleton/SingletonHungry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/singleton/StaticVarSingletonHungry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/singleton/hungry/StaticVarSingletonHungry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/singleton/hungry/StaticBlockSingleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/singleton/hungry/StaticVarSingleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/singleton/lazy/DoubleCheckSingleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/singleton/lazy/InnerClassSingleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/singleton/lazy/SimpleSingleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designPattern/singleton/Singleton.java" />
+        <option value="$PROJECT_DIR$/src/test/java/designPattern/create/factory/simple/SimpleFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/factoryMethod.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/KFCHanburger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/KFCHamburger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/AbstractFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/McDHamburgerFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/KFCHamburgerFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/KFCHogDog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/McDHotDog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/AbstractFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/KFCFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/McDFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/designPattern/create/factory/FactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/Hamburger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/IHamburger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/HotDog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/IHotDog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/DicosHamburgerFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/DicosHamburger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/DicosHotDog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/DicosHamburgerFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/DicosFactory.java" />
       </list>
     </option>
   </component>
@@ -279,11 +327,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="714" />
-    <option name="y" value="-19" />
-    <option name="width" value="426" />
-    <option name="height" value="704" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -291,83 +338,69 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="designpatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designpatterns" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="designpatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designpatterns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="designpatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designpatterns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="designpatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designpatterns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="designPattern" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="designpatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designpatterns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="designPattern" type="462c0819:PsiDirectoryNode" />
-              <item name="singleton" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="designPattern" type="462c0819:PsiDirectoryNode" />
-              <item name="singleton" type="462c0819:PsiDirectoryNode" />
-              <item name="hungry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="designPattern" type="462c0819:PsiDirectoryNode" />
-              <item name="singleton" type="462c0819:PsiDirectoryNode" />
-              <item name="lazy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555253065687" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556356182818" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="designPattern.create.factory.simple" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -381,37 +414,65 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ShapeClient">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.com.designPattern.main.Main" />
-      <module name="DesignPatterns" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+  <component name="RunManager" selected="JUnit.SimpleFactoryTest.getInstance">
+    <configuration name="FactoryTest.abstractFactoryGetInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="designPattern.create.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="designPattern.create.factory" />
+      <option name="MAIN_CLASS_NAME" value="designPattern.create.factory.FactoryTest" />
+      <option name="METHOD_NAME" value="abstractFactoryGetInstance" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShapeClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.designPattern.create.factory.ShapeClient" />
-      <module name="DesignPatterns" />
+    <configuration name="FactoryTest.factoryMethodGetInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.designPattern.create.factory.*" />
+          <option name="PATTERN" value="designPattern.create.factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="designPattern.create.factory" />
+      <option name="MAIN_CLASS_NAME" value="designPattern.create.factory.FactoryTest" />
+      <option name="METHOD_NAME" value="factoryMethodGetInstance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleFactoryTest.getInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="designPattern.create.factory.simplefactory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="designPattern.create.factory.simple" />
+      <option name="MAIN_CLASS_NAME" value="designPattern.create.factory.simple.SimpleFactoryTest" />
+      <option name="METHOD_NAME" value="getInstance" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.ShapeClient" />
+      <item itemvalue="JUnit.SimpleFactoryTest.getInstance" />
+      <item itemvalue="JUnit.FactoryTest.factoryMethodGetInstance" />
+      <item itemvalue="JUnit.FactoryTest.abstractFactoryGetInstance" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ShapeClient" />
+        <item itemvalue="JUnit.FactoryTest.abstractFactoryGetInstance" />
+        <item itemvalue="JUnit.FactoryTest.factoryMethodGetInstance" />
+        <item itemvalue="JUnit.SimpleFactoryTest.getInstance" />
       </list>
     </recent_temporary>
   </component>
@@ -420,62 +481,64 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="637c6165-6230-4fcb-8b03-ac51031a87f0" name="Default Changelist" comment="" />
-      <created>1552727014784</created>
+      <changelist id="12518090-2a20-4ab1-8241-57a6561ca546" name="Default Changelist" comment="" />
+      <created>1556347535233</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1552727014784</updated>
-      <workItem from="1552727018462" duration="2465000" />
-      <workItem from="1552729509740" duration="4330000" />
-      <workItem from="1552748045085" duration="1096000" />
-      <workItem from="1552785882472" duration="908000" />
-      <workItem from="1552820501318" duration="3288000" />
-      <workItem from="1553263780358" duration="676000" />
-      <workItem from="1553834719761" duration="631000" />
-      <workItem from="1553848585720" duration="3533000" />
-      <workItem from="1555247557377" duration="5137000" />
+      <updated>1556347535233</updated>
+      <workItem from="1556347536500" duration="7546000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="SimpleFactoryTest_getInstance - 2019.04.27 at 14h 55m 29s.xml">
+      <configuration name="SimpleFactoryTest.getInstance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SimpleFactoryTest_getInstance - 2019.04.27 at 14h 56m 05s.xml">
+      <configuration name="SimpleFactoryTest.getInstance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FactoryTest_factoryMethodGetInstance - 2019.04.27 at 15h 31m 56s.xml">
+      <configuration name="FactoryTest.factoryMethodGetInstance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FactoryTest_abstractFactoryGetInstance - 2019.04.27 at 15h 39m 43s.xml">
+      <configuration name="FactoryTest.abstractFactoryGetInstance" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22064000" />
+    <option name="totallyTimeSpent" value="7546000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22334754" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Learn" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32899022" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.14099783" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="CheckStyle" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.329718" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Mongo Explorer" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,434 +548,359 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/connection/A.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://MODULES/mdl-DesignPatterns">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
-          <ID>MODULES</ID>
-          <OriginalElement>mdl-DesignPatterns</OriginalElement>
-          <nodes>
-            <node x="" y="">mdl-DesignPatterns</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="87.0" y="15.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/main/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/Circle.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/connection/B.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/Shoe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/ShapeFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/Block.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/com.designPattern.create.abstractFactory">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.designPattern.create.abstractFactory</OriginalElement>
-          <nodes>
-            <node x="106.15384615384613" y="0.0">com.designPattern.create.abstractFactory.Shoe</node>
-            <node x="419.0" y="134.5">com.designPattern.create.abstractFactory.BaomaShoe</node>
-            <node x="10.5" y="134.5">com.designPattern.create.abstractFactory.BenzShoe</node>
-            <node x="563.1538461538461" y="0.0">com.designPattern.create.abstractFactory.Window</node>
-            <node x="206.0" y="123.0">com.designPattern.create.abstractFactory.AbstractCarFactory</node>
-            <node x="99.40384615384619" y="279.0">com.designPattern.create.abstractFactory.BenzFactory</node>
-            <node x="750.0" y="134.5">com.designPattern.create.abstractFactory.BaomaWindow</node>
-            <node x="390.4038461538462" y="279.0">com.designPattern.create.abstractFactory.BaomaFactory</node>
-            <node x="574.0" y="134.5">com.designPattern.create.abstractFactory.BenzWindow</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="com.designPattern.create.abstractFactory.BenzShoe" target="com.designPattern.create.abstractFactory.Shoe">
-              <point x="0.0" y="-26.5" />
-              <point x="78.0" y="103.0" />
-              <point x="146.65384615384613" y="103.0" />
-              <point x="-27.0" y="26.5" />
-            </edge>
-            <edge source="com.designPattern.create.abstractFactory.BaomaFactory" target="com.designPattern.create.abstractFactory.Shoe">
-              <point x="-77.19999999999996" y="-38.0" />
-              <point x="409.7038461538462" y="229.0" />
-              <point x="184.5" y="229.0" />
-              <point x="184.5" y="103.0" />
-              <point x="173.65384615384613" y="103.0" />
-              <point x="0.0" y="26.5" />
-            </edge>
-            <edge source="com.designPattern.create.abstractFactory.BaomaFactory" target="com.designPattern.create.abstractFactory.BaomaShoe">
-              <point x="0.0" y="-38.0" />
-              <point x="0.0" y="26.5" />
-            </edge>
-            <edge source="com.designPattern.create.abstractFactory.BenzFactory" target="com.designPattern.create.abstractFactory.BenzShoe">
-              <point x="-38.60000000000002" y="-38.0" />
-              <point x="157.30384615384617" y="249.0" />
-              <point x="78.0" y="249.0" />
-              <point x="0.0" y="26.5" />
-            </edge>
-            <edge source="com.designPattern.create.abstractFactory.BaomaFactory" target="com.designPattern.create.abstractFactory.BaomaWindow">
-              <point x="38.60000000000002" y="-38.0" />
-              <point x="525.5038461538462" y="249.0" />
-              <point x="828.0" y="249.0" />
-              <point x="0.0" y="26.5" />
-            </edge>
-            <edge source="com.designPattern.create.abstractFactory.BenzFactory" target="com.designPattern.create.abstractFactory.Shoe">
-              <point x="-77.19999999999993" y="-38.0" />
-              <point x="118.70384615384626" y="259.0" />
-              <point x="0.0" y="259.0" />
-              <point x="0.0" y="93.0" />
-              <point x="119.65384615384613" y="93.0" />
-              <point x="-54.0" y="26.5" />
-            </edge>
-            <edge source="com.designPattern.create.abstractFactory.BaomaFactory" target="com.designPattern.create.abstractFactory.AbstractCarFactory">
-              <point x="-38.599999999999966" y="-38.0" />
-              <point x="448.30384615384617" y="219.0" />
-              <point x="350.75" y="219.0" />
-              <point x="48.25" y="38.0" />
-            </edge>
-            <edge source="com.designPattern.create.abstractFactory.BaomaFactory" target="com.designPattern.create.abstractFactory.Window">
-              <point x="77.19999999999999" y="-38.0" />
-              <point x="564.1038461538461" y="259.0" />
-              <point x="916.5" y="259.0" />
-              <point x="916.5" y="93.0" />
-              <point x="703.5538461538462" y="93.0" />
-              <point x="62.40000000000006" y="26.5" />
-            </edge>
-            <edge source="com.designPattern.create.abstractFactory.BenzFactory" target="com.designPattern.create.abstractFactory.AbstractCarFactory">
-              <point x="38.60000000000002" y="-38.0" />
-              <point x="234.5038461538462" y="259.0" />
-              <point x="254.25" y="259.0" />
-              <point x="-48.25" y="38.0" />
-            </edge>
-            <edge source="com.designPattern.create.abstractFactory.AbstractCarFactory" target="com.designPattern.create.abstractFactory.Window">
-              <point x="48.25" y="-38.0" />
-              <point x="350.75" y="103.0" />
-              <point x="609.9538461538461" y="103.0" />
-              <point x="-31.19999999999999" y="26.5" />
-            </edge>
-            <edge source="com.designPattern.create.abstractFactory.AbstractCarFactory" target="com.designPattern.create.abstractFactory.Shoe">
-              <point x="-48.25" y="-38.0" />
-              <point x="254.25" y="83.0" />
-              <point x="200.65384615384613" y="83.0" />
-              <point x="27.0" y="26.5" />
-            </edge>
-            <edge source="com.designPattern.create.abstractFactory.BenzFactory" target="com.designPattern.create.abstractFactory.Window">
-              <point x="0.0" y="-38.0" />
-              <point x="195.5" y="93.0" />
-              <point x="578.7538461538461" y="93.0" />
-              <point x="-62.400000000000006" y="26.5" />
-            </edge>
-            <edge source="com.designPattern.create.abstractFactory.BaomaShoe" target="com.designPattern.create.abstractFactory.Shoe">
-              <point x="0.0" y="-26.5" />
-              <point x="486.5" y="73.0" />
-              <point x="227.65384615384613" y="73.0" />
-              <point x="54.0" y="26.5" />
-            </edge>
-            <edge source="com.designPattern.create.abstractFactory.BaomaWindow" target="com.designPattern.create.abstractFactory.Window">
-              <point x="0.0" y="-26.5" />
-              <point x="828.0" y="103.0" />
-              <point x="672.3538461538461" y="103.0" />
-              <point x="31.19999999999999" y="26.5" />
-            </edge>
-            <edge source="com.designPattern.create.abstractFactory.BenzWindow" target="com.designPattern.create.abstractFactory.Window">
-              <point x="0.0" y="-26.5" />
-              <point x="652.0" y="103.0" />
-              <point x="641.1538461538461" y="103.0" />
-              <point x="0.0" y="26.5" />
-            </edge>
-            <edge source="com.designPattern.create.abstractFactory.BenzFactory" target="com.designPattern.create.abstractFactory.BenzWindow">
-              <point x="77.20000000000005" y="-38.0" />
-              <point x="273.10384615384623" y="239.0" />
-              <point x="652.0" y="239.0" />
-              <point x="0.0" y="26.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.007051282051282" x="362.0" y="261.0" />
-          <SelectedNodes>
-            <node>com.designPattern.create.abstractFactory.BenzShoe</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BenzShoe.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/connection/C.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BaomaShoe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BenzWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BaomaFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BaomaWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/AbstractCarFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BenzFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/ShapeClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/com.designPattern.create.factory">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.designPattern.create.factory</OriginalElement>
-          <nodes>
-            <node x="100.0" y="80.0">com.designPattern.create.factory.Circle</node>
-            <node x="0.0" y="80.0">com.designPattern.create.factory.Block</node>
-            <node x="48.0" y="0.0">com.designPattern.create.factory.Shape</node>
-            <node x="0.0" y="230.0">com.designPattern.create.factory.ShapeClient</node>
-            <node x="0.0" y="155.0">com.designPattern.create.factory.ShapeFactory</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="com.designPattern.create.factory.Circle" target="com.designPattern.create.factory.Shape">
-              <point x="0.0" y="-15.0" />
-              <point x="140.0" y="55.0" />
-              <point x="111.0" y="55.0" />
-              <point x="21.0" y="15.0" />
-            </edge>
-            <edge source="com.designPattern.create.factory.Block" target="com.designPattern.create.factory.Shape">
-              <point x="0.0" y="-15.0" />
-              <point x="40.0" y="55.0" />
-              <point x="69.0" y="55.0" />
-              <point x="-21.0" y="15.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-400.0" y="-62.0" />
-          <SelectedNodes>
-            <node>com.designPattern.create.factory.Shape</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
+          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/com.designPattern.connection">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/connection/D.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.designPattern.connection</OriginalElement>
-          <nodes>
-            <node x="77.0" y="0.0">com.designPattern.connection.A</node>
-            <node x="91.0" y="80.0">com.designPattern.connection.B</node>
-            <node x="14.5" y="80.0">com.designPattern.connection.C</node>
-            <node x="0.0" y="0.0">com.designPattern.connection.D</node>
-            <node x="15.0" y="160.0">com.designPattern.connection.E</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="com.designPattern.connection.C" target="com.designPattern.connection.D">
-              <point x="-14.0" y="-15.0" />
-              <point x="0.0" y="15.0" />
-            </edge>
-            <edge source="com.designPattern.connection.E" target="com.designPattern.connection.C">
-              <point x="0.0" y="-15.0" />
-              <point x="0.0" y="15.0" />
-            </edge>
-            <edge source="com.designPattern.connection.C" target="com.designPattern.connection.A">
-              <point x="14.0" y="-15.0" />
-              <point x="56.5" y="55.0" />
-              <point x="91.0" y="55.0" />
-              <point x="-14.0" y="15.0" />
-            </edge>
-            <edge source="com.designPattern.connection.B" target="com.designPattern.connection.A">
-              <point x="0.0" y="-15.0" />
-              <point x="14.0" y="15.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="86.0" y="95.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/Shape.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/connection/E.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        <state>
+          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/connection/A.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/singleton/hungry/StaticBlockSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/connection/B.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/singleton/hungry/StaticVarSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/connection/C.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/singleton/Singleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/connection/D.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/singleton/lazy/DoubleCheckSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/connection/E.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/singleton/lazy/InnerClassSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/singleton/lazy/InnerClassSingleton.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/singleton/lazy/SimpleSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
           <folding>
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#10065#10066#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/singleton/lazy/DoubleCheckSingleton.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/designPattern/create/factory/simple/SimpleFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/designPattern/create/factory/FactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/singleton/lazy/SimpleSingleton.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/KFCHamburger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/McDHamburger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/simplefactory/SimpleFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/singleton/Singleton.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/IHamburger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="40">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding>
-            <element signature="e#115#116#0" expanded="true" />
+            <element signature="e#98#99#0" expanded="true" />
             <element signature="e#146#147#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/singleton/hungry/StaticVarSingleton.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/IHotDog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="40">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding>
-            <element signature="e#274#275#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#95#96#0" expanded="true" />
+            <element signature="e#143#144#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/designPattern/singleton/hungry/StaticBlockSingleton.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/AbstractFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="140">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/KFCHamburgerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="1" />
           <folding>
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/McDHamburgerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/DicosHamburgerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="52" lean-forward="true" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/AbstractFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/DicosHamburger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/DicosHotDog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/KFCHogDog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/McDHotDog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/DicosFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/KFCFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" selection-start-line="7" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/McDFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>designpatterns</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
