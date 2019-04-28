@@ -11,9 +11,8 @@ public class FactoryTest {
 
     @Test
     public void simpleFactoryGetInstance() {
-        SimpleFactory simpleFactory = new SimpleFactory();
-        System.out.println(simpleFactory.getInstance("KFC").say());
-        System.out.println(simpleFactory.getInstance("McD").say());
+        System.out.println(SimpleFactory.getInstance(SimpleFactory.KFC).say());
+        System.out.println(SimpleFactory.getInstance(SimpleFactory.McD).say());
     }
 
     @Test
