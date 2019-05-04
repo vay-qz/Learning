@@ -1,4 +1,4 @@
-package com.vay.gc;
+package pers.vay.gc;
 
 import sun.misc.Unsafe;
 
