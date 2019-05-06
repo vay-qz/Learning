@@ -79,7 +79,17 @@ public class OOMTest {
 //            System.out.println(e.getMessage());
 //        }
         /**
-         * 常量与静态变量，1.6中位于永久代，1.8中位于堆
+         * 测试常量与静态变量在内存中的位置
+         * <p>
+         *     -Xms2m
+         *     -Xmx2m
+         *     -XX:PermSize=3m
+         *     -XX:MaxPermSize=3m
+         * </p>
+         * <p>
+         *     结论
+         *      常量与静态变量，1.6中位于永久代，1.8中位于堆
+         * </p>
          */
 //        VarOOM test = new VarOOM();
 //        ConstOOM test = new ConstOOM();
