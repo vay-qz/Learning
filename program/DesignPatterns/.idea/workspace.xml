@@ -2,100 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12518090-2a20-4ab1-8241-57a6561ca546" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/connection/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/connection/B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/connection/C.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/connection/D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/connection/E.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/AbstractFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/DicosFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/KFCFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/McDFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/DicosHamburger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/DicosHotDog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/IHamburger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/IHotDog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/KFCHamburger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/KFCHogDog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/McDHamburger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/bean/McDHotDog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/AbstractFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/DicosHamburgerFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/KFCHamburgerFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/McDHamburgerFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/factory/simplefactory/SimpleFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/Singleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/hungry/StaticBlockSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/hungry/StaticVarSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/lazy/DoubleCheckSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/lazy/InnerClassSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designPattern/create/singleton/lazy/SimpleSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/designPattern/create/factory/FactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thunisoft_dzjz_commons_dzjz_dubbo_dzjz_3_1_5_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a8cc9ab91c8dd6b01e1d9ea412e3e9d1835e7e5e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/b/bb762e219b15d30cd99186a86e9473eae4e99a0d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df02346c837559af0c962939727dd24c2f1faa81" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jvm/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jvm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubboDemo/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatterns.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPatterns.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/connection/A.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/connection/B.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/connection/C.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/connection/D.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/connection/E.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/AbstractCarFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BaomaFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BaomaShoe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BaomaWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BenzFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BenzShoe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/BenzWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/Shoe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/abstractFactory/Window.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/Block.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/Circle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/ShapeClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/ShapeFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/factory/simple/SimpleFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/singleton/Singleton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/singleton/hungry/StaticBlockSingleton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/singleton/hungry/StaticVarSingleton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/singleton/lazy/DoubleCheckSingleton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/singleton/lazy/InnerClassSingleton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designPattern/create/singleton/lazy/SimpleSingleton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DesignPatterns-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/connection/A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/connection/B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/connection/C.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/connection/D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/connection/E.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/AbstractCarFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/BaomaFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/BaomaShoe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/BaomaWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/BenzFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/BenzShoe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/BenzWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/Shoe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/abstractFactory/Window.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/factory/Block.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/factory/Circle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/factory/Shape.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/factory/ShapeClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/designPattern/create/factory/ShapeFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCMaven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMVCMaven/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/.idea/Jvm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Jvm/.idea/Jvm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Jvm/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Jvm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/src/com/vay/JVMToolsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/src/com/vay/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/src/com/vay/gc/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/src/com/vay/load/Child.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/src/com/vay/load/Load.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/src/com/vay/load/Parents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/production/Jvm/com/vay/JVMToolsTest$OOMObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/production/Jvm/com/vay/JVMToolsTest$SynRunable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/production/Jvm/com/vay/JVMToolsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/production/Jvm/com/vay/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/production/Jvm/com/vay/gc/Main$OOMObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/production/Jvm/com/vay/gc/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/production/Jvm/com/vay/load/Child.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/production/Jvm/com/vay/load/Load.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/production/Jvm/com/vay/load/Parents.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubboDemo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubboDemo/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubboDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubboDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubboDemo/dubboInterface/dubboInterface.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../summary/虚拟机/类加载.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../summary/虚拟机/类加载.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -109,20 +41,25 @@
     <session id="-151637254">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="46" />
-          <entry key="xml" value="1" />
+          <entry key="java" value="47" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="46" />
-          <entry key="XML" value="1" />
+          <entry key="JAVA" value="47" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -142,35 +79,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/McDHamburgerFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#273#274#0" expanded="true" />
-                <element signature="e#314#315#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/DicosHamburgerFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="52" lean-forward="true" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#224#225#0" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/DicosFactory.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -178,10 +87,6 @@
               <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#262#263#0" expanded="true" />
-                <element signature="e#289#290#0" expanded="true" />
-                <element signature="e#337#338#0" expanded="true" />
-                <element signature="e#364#365#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -201,18 +106,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/McDFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="180">
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#367#368#0" expanded="true" />
                 <element signature="e#408#409#0" expanded="true" />
                 <element signature="e#456#457#0" expanded="true" />
                 <element signature="e#494#495#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/ClassLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5260">
+              <caret line="324" column="38" selection-start-line="324" selection-start-column="38" selection-end-line="324" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="491">
+              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="44" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -327,18 +249,20 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="714" />
+    <option name="y" value="-19" />
+    <option name="width" value="426" />
+    <option name="height" value="704" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -378,15 +302,18 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="classlo&#9;PSI&#9;JAVA://java.lang.ClassLoader" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556356182818" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -487,6 +414,11 @@
       <option name="presentableId" value="Default" />
       <updated>1556347535233</updated>
       <workItem from="1556347536500" duration="7546000" />
+      <workItem from="1556632833304" duration="1423000" />
+      <workItem from="1556695182222" duration="1383000" />
+      <workItem from="1556763301005" duration="943000" />
+      <workItem from="1556785010605" duration="9000" />
+      <workItem from="1556785060007" duration="1388000" />
     </task>
     <servers />
   </component>
@@ -505,24 +437,19 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7546000" />
+    <option name="totallyTimeSpent" value="12692000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19402985" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32899022" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
@@ -530,15 +457,20 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,34 +561,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
-          <folding>
-            <element signature="e#10065#10066#0" expanded="true" />
-            <element signature="e#10148#10149#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/designPattern/create/factory/simple/SimpleFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/designPattern/create/factory/simple/SimpleFactoryTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/designPattern/create/factory/FactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -678,9 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -688,10 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding>
-            <element signature="e#98#99#0" expanded="true" />
-            <element signature="e#146#147#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -699,10 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding>
-            <element signature="e#95#96#0" expanded="true" />
-            <element signature="e#143#144#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -717,35 +618,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/McDHamburgerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="80">
           <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/factorymethod/DicosHamburgerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="3" column="52" lean-forward="true" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/DicosFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/KFCFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" selection-start-line="7" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/McDFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5260">
+          <caret line="324" column="38" selection-start-line="324" selection-start-column="38" selection-end-line="324" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -787,43 +718,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/DicosFactory.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/KFCFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/designPattern/create/factory/abstractfactory/McDFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="491">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="44" selection-end-column="12" />
         </state>
       </provider>
     </entry>

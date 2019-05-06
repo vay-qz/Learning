@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5a5446e6-f3f9-4470-a30b-b5c3704c3f30" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../DesignPatterns/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignPatterns/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Jvm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Jvm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/vay/JVMToolsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/vay/Main2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/vay/classload/MyClassLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/vay/gc/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/vay/load/Child.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/vay/load/Load.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/vay/load/Parents.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../dubboDemo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubboDemo/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dubboDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubboDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../summary/虚拟机/java内存区域 (2).md" beforeDir="false" afterPath="$PROJECT_DIR$/../../summary/虚拟机/java内存区域 (2).md" afterDir="false" />
@@ -30,87 +20,72 @@
     <session id="897402116">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.26" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="37" />
-          <entry key="xml" value="2" />
+          <entry key="java" value="40" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="37" />
-          <entry key="XML" value="2" />
+          <entry key="JAVA" value="40" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2211" />
-          <entry key="xml" value="15" />
+          <entry key="java" value="2387" />
+          <entry key="xml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2211" />
-          <entry key="XML" value="15" />
+          <entry key="JAVA" value="2387" />
+          <entry key="XML" value="17" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/gc/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/classloader/loadorder/Child.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/JVMToolsTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/classloader/loadorder/Parents.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="e#261#262#0" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pers/vay/loadorder/LoadOrderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pers/vay/classloader/MyClassLoaderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="760">
+              <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -152,10 +127,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/vay/gc/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vay/classload/load_order/Child.java" />
         <option value="$PROJECT_DIR$/src/main/java/pers/vay/classload/load_order/Parents.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pers/vay/classloader/loadorder/Parents.java" />
         <option value="$PROJECT_DIR$/src/main/java/pers/vay/classloader/loadorder/Child.java" />
         <option value="$PROJECT_DIR$/src/test/java/pers/vay/loadorder/LoadOrderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pers/vay/oom/OOMTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/vay/OOMTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/vay/oom/OOMTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/vay/JVMToolsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/vay/gc/Main.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -165,7 +145,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="17" />
     <option name="y" value="212" />
     <option name="width" value="1936" />
@@ -179,7 +159,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,54 +191,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vay" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Jvm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Jvm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vay" type="462c0819:PsiDirectoryNode" />
-              <item name="classloader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Jvm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Jvm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vay" type="462c0819:PsiDirectoryNode" />
-              <item name="classloader" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Jvm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Jvm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vay" type="462c0819:PsiDirectoryNode" />
-              <item name="classloader" type="462c0819:PsiDirectoryNode" />
-              <item name="classloader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Jvm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Jvm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vay" type="462c0819:PsiDirectoryNode" />
-              <item name="classloader" type="462c0819:PsiDirectoryNode" />
-              <item name="loadorder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Jvm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Jvm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vay" type="462c0819:PsiDirectoryNode" />
-              <item name="gc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Jvm" type="b2602c69:ProjectViewProjectNode" />
@@ -305,20 +236,21 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556857774536" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557061992233" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../designpatterns" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31954023" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
@@ -327,6 +259,7 @@
       <recent name="com.vay.classload" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pers.vay" />
       <recent name="com.vay" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -345,13 +278,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LoadOrderTest.loadOrder">
+  <component name="RunManager" selected="Application.OOMTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.vay.gc.Main" />
       <module name="Jvm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.vay.gc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OOMTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="pers.vay.oom.OOMTest" />
+      <module name="Jvm" />
+      <option name="VM_PARAMETERS" value="-Xms=10M -Xmx=10M" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.vay.oom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -391,22 +340,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyClassLoaderTest.getInputStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Jvm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.vay.classload.bean.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.vay.classload" />
-      <option name="MAIN_CLASS_NAME" value="com.vay.classload.MyClassLoaderTest" />
-      <option name="METHOD_NAME" value="getInputStream" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyClassLoaderTest.toByteArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jvm" />
       <extension name="coverage">
@@ -424,19 +357,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MyClassLoaderTest.getInputStream" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.OOMTest" />
       <item itemvalue="JUnit.MyClassLoaderTest.toByteArray" />
       <item itemvalue="JUnit.MyClassLoaderTest.findClass" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.LoadOrderTest.loadOrder" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OOMTest" />
         <item itemvalue="JUnit.LoadOrderTest.loadOrder" />
         <item itemvalue="JUnit.MyClassLoaderTest.findClass" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MyClassLoaderTest.toByteArray" />
-        <item itemvalue="JUnit.MyClassLoaderTest.getInputStream" />
       </list>
     </recent_temporary>
   </component>
@@ -454,7 +387,10 @@
       <workItem from="1555247515782" duration="1906000" />
       <workItem from="1556781865934" duration="11079000" />
       <workItem from="1556850513660" duration="6279000" />
-      <workItem from="1556960076461" duration="608000" />
+      <workItem from="1556960076461" duration="676000" />
+      <workItem from="1557059303364" duration="16000" />
+      <workItem from="1557059762748" duration="111000" />
+      <workItem from="1557059900035" duration="2105000" />
     </task>
     <servers />
   </component>
@@ -491,13 +427,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20728000" />
+    <option name="totallyTimeSpent" value="23028000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18443497" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19083156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -515,7 +451,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.32899022" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32899022" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -618,45 +554,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/gc/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/JVMToolsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/classload/loadorder/Load.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/classloader/loadorder/Child.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pers/vay/loadorder/LoadOrderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/classloader/loadorder/Parents.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="200">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding>
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -671,10 +575,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pers/vay/loadorder/LoadOrderTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/classloader/loadorder/Parents.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        <state relative-caret-position="260">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/classloader/loadorder/Child.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/JVMToolsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/oom/OOMTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/gc/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -721,7 +665,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

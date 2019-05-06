@@ -6,13 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dubbo" />
-        <module name="dubbo.consumer" />
-        <module name="dubbo.provider" />
-        <module name="dubboconsumer" />
-        <module name="dubboDemo" />
-        <module name="dubboInterface" />
-        <module name="dubboprovider" />
+        <module name="jvmoom" />
       </profile>
     </annotationProcessing>
   </component>
