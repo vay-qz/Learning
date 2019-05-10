@@ -10,6 +10,10 @@ import java.util.List;
 
 public class OOMTest {
 
+
+
+    public final static String a = "123";
+
     /**
      * 测试字符串常量池溢出，简介验证字符串常量池的位置
      * <p>
@@ -93,5 +97,12 @@ public class OOMTest {
          */
 //        VarOOM test = new VarOOM();
 //        ConstOOM test = new ConstOOM();
+
+        String pp = "ccccc";
+        String a = new String("ccccc").intern();
+        System.out.println(a == pp);
+        while(true){
+
+        }
     }
 }
