@@ -48,98 +48,35 @@
 
    也就是说运行时常量池是每个类或接口的class文件中的常量池的运行时体现
 
-2. 直接内存：直接内存并不属于运行时区域，但是在开发过程中我们确实可以用到，而且在某些情况下效率会比使用堆内存效率更高//FIXME
+2. 直接内存：直接内存并不属于运行时区域，但是在开发过程中我们确实可以用到，使用直接内存进行IO将会拥有比使用堆内存进行IO更高的效率，这是由于其数据流的流转不同而造就的
 
-## 溢出测试
+   ```mermaid
+   graph LR
+   	subgraph 直接内存
+   	A(本地IO)-->B(直接内存)
+   	B-->C(本地IO)
+   	end
+   	subgraph 堆内存
+   	D(本地IO)--切换到内核态-->E(内核缓存)
+   	E--复制-->F(堆内存)
+   	F-->H(本地IO)
+   	end
+   ```
 
-在我们日常工作中，可能会因为这样那样的原因而导致一些溢出。而同样的代码在不同的jdk版本执行下却可能出现不同的错误。
+   > 上图解释
+   >
+   > - 传统文件IO时，Java进程又用户态切换为内核态，而后从内核缓存中将数据拷贝到堆内存中
+   > - 使用直接内存时，直接内存可以直接映射到需要操作的文件。
 
-- 字符串常量池溢出
+   ::: tip
 
-  ```java
-      /**
-       * 测试字符串常量池溢出，简介验证字符串常量池的位置
-       * <p>
-       *     -Xms20m
-       *     -Xmx20m
-       *     -XX:PermSize=10m
-       *     -XX:MaxPermSize=10m
-       *     -XX:-UseGCOverheadLimit  //一定要加，否则报的就是GC ovenhead limit exceeded
-       * </p>
-       * <p>
-       *     预期
-       *      1.6永久代溢出
-       *      1.7/1.8堆溢出
-       * </p>
-       * <p>
-       *     结论：
-       *      1.6中字符串常量池在永久代中
-       *      1.7、1.8在堆中
-       * </p>
-       */
-      public void stringPoolOOM() {
-          List<String> list = new ArrayList<String>();
-          int i = 10000;
-          while(true){
-              System.out.println(i);
-              list.add(String.valueOf("String" + i++).intern());
-          }
-      }
-  ```
+   虽然直接内存的操作比传统IO要快，是直接内存的申请却慢于堆内存的申请
 
-  1.6溢出错误信息
+   :::
 
-  ![1557411180971](./pic/1.6string.png)
+## 池技术
 
-  1.7/1.8溢出错误信息
 
-  ![1557411258305](./pic/1.7and1.8string.png)
-
-  > 由此可见，字符串常量池在1.6中存放在永久代中，1.7和1.8存放在堆中
-
-- 类信息溢出
-
-  ```java
-      /**
-       * 测试class信息溢出，间接测试方法区的实现方式是永久代还是元空间
-       * <p>
-       *     jdk1.6/1.7
-       *      -XX:PermSize=10m
-       *      -XX:MaxPermSize=10m
-       *     jdk1.8
-       *      -XX:MetaspaceSize=10m
-       *      -XX:MaxMetaspaceSize=10m
-       * </p>
-       * <p>
-       *     预期
-       *      1.6/1.7实现方式为永久代
-       *      1.8为元空间
-       * </p>
-       */
-      public void classInfosOOM() {
-          while (true) {
-              Enhancer enhancer = new Enhancer();
-              enhancer.setSuperclass(OOMTest.class);
-              enhancer.setUseCache(false);
-              enhancer.setCallback(new MethodInterceptor() {
-                  public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable {
-                      return proxy.invokeSuper(obj, args);
-                  }
-              });
-              enhancer.create();
-          }
-      }
-  ```
-
-  1.6/1.7类信息溢出图
-
-  ![1557412056590](./pic/1.6and1.7class.png)
-
-  1.8类信息溢出图
-
-  ![1557412383285](./pic/1.8class.png)
-
-以上，我们讨论的主要是1.6/1.7/1.8三个版本的jdk，在1.6与1.7中，永久代是方法区的主要实现，但是方法区并不等同于永久代，在1.6中，永久代还包括了字符串常量池，如果字符串常量池过大同样会引起永久代的溢出，而在jdk1.7中，字符串常量池被移到了堆中。从jdk1.8开始，永久代被移除，类信息转移到元空间中进行存储。
 
 ## Q&A
 

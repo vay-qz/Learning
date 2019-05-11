@@ -98,11 +98,10 @@ public class OOMTest {
 //        VarOOM test = new VarOOM();
 //        ConstOOM test = new ConstOOM();
 
-        String pp = "ccccc";
-        String a = new String("ccccc").intern();
-        System.out.println(a == pp);
-        while(true){
-
-        }
+        String a = new String("1234").intern();
+        String b = new String("1234");
+        String c = "1234";
+        System.out.println(a == b);
+        System.out.println(a == c);
     }
 }
