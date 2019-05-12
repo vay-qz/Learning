@@ -10,10 +10,6 @@ import java.util.List;
 
 public class OOMTest {
 
-
-
-    public final static String a = "123";
-
     /**
      * 测试字符串常量池溢出，简介验证字符串常量池的位置
      * <p>
@@ -73,6 +69,11 @@ public class OOMTest {
         }
     }
 
+    public void stringPoolPlaceTest() {
+        String a = new StringBuilder("vay").append("mh").toString();
+        System.out.println(a == a.intern());
+    }
+
     public static void main(String[] args) {
         OOMTest oomTest = new OOMTest();
 //        oomTest.stringPoolOOM();
@@ -95,13 +96,12 @@ public class OOMTest {
          *      常量与静态变量，1.6中位于永久代，1.8中位于堆
          * </p>
          */
-//        VarOOM test = new VarOOM();
-//        ConstOOM test = new ConstOOM();
+        VarOOM test = new VarOOM();
+        ConstOOM test2 = new ConstOOM();
+        while(true){
 
-        String a = new String("1234").intern();
-        String b = new String("1234");
-        String c = "1234";
-        System.out.println(a == b);
-        System.out.println(a == c);
+        }
+
+//        oomTest.stringPoolPlaceTest();
     }
 }
