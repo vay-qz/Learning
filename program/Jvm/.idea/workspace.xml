@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a5446e6-f3f9-4470-a30b-b5c3704c3f30" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignPatterns/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignPatterns/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCMaven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMVCMaven/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCMaven/target/classes/com/vay/anno/InitParamAnno/InitController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../summary/虚拟机/内存分配策略.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../summary/设计模式/设计模式——享元模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../summary/设计模式/设计模式——享元模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../summary/虚拟机/垃圾收集算法.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../summary/虚拟机/垃圾收集算法.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,10 +26,11 @@
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.33" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -73,10 +68,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
               <caret line="21" selection-start-line="21" selection-end-line="25" selection-end-column="5" />
-              <folding>
-                <element signature="e#910#911#0" expanded="true" />
-                <element signature="e#995#996#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -147,8 +138,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,7 +223,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -392,6 +383,7 @@
       <workItem from="1558013723958" duration="76000" />
       <workItem from="1558253722262" duration="2514000" />
       <workItem from="1558259183655" duration="2266000" />
+      <workItem from="1558363971573" duration="597000" />
     </task>
     <servers />
   </component>
@@ -428,13 +420,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27096000" />
+    <option name="totallyTimeSpent" value="27693000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-412" width="916" height="1576" extended-state="6" />
+    <frame x="1912" y="-412" width="916" height="1576" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.42640188" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.43691587" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -590,10 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
           <caret line="991" column="23" selection-start-line="991" selection-start-column="23" selection-end-line="991" selection-end-column="23" />
-          <folding>
-            <element signature="e#40917#40918#0" expanded="true" />
-            <element signature="e#40958#40959#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
