@@ -30,5 +30,3 @@
 ```
 
 ![1549956801670](./pic/full.png)
-
-- survivor区to space区是干什么的？何时会升入？
