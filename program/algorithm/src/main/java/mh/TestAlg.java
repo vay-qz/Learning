@@ -1,8 +1,6 @@
 package mh;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class TestAlg {
 
@@ -44,6 +42,65 @@ public class TestAlg {
             }
             if(t == 2){
                 break;
+            }
+        }
+        return res;
+    }
+
+    /**
+     * 两数之和
+     *
+     * @param nums   给定数组
+     * @param target 目标值
+     * @return 给定数组的下标
+     */
+    public List<List<Integer>> twoSumWithHash(int[] nums, int target, int index) {
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        for (int i = index; i < nums.length; i++) {
+            map.put(nums[i], nums[i]);
+        }
+        for (int i = index; i < nums.length; i++) {
+            if (map.get(target - nums[i]) != null) {
+                List<Integer> temp = new ArrayList<Integer>();
+                temp.add(nums[i]);
+                temp.add(target - nums[i]);
+                res.add(temp);
+                map.remove(nums[i]);
+                map.remove(target - nums[i]);
+            }
+        }
+        return res;
+    }
+
+    /**
+     * n个数的和
+     *
+     * @param nums
+     * @param target
+     * @return
+     */
+    public List<List<Integer>> nSum(int[] nums, int target, int n) {
+        List<List<Integer>> res = getRes(nums, target, 0, n);
+        return res;
+    }
+
+    private List<List<Integer>> getRes(int[] nums, int target, int index, int length) {
+        if (index >= nums.length) {
+            return null;
+        }
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        if (length == 2) {
+            res.addAll(twoSumWithHash(nums, target, index));
+        } else {
+            for (int i = index; i < nums.length; i++) {
+                List<List<Integer>> temp = getRes(nums, target - nums[i], i + 1, length - 1);
+                if (temp != null && temp.size() > 0) {
+                    for (List<Integer> p : temp) {
+                        p.add(nums[i]);
+                    }
+                    res.addAll(temp);
+                }
             }
         }
         return res;
