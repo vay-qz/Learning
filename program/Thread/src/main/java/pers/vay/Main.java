@@ -1,3 +1,5 @@
+package pers.vay;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.channels.FileChannel;
@@ -25,7 +27,7 @@ public class Main {
 //        main.testNIO();
 //        main.testLockSupport();
 
-//        VolatileTest volatileTest = new VolatileTest();
+//        pers.vay.VolatileTest volatileTest = new pers.vay.VolatileTest();
 //        volatileTest.failTest();
 //        volatileTest.successTest();
 

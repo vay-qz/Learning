@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e5df7b2-3e99-498f-b07c-a2bfa1a2e2a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mh/TestAlg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mh/TestAlgTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Jvm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Jvm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jvmoom/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jvmoom/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jvmoom/src/main/java/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jvmoom/src/main/java/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jvmoom/src/main/java/oom/OOMTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jvmoom/src/main/java/oom/OOMTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jvmoom/target/classes/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jvmoom/target/classes/oom/OOMTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jvmoom/target/classes/oom/OOMTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jvmoom/target/classes/oom/OOMTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jvmoom/target/classes/oom/OOMTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../summary/虚拟机/java内存区域 (2).md" beforeDir="false" afterPath="$PROJECT_DIR$/../../summary/虚拟机/java内存区域 (2).md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,103 +18,47 @@
     <session id="42428551">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="5" />
+          <entry key="java" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1559" />
+          <entry key="java" value="2784" />
+          <entry key="txt" value="10" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1559" />
+          <entry key="JAVA" value="2784" />
+          <entry key="PLAIN_TEXT" value="10" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/mh/TestAlg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1488#1503#0" expanded="true" />
-                <element signature="e#1762#1771#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/Arrays.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="142" column="23" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="23" />
-              <folding>
-                <element signature="e#5027#5028#0" expanded="true" />
-                <element signature="e#5098#5099#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/ArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="106" column="40" lean-forward="true" selection-start-line="106" selection-start-column="40" selection-end-line="106" selection-end-column="40" />
-              <folding>
-                <element signature="e#6283#6284#0" expanded="true" />
-                <element signature="e#6351#6352#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/AbstractList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-121">
-              <caret line="496" column="16" selection-start-line="496" selection-start-column="10" selection-end-line="496" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/mh/TestAlgTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="169">
+              <caret line="93" column="60" lean-forward="true" selection-start-line="93" selection-start-column="60" selection-end-line="93" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -140,6 +76,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>equals</find>
+      <find>entry</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,8 +88,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/mh/Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/mh/TestTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/mh/TestAlgTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/mh/TestAlg.java" />
+        <option value="$PROJECT_DIR$/src/test/java/mh/TestAlgTest.java" />
       </list>
     </option>
   </component>
@@ -174,6 +111,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,71 +121,25 @@
               <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mh" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mh" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557670341636" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558853529910" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Jvm" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Thread" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -267,7 +161,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestAlgTest.threeSum">
+  <component name="RunManager" selected="JUnit.TestAlgTest.nSumTest">
+    <configuration name="TestAlgTest.nSumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mh" />
+      <option name="MAIN_CLASS_NAME" value="mh.TestAlgTest" />
+      <option name="METHOD_NAME" value="nSumTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestAlgTest.threeSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
       <extension name="coverage">
@@ -300,13 +210,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestAlgTest.twoSumWithHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mh" />
+      <option name="MAIN_CLASS_NAME" value="mh.TestAlgTest" />
+      <option name="METHOD_NAME" value="twoSumWithHash" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAlgTest.twoSumWithHashTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mh" />
+      <option name="MAIN_CLASS_NAME" value="mh.TestAlgTest" />
+      <option name="METHOD_NAME" value="twoSumWithHashTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.TestAlgTest.twoSum" />
       <item itemvalue="JUnit.TestAlgTest.threeSum" />
+      <item itemvalue="JUnit.TestAlgTest.twoSumWithHash" />
+      <item itemvalue="JUnit.TestAlgTest.nSumTest" />
+      <item itemvalue="JUnit.TestAlgTest.twoSumWithHashTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestAlgTest.nSumTest" />
+        <item itemvalue="JUnit.TestAlgTest.twoSumWithHashTest" />
         <item itemvalue="JUnit.TestAlgTest.threeSum" />
+        <item itemvalue="JUnit.TestAlgTest.twoSumWithHash" />
         <item itemvalue="JUnit.TestAlgTest.twoSum" />
       </list>
     </recent_temporary>
@@ -322,60 +270,65 @@
       <option name="presentableId" value="Default" />
       <updated>1557649432400</updated>
       <workItem from="1557649439705" duration="10352000" />
+      <workItem from="1558787435113" duration="2088000" />
+      <workItem from="1558837035916" duration="7304000" />
+      <workItem from="1558880221927" duration="260000" />
     </task>
+    <task id="LOCAL-00001" summary="【*】n数之和">
+      <created>1558853559327</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558853559327</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestAlgTest_threeSum - 2019.05.12 at 21h 20m 13s.xml">
+    <history-entry file="TestAlgTest_twoSumWithHashTest - 2019.05.26 at 12h 19m 31s.xml">
+      <configuration name="TestAlgTest.twoSumWithHashTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAlgTest_nSumTest - 2019.05.26 at 12h 19m 41s.xml">
+      <configuration name="TestAlgTest.nSumTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAlgTest_threeSum - 2019.05.26 at 12h 20m 37s.xml">
       <configuration name="TestAlgTest.threeSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAlgTest_threeSum - 2019.05.12 at 21h 20m 31s.xml">
-      <configuration name="TestAlgTest.threeSum" configurationId="JUnit" />
+    <history-entry file="TestAlgTest_nSumTest - 2019.05.26 at 12h 20m 59s.xml">
+      <configuration name="TestAlgTest.nSumTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAlgTest_threeSum - 2019.05.12 at 21h 54m 53s.xml">
-      <configuration name="TestAlgTest.threeSum" configurationId="JUnit" />
+    <history-entry file="TestAlgTest_nSumTest - 2019.05.26 at 12h 21m 35s.xml">
+      <configuration name="TestAlgTest.nSumTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAlgTest_threeSum - 2019.05.12 at 21h 56m 39s.xml">
-      <configuration name="TestAlgTest.threeSum" configurationId="JUnit" />
+    <history-entry file="TestAlgTest_nSumTest - 2019.05.26 at 14h 39m 30s.xml">
+      <configuration name="TestAlgTest.nSumTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAlgTest_threeSum - 2019.05.12 at 22h 02m 03s.xml">
-      <configuration name="TestAlgTest.threeSum" configurationId="JUnit" />
+    <history-entry file="TestAlgTest_twoSumWithHashTest - 2019.05.26 at 14h 40m 36s.xml">
+      <configuration name="TestAlgTest.twoSumWithHashTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAlgTest_threeSum - 2019.05.12 at 22h 02m 43s.xml">
-      <configuration name="TestAlgTest.threeSum" configurationId="JUnit" />
+    <history-entry file="TestAlgTest_nSumTest - 2019.05.26 at 14h 40m 41s.xml">
+      <configuration name="TestAlgTest.nSumTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAlgTest_threeSum - 2019.05.12 at 22h 04m 57s.xml">
-      <configuration name="TestAlgTest.threeSum" configurationId="JUnit" />
+    <history-entry file="TestAlgTest_nSumTest - 2019.05.26 at 14h 41m 00s.xml">
+      <configuration name="TestAlgTest.nSumTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAlgTest_threeSum - 2019.05.12 at 22h 10m 05s.xml">
-      <configuration name="TestAlgTest.threeSum" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestAlgTest_threeSum - 2019.05.12 at 22h 10m 43s.xml">
-      <configuration name="TestAlgTest.threeSum" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestAlgTest_threeSum - 2019.05.12 at 22h 12m 08s.xml">
-      <configuration name="TestAlgTest.threeSum" configurationId="JUnit" />
+    <history-entry file="TestAlgTest_nSumTest - 2019.05.26 at 14h 41m 28s.xml">
+      <configuration name="TestAlgTest.nSumTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10352000" />
+    <option name="totallyTimeSpent" value="20004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18230277" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32899022" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
@@ -383,22 +336,64 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32899022" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286334" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="【*】n数之和" />
+    <option name="LAST_COMMIT_MESSAGE" value="【*】n数之和" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -408,27 +403,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/AbstractList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-121">
-          <caret line="496" column="16" selection-start-line="496" selection-start-column="10" selection-end-line="496" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="106" column="40" lean-forward="true" selection-start-line="106" selection-start-column="40" selection-end-line="106" selection-end-column="40" />
-          <folding>
-            <element signature="e#6283#6284#0" expanded="true" />
-            <element signature="e#6351#6352#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
+        <state relative-caret-position="2020">
           <caret line="142" column="23" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="23" />
           <folding>
             <element signature="e#5027#5028#0" expanded="true" />
@@ -437,10 +414,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1600">
+          <caret line="106" column="40" selection-start-line="106" selection-start-column="40" selection-end-line="106" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9020">
+          <caret line="496" column="16" selection-start-line="496" selection-start-column="10" selection-end-line="496" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.7/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="462" column="30" selection-start-line="462" selection-start-column="30" selection-end-line="462" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="374" column="14" selection-start-line="374" selection-start-column="14" selection-end-line="374" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1940">
+          <caret line="276" column="60" selection-start-line="276" selection-start-column="55" selection-end-line="276" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mh/TestAlgTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="580">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -449,15 +461,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mh/TestAlg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1488#1503#0" expanded="true" />
-            <element signature="e#1762#1771#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="169">
+          <caret line="93" column="60" lean-forward="true" selection-start-line="93" selection-start-column="60" selection-end-line="93" selection-end-column="60" />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>algorithm</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:4.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

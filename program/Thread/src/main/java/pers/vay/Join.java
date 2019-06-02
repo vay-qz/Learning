@@ -1,3 +1,5 @@
+package pers.vay;
+
 public class Join extends Thread{
     private Thread leader;
 
