@@ -1,0 +1,3 @@
+
+Osquid:S1444	"3Make this "public static parentsStatic" field final(½ÀªÂùÿÿÿÿ
+Œ"squid:ClassVariableVisibilityCheck	"YMake parentsStatic a static final constant or non-public and provide accessors if needed.(½ÀªÂùÿÿÿÿ

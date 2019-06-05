@@ -1,0 +1,72 @@
+
+[squid:S18549"?Remove this useless assignment to local variable "allocation3".(ÜœÓÁûÿÿÿÿ
+Vsquid:S18548"?Remove this useless assignment to local variable "allocation3".(À¿ÉÈ
+Zsquid:S1854_">Remove this useless assignment to local variable "allocation".(šÿÇ¢şÿÿÿÿ
+Gsquid:S1481~"0Remove this unused "allocation3" local variable.(ÚÃ†
+_squid:S00112‹"FDefine and throw a dedicated exception instead of using a generic one.(ó€Ğ
+squid:S1186š"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(²ˆÿÿÿÿÿ
+Gsquid:S1481~"0Remove this unused "allocation1" local variable.(ÚÃ†
+@squid:S1659~")Declare "allocation3" on a separate line.(ÚÃ†
+Vsquid:S18545"?Remove this useless assignment to local variable "allocation1".(ïµ­ƒ
+Gsquid:S1481o"0Remove this unused "allocation1" local variable.(íáÔÕ
+@squid:S1659~")Declare "allocation2" on a separate line.(ÚÃ†
+\squid:S1854V"@Remove this useless assignment to local variable "allocation10".(Ì¤•ãüÿÿÿÿ
+Vsquid:S1854S"?Remove this useless assignment to local variable "allocation8".(€­Â¢
+Vsquid:S1854P"?Remove this useless assignment to local variable "allocation6".(¦ĞÓ¸
+Gsquid:S14813"0Remove this unused "allocation3" local variable.(ÚÃ†
+Lsquid:S1481H"0Remove this unused "allocation1" local variable.(­Òıÿÿÿÿ
+Lsquid:S1481H"0Remove this unused "allocation9" local variable.(­Òıÿÿÿÿ
+isquid:UnusedPrivateMethodn"?Remove this unused private "testPretenureSizeThreshold" method.(Å°¹™şÿÿÿÿ
+@squid:S16593")Declare "allocation2" on a separate line.(ÚÃ†
+Esquid:S1659H")Declare "allocation9" on a separate line.(­Òıÿÿÿÿ
+[squid:S1854U"?Remove this useless assignment to local variable "allocation9".(Ó»Î¢úÿÿÿÿ
+Lsquid:S1191"5Use classes from the Java API instead of Sun classes.(éª‚€
+[squid:S1854J"?Remove this useless assignment to local variable "allocation1".(àˆÌÈıÿÿÿÿ
+[squid:S1854p"?Remove this useless assignment to local variable "allocation1".(ß‰Òøÿÿÿÿ
+Tsquid:S1854"8Remove this useless assignment to local variable "main".(²Äˆİÿÿÿÿÿ
+Vsquid:S1854M"?Remove this useless assignment to local variable "allocation4".(×Á¹
+@squid:S16593")Declare "allocation3" on a separate line.(ÚÃ†
+Lsquid:S1481H"0Remove this unused "allocation4" local variable.(­Òıÿÿÿÿ
+Lsquid:S1481H"0Remove this unused "allocation7" local variable.(­Òıÿÿÿÿ
+Esquid:S1659H")Declare "allocation8" on a separate line.(­Òıÿÿÿÿ
+esquid:UnusedPrivateMethodG";Remove this unused private "testTenuringThreshold2" method.(¤•¢©ûÿÿÿÿ
+Lsquid:S1481H"0Remove this unused "allocation8" local variable.(­Òıÿÿÿÿ
+Gsquid:S14813"0Remove this unused "allocation2" local variable.(ÚÃ†
+Wsquid:UnusedPrivateMethod¾",Remove this unused private "heapOOM" method.(«¨Õåúÿÿÿÿ
+Gsquid:S1481~"0Remove this unused "allocation2" local variable.(ÚÃ†
+Vsquid:S1854`"?Remove this useless assignment to local variable "allocation2".(§ÙöÉ
+Wsquid:S1854€"?Remove this useless assignment to local variable "allocation2".(ë¹¨¬
+Esquid:S1659H")Declare "allocation4" on a separate line.(­Òıÿÿÿÿ
+Esquid:S1659H")Declare "allocation5" on a separate line.(­Òıÿÿÿÿ
+dsquid:UnusedPrivateMethod2":Remove this unused private "testTenuringThreshold" method.(ÌÓ”¬ÿÿÿÿÿ
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¸€ÉÛ
+[squid:S18546"?Remove this useless assignment to local variable "allocation2".(ŒÂäßşÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¼Â‘âúÿÿÿÿ
+Zsquid:UnusedPrivateMethod‹"4Remove this unused private "directMemoryOOM" method.(ó€Ğ
+Gsquid:S14813"0Remove this unused "allocation1" local variable.(ÚÃ†
+Ssquid:UnusedPrivateMethod£"-Remove this unused private "stackOOM" method.(Íâ£¢
+Lsquid:S1481H"0Remove this unused "allocation6" local variable.(­Òıÿÿÿÿ
+_squid:S1226`"HIntroduce a new variable instead of reusing the parameter "allocation2".(§ÙöÉ
+qsquid:S2293¿"YReplace the type specification in this constructor call with the diamond operator ("<>").(šŸŞ
+Lsquid:S1481H"0Remove this unused "allocation5" local variable.(­Òıÿÿÿÿ
+Msquid:S1481H"1Remove this unused "allocation10" local variable.(­Òıÿÿÿÿ
+\squid:S1854‚"?Remove this useless assignment to local variable "allocation3".(©”Ùûÿÿÿÿ
+Esquid:S1659H")Declare "allocation2" on a separate line.(­Òıÿÿÿÿ
+Esquid:S1481")Remove this unused "main" local variable.(²Äˆİÿÿÿÿÿ
+Vsquid:S1854N"?Remove this useless assignment to local variable "allocation5".(ˆ­©´
+Vsquid:S1854Q"?Remove this useless assignment to local variable "allocation7".(ÛÃÆå
+Gsquid:S00108¦")Either remove or fill this block of code.(˜ïˆÿÿÿÿÿ
+?squid:S2189¤""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+Esquid:S1659H")Declare "allocation6" on a separate line.(­Òıÿÿÿÿ
+?squid:S2189À""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+^squid:S2094"BRemove this empty class, write its code or make it an "interface".(ÊòÌøÿÿÿÿ
+Fsquid:S1659H"*Declare "allocation10" on a separate line.(­Òıÿÿÿÿ
+csquid:S2184"FCast one of the operands of this multiplication operation to a "long".(ç—Üƒûÿÿÿÿ
+csquid:S1226_"GIntroduce a new variable instead of reusing the parameter "allocation".(šÿÇ¢şÿÿÿÿ
+[squid:S18547"?Remove this useless assignment to local variable "allocation3".(ÜœÓÁûÿÿÿÿ
+Esquid:S1659H")Declare "allocation3" on a separate line.(­Òıÿÿÿÿ
+Xsquid:UnusedPrivateMethod}"3Remove this unused private "testAllocation" method.(İ‡±Ó
+Esquid:S1659H")Declare "allocation7" on a separate line.(­Òıÿÿÿÿ
+?squid:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+Ssquid:S2696³"6Make the enclosing method "static" or remove this set.(çÆğ½ûÿÿÿÿ
+\squid:UnusedPrivateMethodš"1Remove this unused private "metaSpaceOOM" method.(²ˆÿÿÿÿÿ
