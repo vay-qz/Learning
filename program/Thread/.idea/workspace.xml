@@ -15,14 +15,15 @@
     <session id="1098966480">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -58,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/BlockingQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="195" column="73" lean-forward="true" selection-start-line="195" selection-start-column="73" selection-end-line="195" selection-end-column="73" />
+            <state relative-caret-position="360">
+              <caret line="184" column="56" selection-start-line="184" selection-start-column="56" selection-end-line="184" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -115,10 +116,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="411" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="916" />
-    <option name="height" value="1051" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -185,20 +186,20 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Executors&#9;FILE&#9;jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/Executors.java&#10;threadpoolEx&#9;PSI&#9;JAVA://java.util.concurrent.ThreadPoolExecutor" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559379932782" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559657347356" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Jvm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blockingqueue" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -269,7 +270,8 @@
       <workItem from="1559224509830" duration="3393000" />
       <workItem from="1559354508077" duration="11498000" />
       <workItem from="1559460994217" duration="7840000" />
-      <workItem from="1559652887180" duration="3344000" />
+      <workItem from="1559652887180" duration="3401000" />
+      <workItem from="1560170626094" duration="609000" />
     </task>
     <servers />
   </component>
@@ -291,13 +293,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31945000" />
+    <option name="totallyTimeSpent" value="32611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17324094" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1748401" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -515,20 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27840">
           <caret line="1454" column="36" selection-start-line="1454" selection-start-column="36" selection-end-line="1454" selection-end-column="36" />
-          <folding>
-            <element signature="e#16766#16767#0" expanded="true" />
-            <element signature="e#16801#16802#0" expanded="true" />
-            <element signature="e#25302#25303#0" expanded="true" />
-            <element signature="e#25341#25342#0" expanded="true" />
-            <element signature="e#31791#31792#0" expanded="true" />
-            <element signature="e#31834#31835#0" expanded="true" />
-            <element signature="e#57604#57605#0" expanded="true" />
-            <element signature="e#57649#57650#0" expanded="true" />
-            <element signature="e#60039#60040#0" expanded="true" />
-            <element signature="e#60075#60076#0" expanded="true" />
-            <element signature="e#64089#64090#0" expanded="true" />
-            <element signature="e#64134#64135#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -543,12 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10000">
           <caret line="539" column="24" selection-start-line="539" selection-start-column="24" selection-end-line="539" selection-end-column="24" />
-          <folding>
-            <element signature="e#22675#22676#0" expanded="true" />
-            <element signature="e#22703#22704#0" expanded="true" />
-            <element signature="e#22933#22934#0" expanded="true" />
-            <element signature="e#22965#22966#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -596,8 +578,8 @@
     </entry>
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/BlockingQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="195" column="73" lean-forward="true" selection-start-line="195" selection-start-column="73" selection-end-line="195" selection-end-column="73" />
+        <state relative-caret-position="360">
+          <caret line="184" column="56" selection-start-line="184" selection-start-column="56" selection-end-line="184" selection-end-column="56" />
         </state>
       </provider>
     </entry>
