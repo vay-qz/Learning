@@ -2,14 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d5b7eb0-6f95-4c69-b455-21ecec4e5e68" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/oom/OOMTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oom/OOMTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/oom/OOMTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oom/OOMTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/oom/OOMTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oom/OOMTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../summary/虚拟机/java内存区域 (2).md" beforeDir="false" afterPath="$PROJECT_DIR$/../../summary/虚拟机/java内存区域 (2).md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LockTest/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LockTest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/classes/pers/vay/JVMToolsTest$OOMObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/classes/pers/vay/JVMToolsTest$SynRunable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/classes/pers/vay/JVMToolsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/classes/pers/vay/classloader/bean/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/classes/pers/vay/classloader/classloader/MyClassLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/classes/pers/vay/classloader/loadorder/Child.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/classes/pers/vay/classloader/loadorder/Parents.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/classes/pers/vay/gc/Main$OOMObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jvm/target/classes/pers/vay/gc/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LockTest/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockingqueue/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockingqueue/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/sonarlint/issuestore/8/1/815b604a8e7c508e6bb427f748f3275ae7b76a6c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/sonarlint/issuestore/8/7/87611b0e15b6a1914bfe1b6b0f5c0233da1151ff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/collection.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/src/main/java/com/vay/hash/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/src/main/java/com/vay/hash/Person.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,8 +47,9 @@
     <session id="-1657959635">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.3" value="1" />
@@ -37,19 +57,19 @@
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.73" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="6" />
-          <entry key="java" value="17" />
+          <entry key="java" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="6" />
-          <entry key="JAVA" value="17" />
+          <entry key="JAVA" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -70,23 +90,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/oom/OOMTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="1271">
               <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oom/VarOOM.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-100">
+              <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oom/ConstOOM.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -135,9 +164,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,6 +214,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,7 +225,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557649447767" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Proxy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -266,17 +295,18 @@
       <workItem from="1557580436561" duration="4458000" />
       <workItem from="1557624675830" duration="1457000" />
       <workItem from="1557649080501" duration="368000" />
+      <workItem from="1560519122680" duration="18000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22561000" />
+    <option name="totallyTimeSpent" value="22579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.123667374" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12473348" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -365,13 +395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oom/VarOOM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14020">
@@ -424,13 +447,6 @@
     <entry file="file://$PROJECT_DIR$/target/classes/oom/OOMTest.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oom/ConstOOM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -438,9 +454,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oom/ConstOOM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oom/VarOOM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/oom/OOMTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state relative-caret-position="1271">
           <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />

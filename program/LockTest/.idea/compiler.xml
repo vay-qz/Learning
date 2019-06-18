@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="collection" />
+        <module name="LockTest" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="LockTest" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
