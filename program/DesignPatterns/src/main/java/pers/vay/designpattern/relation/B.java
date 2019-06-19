@@ -1,4 +1,4 @@
-package pers.vay.designpattern.connection;
+package pers.vay.designpattern.relation;
 
 
 /**
