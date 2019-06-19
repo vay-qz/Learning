@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12518090-2a20-4ab1-8241-57a6561ca546" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/after/Show.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/1/51902c82d5d7be8eecef6b22ec5b801eb46b18a2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/2/82ea109363e4cd2eb3670d67f5ccd8d747377e6c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/9617abc342050b36d282b01be12e7b35cf6a2776" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/f/bf3911cd9feec3a0b556700ed3cdd652d96fab75" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d8bcf1c6fab0f2fe98277d0ca1fb75e869c5603c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2ced28a738c90db6a81546d16ce3ec7ad5539b6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f00b5d6dbeb934ba99c33ae0389ed9436ced8a39" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0700513cc3c3c354dfc285f2efde5b38c7d69e7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/connection/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/relation/A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/connection/B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/relation/B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/connection/C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/relation/C.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/connection/D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/relation/D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/connection/E.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/relation/E.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/AbstractBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/Angle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/AngleBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/Director.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/Show.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pers/vay/designpattern/create/builder/ShowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pers/vay/designpattern/create/builder/ShowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../summary/设计模式/设计模式——建造者模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../summary/设计模式/设计模式——建造者模式.md" afterDir="false" />
-    </list>
+    <list default="true" id="12518090-2a20-4ab1-8241-57a6561ca546" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -107,8 +83,8 @@
       <file leaf-file-name="AbstractBuilder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/after/AbstractBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="306">
+              <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -233,7 +209,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -476,7 +452,7 @@
       <workItem from="1560773517698" duration="6381000" />
       <workItem from="1560822712405" duration="746000" />
       <workItem from="1560825276289" duration="15255000" />
-      <workItem from="1560912964780" duration="7090000" />
+      <workItem from="1560912964780" duration="7220000" />
     </task>
     <servers />
   </component>
@@ -513,10 +489,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46447000" />
+    <option name="totallyTimeSpent" value="46577000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
@@ -888,8 +865,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/after/AbstractBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="306">
+          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
         </state>
       </provider>
     </entry>
