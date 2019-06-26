@@ -7,11 +7,11 @@ import org.junit.Test;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class ReentrantLockTest {
-
 
     private final static String TARGET_STRING = "1";
 
@@ -43,53 +43,9 @@ public class ReentrantLockTest {
     }
 
     @Test
-    public void reentrantLock_fairlock_getlock_inorder() throws InterruptedException {
-        BlockingQueue<String> results = new ArrayBlockingQueue<>(10);
-        //保证线程执行完毕
-        BlockingQueue<String> blockingQueue = new ArrayBlockingQueue<>(10);
-        Lock lock = new ReentrantLock(true);
-        lock.lock();
-        StringBuffer origin = new StringBuffer();
-        for(int i = 1; i < 5; i++) {
-            origin.append("thread" + i);
-            Thread thread = new FairReentrantLockThread("thread" + i, lock, results, blockingQueue);
-            thread.start();
-//            Thread.sleep(500);
-        }
-        lock.unlock();
-        while(blockingQueue.size()!=4);
-        StringBuffer now = new StringBuffer();
-        for(int i = 0; i < 4; i ++) {
-            now.append(results.take());
-        }
-        Assert.assertEquals(origin.toString(), now.toString());
-    }
-
-    @Test
-    public void reentrantLock_norfairlock_getlock_inorder() throws InterruptedException {
-        BlockingQueue<String> results = new ArrayBlockingQueue<>(100);
-        //保证线程执行完毕
-        BlockingQueue<String> blockingQueue = new ArrayBlockingQueue<>(100);
-        Lock lock = new ReentrantLock();
-        lock.lock();
-        StringBuffer origin = new StringBuffer();
-        for(int i = 1; i < 20; i++) {
-            origin.append("thread" + i);
-            Thread thread = new FairReentrantLockThread("thread" + i, lock, results, blockingQueue);
-            thread.start();
-            Thread.sleep(500);
-        }
-        lock.unlock();
-        while(blockingQueue.size()!=19);
-        StringBuffer now = new StringBuffer();
-        for(int i = 0; i < 19; i ++) {
-            now.append(results.take());
-        }
-        Assert.assertNotEquals(origin.toString(), now.toString());
-    }
-
-    @Test
     public void condition_same_object() {
+        Lock lock = new ReentrantLock();
+        Condition condition = lock.newCondition();
 
     }
 
@@ -122,31 +78,6 @@ public class ReentrantLockTest {
                 this.lock.unlock();
             }
         }
-    }
-
-    class FairReentrantLockThread extends Thread {
-        private Lock lock;
-        private BlockingQueue<String> results;
-        private BlockingQueue<String> blockingQueue;
-
-        FairReentrantLockThread(String name, Lock lock, BlockingQueue results, BlockingQueue blockingQueue) {
-            super(name);
-            this.lock = lock;
-            this.results = results;
-            this.blockingQueue = blockingQueue;
-        }
-
-        @Override
-        public void run() {
-            try {
-                lock.lock();
-                results.offer(this.getName());
-                blockingQueue.offer("1");
-            } finally {
-                lock.unlock();
-            }
-        }
-
     }
 
 }
