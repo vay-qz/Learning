@@ -1,9 +1,3 @@
-# ReentrantLock类解析
+# ReentrantLock
 
-如何阻塞？
-
-LockSupport.park
-
-如何实现公平锁？
-
-不允许插队
+竞争锁之后可以取消
