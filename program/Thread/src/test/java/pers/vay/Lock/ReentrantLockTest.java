@@ -4,12 +4,8 @@ package pers.vay.Lock;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.*;
+import java.util.concurrent.locks.*;
 
 public class ReentrantLockTest {
 
@@ -43,15 +39,96 @@ public class ReentrantLockTest {
     }
 
     @Test
-    public void condition_same_object() {
-        Lock lock = new ReentrantLock();
-        Condition condition = lock.newCondition();
+    public void reentrantLock_canbe_reentry() throws InterruptedException {
+        BlockingQueue<Object> result = new ArrayBlockingQueue<Object>(10);
+        ReentrantThread thread = new ReentrantThread(result);
+        thread.start();
+        int i = 0;
+        while (thread.getState() != Thread.State.TERMINATED){
+            if(i > 5){
+                break;
+            }
+            Thread.sleep(1000);
+        }
+        Assert.assertEquals(result.size(), 2);
 
     }
 
     @Test
-    public void reentrantLock_canbe_reentry() {
+    public void condition_same_object() {
+        Lock lock = new ReentrantLock();
+        lock.lock();
+        Condition condition = lock.newCondition();
+        new ConditionThread(condition, lock).start();
+        try {
+            condition.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
+    @Test
+    public void ReentrantReadWriteLock_ReadLock_Share() throws InterruptedException {
+        ReentrantReadWriteLock readWriteLock = new ReentrantReadWriteLock();
+        ReentrantReadWriteLock.ReadLock readLock = readWriteLock.readLock();
+        BlockingQueue blockingQueue = new ArrayBlockingQueue(10);
+        Thread thread1 = new ReentrantReadLockThread(readLock, blockingQueue);
+        Thread thread2 = new ReentrantReadLockThread(readLock, blockingQueue);
+        thread1.start();
+        thread2.start();
+        thread1.join();
+        thread2.join();
+        Assert.assertEquals(blockingQueue.size(), 2);
+    }
+
+    @Test
+    public void ReentrantReadWriteLock_ReadLock_WriteCantLock() throws InterruptedException {
+        ReentrantReadWriteLock readWriteLock = new ReentrantReadWriteLock();
+        ReentrantReadWriteLock.ReadLock readLock = readWriteLock.readLock();
+        BlockingQueue blockingQueue = new ArrayBlockingQueue(10);
+        readLock.lock();
+        Thread thread = new Thread(()->{
+            readWriteLock.writeLock().lock();
+            blockingQueue.offer(new Object());
+        });
+        thread.start();
+        Thread.sleep(1000);
+        Assert.assertEquals(blockingQueue.size(), 0);
+    }
+
+    class ReentrantReadLockThread extends Thread {
+        ReentrantReadWriteLock.ReadLock readLock;
+        BlockingQueue blockingQueue;
+        public ReentrantReadLockThread(ReentrantReadWriteLock.ReadLock readLock, BlockingQueue blockingQueue) {
+            this.readLock = readLock;
+            this.blockingQueue = blockingQueue;
+        }
+
+        @Override
+        public void run() {
+            readLock.lock();
+            blockingQueue.offer(new Object());
+        }
+    }
+
+    class ConditionThread extends Thread {
+        Condition condition;
+        Lock lock;
+
+        ConditionThread(Condition condition, Lock lock) {
+            this.condition = condition;
+            this.lock = lock;
+        }
+
+        @Override
+        public void run() {
+            try {
+                lock.lock();
+                condition.signalAll();
+            }finally {
+                lock.unlock();
+            }
+        }
     }
 
     class ReentrantLockThread extends Thread {
@@ -76,6 +153,29 @@ public class ReentrantLockTest {
                 System.out.println(this + " getlock fail");
             } finally {
                 this.lock.unlock();
+            }
+        }
+    }
+
+    class ReentrantThread extends Thread {
+        private Lock lock = new ReentrantLock();
+        private BlockingQueue blockingQueue;
+        ReentrantThread(BlockingQueue blockingQueue) {
+            this.blockingQueue = blockingQueue;
+        }
+        @Override
+        public void run() {
+            try {
+                lock.lock();
+                blockingQueue.offer(new Object());
+                try {
+                    lock.lock();
+                    blockingQueue.offer(new Object());
+                }finally {
+                    lock.unlock();
+                }
+            }finally {
+                lock.unlock();
             }
         }
     }

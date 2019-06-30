@@ -7,6 +7,11 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class ReentrantLockTest {
 
+    /**
+     * 公平锁，按照申请锁的顺序获得锁，不允许抢占
+     * 先开始50个线程申请锁
+     * 在50个线程执行时再开始50个线程，之前申请锁的50个线程一定按照顺序获取到锁，后续线程不会抢占已排队的线程
+     */
     public void reentrantLock_fairlock_getlock_inorder() {
         Lock lock = new ReentrantLock();
         lock.lock();
@@ -30,6 +35,11 @@ public class ReentrantLockTest {
         }
     }
 
+    /**
+     * 非公平锁，允许抢占
+     * 先开始50个线程申请锁
+     * 在50个线程执行时再开始50个线程，后开始的50个线程在获取锁时每次都会试图使用CAS的方法抢占锁
+     */
     public void reentrantLock_norfairlock_getlock_inorder() {
         Lock lock = new ReentrantLock(true);
         lock.lock();
@@ -53,6 +63,7 @@ public class ReentrantLockTest {
         }
     }
 
+
     class FairReentrantLockThread extends Thread {
         private Lock lock;
 
@@ -71,9 +82,9 @@ public class ReentrantLockTest {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         ReentrantLockTest reentrantLockTest = new ReentrantLockTest();
-        reentrantLockTest.reentrantLock_fairlock_getlock_inorder();
-        reentrantLockTest.reentrantLock_norfairlock_getlock_inorder();
+//        reentrantLockTest.reentrantLock_fairlock_getlock_inorder();
+//        reentrantLockTest.reentrantLock_norfairlock_getlock_inorder();
     }
 }

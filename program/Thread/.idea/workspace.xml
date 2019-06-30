@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5db1bc44-2c12-4795-b0e6-07e2038454b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pers/vay/lock/ReentrantLockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pers/vay/lock/LockSupportTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/vay/lock/ReentrantLockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/vay/lock/ReentrantLockTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pers/vay/Lock/ReentrantLockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pers/vay/Lock/ReentrantLockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pers/vay/Lock/ReentrantLockTest$FairReentrantLockThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pers/vay/Lock/ReentrantLockTest$FairReentrantLockThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pers/vay/lock/ReentrantLockTest$FairReentrantLockThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pers/vay/lock/ReentrantLockTest$FairReentrantLockThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pers/vay/lock/ReentrantLockTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pers/vay/lock/ReentrantLockTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pers/vay/Lock/ReentrantLockTest$FairReentrantLockThread.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pers/vay/Lock/ReentrantLockTest$ReentrantLockThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pers/vay/Lock/ReentrantLockTest$ReentrantLockThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pers/vay/Lock/ReentrantLockTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pers/vay/Lock/ReentrantLockTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../summary/多线程/ReentranLock.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../summary/多线程/ReentranLock.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,42 +31,45 @@
     <session id="1098966480">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="77" />
+          <entry key="java" value="103" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="77" />
+          <entry key="JAVA" value="103" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1701" />
+          <entry key="java" value="3545" />
           <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1701" />
+          <entry key="JAVA" value="3545" />
           <entry key="XML" value="8" />
         </counts>
       </usages-collector>
@@ -71,37 +78,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/lock/ReentrantLockTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/Join.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pers/vay/Lock/ReentrantLockTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+            <state relative-caret-position="664">
+              <caret line="87" column="72" selection-start-line="87" selection-start-column="72" selection-end-line="87" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,53 +90,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/lock/LockSupportTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="115" column="57" lean-forward="true" selection-start-line="115" selection-start-column="57" selection-end-line="115" selection-end-column="57" />
-              <folding>
-                <element signature="e#7116#7117#0" expanded="true" />
-                <element signature="e#7150#7151#0" expanded="true" />
-                <element signature="e#8176#8177#0" expanded="true" />
-                <element signature="e#8216#8217#0" expanded="true" />
-                <element signature="e#9117#9118#0" expanded="true" />
-                <element signature="e#9144#9145#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7300">
-              <caret line="856" column="59" lean-forward="true" selection-start-line="856" selection-start-column="59" selection-end-line="856" selection-end-column="59" />
-              <folding>
-                <element signature="e#22675#22676#0" expanded="true" />
-                <element signature="e#22703#22704#0" expanded="true" />
-                <element signature="e#22933#22934#0" expanded="true" />
-                <element signature="e#22965#22966#0" expanded="true" />
-                <element signature="e#41392#41393#0" expanded="true" />
-                <element signature="e#41449#41450#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="184">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/StampedLock.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pers/vay/Lock/ReentrantLockTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="190" column="24" selection-start-line="190" selection-start-column="13" selection-end-line="190" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/ReentrantReadWriteLock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="214" column="35" lean-forward="true" selection-start-line="214" selection-start-column="35" selection-end-line="214" selection-end-column="35" />
+            <state relative-caret-position="2208">
+              <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,9 +113,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/Thread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="945" column="26" selection-start-line="945" selection-start-column="26" selection-end-line="945" selection-end-column="26" />
+            <state relative-caret-position="-1451">
+              <caret line="462" column="11" selection-start-line="462" selection-start-column="11" selection-end-line="462" selection-end-column="11" />
               <folding>
+                <element signature="e#15704#15705#0" expanded="true" />
+                <element signature="e#15770#15771#0" expanded="true" />
                 <element signature="e#36709#36710#0" expanded="true" />
                 <element signature="e#36767#36768#0" expanded="true" />
               </folding>
@@ -175,10 +126,95 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1256">
+              <caret line="284" column="20" lean-forward="true" selection-start-line="284" selection-start-column="20" selection-end-line="284" selection-end-column="20" />
+              <folding>
+                <element signature="e#5562#5563#0" expanded="true" />
+                <element signature="e#5614#5615#0" expanded="true" />
+                <element signature="e#5811#5812#0" expanded="true" />
+                <element signature="e#5878#5879#0" expanded="true" />
+                <element signature="e#5914#5915#0" expanded="true" />
+                <element signature="e#5960#5961#0" expanded="true" />
+                <element signature="e#6849#6850#0" expanded="true" />
+                <element signature="e#6907#6908#0" expanded="true" />
+                <element signature="e#7116#7117#0" expanded="true" />
+                <element signature="e#7150#7151#0" expanded="true" />
+                <element signature="e#8176#8177#0" expanded="true" />
+                <element signature="e#8216#8217#0" expanded="true" />
+                <element signature="e#9117#9118#0" expanded="true" />
+                <element signature="e#9144#9145#0" expanded="true" />
+                <element signature="e#17535#17536#0" expanded="true" />
+                <element signature="e#17577#17578#0" expanded="true" />
+                <element signature="e#18553#18554#0" expanded="true" />
+                <element signature="e#18595#18596#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/Condition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
+            <state relative-caret-position="-124">
               <caret line="178" column="17" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/Lock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="183" column="9" selection-start-line="183" selection-start-column="9" selection-end-line="183" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1104">
+              <caret line="385" column="64" lean-forward="true" selection-start-line="385" selection-start-column="64" selection-end-line="385" selection-end-column="64" />
+              <folding>
+                <element signature="e#20991#20992#0" expanded="true" />
+                <element signature="e#21042#21043#0" expanded="true" />
+                <element signature="e#22675#22676#0" expanded="true" />
+                <element signature="e#22703#22704#0" expanded="true" />
+                <element signature="e#22933#22934#0" expanded="true" />
+                <element signature="e#22965#22966#0" expanded="true" />
+                <element signature="e#32644#32645#0" expanded="true" />
+                <element signature="e#32694#32695#0" expanded="true" />
+                <element signature="e#41392#41393#0" expanded="true" />
+                <element signature="e#41449#41450#0" expanded="true" />
+                <element signature="e#42562#42563#0" expanded="true" />
+                <element signature="e#42619#42620#0" expanded="true" />
+                <element signature="e#44444#44445#0" expanded="true" />
+                <element signature="e#44501#44502#0" expanded="true" />
+                <element signature="e#45599#45600#0" expanded="true" />
+                <element signature="e#45656#45657#0" expanded="true" />
+                <element signature="e#85889#85890#0" expanded="true" />
+                <element signature="e#85959#85960#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/Object.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/LockSupport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4764">
+              <caret line="171" column="23" selection-start-line="171" selection-start-column="23" selection-end-line="171" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -226,6 +262,7 @@
         <option value="$PROJECT_DIR$/src/main/java/pers/vay/MyThreadExecutePool.java" />
         <option value="$PROJECT_DIR$/src/main/java/pers/vay/Lock/ReentrantLockTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/pers/vay/Lock/ReentrantLockTestTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/vay/lock/LockSupportTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pers/vay/lock/ReentrantLockTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/pers/vay/Lock/ReentrantLockTest.java" />
       </list>
@@ -237,11 +274,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="569" />
+    <option name="y" value="253" />
+    <option name="width" value="426" />
+    <option name="height" value="704" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -266,9 +303,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -349,17 +384,68 @@
               <item name="vay" type="462c0819:PsiDirectoryNode" />
               <item name="Lock" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Thread" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="Thread" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="Thread" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Thread" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Thread" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Thread" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Thread" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="locks" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Executors&#9;FILE&#9;jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/Executors.java&#10;threadpoolEx&#9;PSI&#9;JAVA://java.util.concurrent.ThreadPoolExecutor" />
+    <property name="SearchEverywhereHistoryKey" value="thread&#9;FILE&#9;jar://E:/Java/jdk1.8/src.zip!/java/lang/Thread.java&#10;Object&#9;PSI&#9;JAVA://java.lang.Object&#10;Executors&#9;FILE&#9;jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/Executors.java&#10;threadpoolEx&#9;PSI&#9;JAVA://java.util.concurrent.ThreadPoolExecutor" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561558814383" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561895870077" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -369,7 +455,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -397,7 +483,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReentrantLockTest">
+  <component name="RunManager" selected="Application.LockSupportTest">
+    <configuration name="LockSupportTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.vay.lock.LockSupportTest" />
+      <module name="Thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.vay.lock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReentrantLockTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pers.vay.lock.ReentrantLockTest" />
       <module name="Thread" />
@@ -411,25 +510,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyThreadExecutePoolTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Thread" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pers.vay.lock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pers.vay" />
-      <option name="MAIN_CLASS_NAME" value="pers.vay.MyThreadExecutePoolTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReentrantLockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReentrantLockTest.AQS_doAcquireInterruptibly_interrupt_immediately" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Thread" />
       <extension name="coverage">
         <pattern>
@@ -439,27 +520,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="pers.vay.Lock" />
       <option name="MAIN_CLASS_NAME" value="pers.vay.Lock.ReentrantLockTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReentrantLockTest.reentrantLock_fairlock_getlock_inorder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Thread" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pers.vay.Lock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pers.vay.Lock" />
-      <option name="MAIN_CLASS_NAME" value="pers.vay.Lock.ReentrantLockTest" />
-      <option name="METHOD_NAME" value="reentrantLock_fairlock_getlock_inorder" />
+      <option name="METHOD_NAME" value="AQS_doAcquireInterruptibly_interrupt_immediately" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReentrantLockTest.reentrantLock_same_synchronized_success2Lock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReentrantLockTest.ReentrantReadWriteLock_ReadLock_Share" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Thread" />
       <extension name="coverage">
         <pattern>
@@ -469,26 +536,42 @@
       </extension>
       <option name="PACKAGE_NAME" value="pers.vay.Lock" />
       <option name="MAIN_CLASS_NAME" value="pers.vay.Lock.ReentrantLockTest" />
-      <option name="METHOD_NAME" value="reentrantLock_same_synchronized_success2Lock" />
+      <option name="METHOD_NAME" value="ReentrantReadWriteLock_ReadLock_Share" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReentrantLockTest.ReentrantReadWriteLock_ReadLock_WriteCantLock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.vay.Lock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pers.vay.Lock" />
+      <option name="MAIN_CLASS_NAME" value="pers.vay.Lock.ReentrantLockTest" />
+      <option name="METHOD_NAME" value="ReentrantReadWriteLock_ReadLock_WriteCantLock" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MyThreadExecutePoolTest.test" />
-      <item itemvalue="JUnit.ReentrantLockTest" />
-      <item itemvalue="JUnit.ReentrantLockTest.reentrantLock_same_synchronized_success2Lock" />
-      <item itemvalue="JUnit.ReentrantLockTest.reentrantLock_fairlock_getlock_inorder" />
+      <item itemvalue="JUnit.ReentrantLockTest.ReentrantReadWriteLock_ReadLock_Share" />
+      <item itemvalue="JUnit.ReentrantLockTest.ReentrantReadWriteLock_ReadLock_WriteCantLock" />
+      <item itemvalue="JUnit.ReentrantLockTest.AQS_doAcquireInterruptibly_interrupt_immediately" />
       <item itemvalue="Application.ReentrantLockTest" />
+      <item itemvalue="Application.LockSupportTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LockSupportTest" />
         <item itemvalue="Application.ReentrantLockTest" />
-        <item itemvalue="JUnit.ReentrantLockTest.reentrantLock_fairlock_getlock_inorder" />
-        <item itemvalue="JUnit.ReentrantLockTest" />
-        <item itemvalue="JUnit.ReentrantLockTest.reentrantLock_same_synchronized_success2Lock" />
-        <item itemvalue="JUnit.MyThreadExecutePoolTest.test" />
+        <item itemvalue="JUnit.ReentrantLockTest.AQS_doAcquireInterruptibly_interrupt_immediately" />
+        <item itemvalue="JUnit.ReentrantLockTest.ReentrantReadWriteLock_ReadLock_WriteCantLock" />
+        <item itemvalue="JUnit.ReentrantLockTest.ReentrantReadWriteLock_ReadLock_Share" />
       </list>
     </recent_temporary>
   </component>
@@ -513,49 +596,52 @@
       <workItem from="1561216165917" duration="842000" />
       <workItem from="1561507742450" duration="2508000" />
       <workItem from="1561551732250" duration="5271000" />
+      <workItem from="1561680312906" duration="3009000" />
+      <workItem from="1561730167191" duration="1160000" />
+      <workItem from="1561813163524" duration="3574000" />
+      <workItem from="1561857579515" duration="18945000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyThreadExecutePoolTest_test - 2019.06.01 at 16h 52m 07s.xml">
-      <configuration name="MyThreadExecutePoolTest.test" configurationId="JUnit" />
+    <history-entry file="ReentrantLockTest_ReentrantReadWriteLock_ReadLock_WriteCantLock - 2019.06.30 at 15h 07m 32s.xml">
+      <configuration name="ReentrantLockTest.ReentrantReadWriteLock_ReadLock_WriteCantLock" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyThreadExecutePoolTest_test - 2019.06.01 at 16h 52m 31s.xml">
-      <configuration name="MyThreadExecutePoolTest.test" configurationId="JUnit" />
+    <history-entry file="ReentrantLockTest_ReentrantReadWriteLock_ReadLock_WriteCantLock - 2019.06.30 at 15h 07m 52s.xml">
+      <configuration name="ReentrantLockTest.ReentrantReadWriteLock_ReadLock_WriteCantLock" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyThreadExecutePoolTest_test - 2019.06.01 at 16h 52m 38s.xml">
-      <configuration name="MyThreadExecutePoolTest.test" configurationId="JUnit" />
+    <history-entry file="ReentrantLockTest_ReentrantReadWriteLock_ReadLock_WriteCantLock - 2019.06.30 at 15h 07m 59s.xml">
+      <configuration name="ReentrantLockTest.ReentrantReadWriteLock_ReadLock_WriteCantLock" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReentrantLockTest - 2019.06.26 at 08h 27m 30s.xml">
-      <configuration name="ReentrantLockTest" configurationId="JUnit" />
+    <history-entry file="ReentrantLockTest_ReentrantReadWriteLock_ReadLock_WriteCantLock - 2019.06.30 at 15h 08m 52s.xml">
+      <configuration name="ReentrantLockTest.ReentrantReadWriteLock_ReadLock_WriteCantLock" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReentrantLockTest_reentrantLock_same_synchronized_success2Lock - 2019.06.26 at 08h 29m 30s.xml">
-      <configuration name="ReentrantLockTest.reentrantLock_same_synchronized_success2Lock" configurationId="JUnit" />
+    <history-entry file="ReentrantLockTest_ReentrantReadWriteLock_ReadLock_WriteCantLock - 2019.06.30 at 15h 09m 05s.xml">
+      <configuration name="ReentrantLockTest.ReentrantReadWriteLock_ReadLock_WriteCantLock" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReentrantLockTest - 2019.06.26 at 08h 30m 02s.xml">
-      <configuration name="ReentrantLockTest" configurationId="JUnit" />
+    <history-entry file="ReentrantLockTest_ReentrantReadWriteLock_ReadLock_WriteCantLock - 2019.06.30 at 15h 10m 48s.xml">
+      <configuration name="ReentrantLockTest.ReentrantReadWriteLock_ReadLock_WriteCantLock" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReentrantLockTest_reentrantLock_same_synchronized_success2Lock - 2019.06.26 at 08h 30m 39s.xml">
-      <configuration name="ReentrantLockTest.reentrantLock_same_synchronized_success2Lock" configurationId="JUnit" />
+    <history-entry file="ReentrantLockTest_AQS_doAcquireInterruptibly_interrupt_immediately - 2019.06.30 at 17h 16m 48s.xml">
+      <configuration name="ReentrantLockTest.AQS_doAcquireInterruptibly_interrupt_immediately" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReentrantLockTest - 2019.06.26 at 08h 30m 59s.xml">
-      <configuration name="ReentrantLockTest" configurationId="JUnit" />
+    <history-entry file="ReentrantLockTest_AQS_doAcquireInterruptibly_interrupt_immediately - 2019.06.30 at 17h 17m 16s.xml">
+      <configuration name="ReentrantLockTest.AQS_doAcquireInterruptibly_interrupt_immediately" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReentrantLockTest - 2019.06.26 at 08h 33m 48s.xml">
-      <configuration name="ReentrantLockTest" configurationId="JUnit" />
+    <history-entry file="ReentrantLockTest_AQS_doAcquireInterruptibly_interrupt_immediately - 2019.06.30 at 17h 19m 31s.xml">
+      <configuration name="ReentrantLockTest.AQS_doAcquireInterruptibly_interrupt_immediately" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReentrantLockTest_reentrantLock_fairlock_getlock_inorder - 2019.06.26 at 20h 33m 08s.xml">
-      <configuration name="ReentrantLockTest.reentrantLock_fairlock_getlock_inorder" configurationId="JUnit" />
+    <history-entry file="ReentrantLockTest_AQS_doAcquireInterruptibly_interrupt_immediately - 2019.06.30 at 17h 20m 05s.xml">
+      <configuration name="ReentrantLockTest.AQS_doAcquireInterruptibly_interrupt_immediately" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41247000" />
+    <option name="totallyTimeSpent" value="67935000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17963752" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18710022" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -565,7 +651,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.53963083" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29858848" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -597,6 +683,18 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/ReentrantLock.java</url>
+          <line>334</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/ForkJoinPool.java" />
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/ForkJoinTask.java" />
@@ -608,7 +706,6 @@
     <entry file="jar://E:/Java/jdk1.8/javafx-src.zip!/com/sun/javafx/tk/quantum/QuantumRenderer.java" />
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/RejectedExecutionHandler.java" />
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/RejectedExecutionException.java" />
-    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/Executors.java" />
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/AbstractExecutorService.java" />
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/Executor.java" />
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/ExecutorService.java" />
@@ -617,13 +714,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/test/pers/vay/MyThreadExecutePoolTest.java" />
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/RuntimeException.java" />
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/Exception.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/NIOClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pers/vay/MyThreadExecutePoolTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -633,16 +723,8 @@
     </entry>
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/ThreadPoolExecutor.java" />
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/LinkedList.java" />
-    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/ScheduledThreadPoolExecutor.java" />
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/Error.java" />
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/Throwable.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/MyThreadExecutePool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/ArrayBlockingQueue.java" />
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/Queue.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/qz/thread/ServerThread.java">
@@ -659,7 +741,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/lock/ReentrantLockTest.java" />
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/BlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5302">
+          <caret line="275" column="6" selection-start-line="275" selection-start-column="6" selection-end-line="275" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -667,10 +755,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/Join.java">
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/StampedLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="3366">
+          <caret line="190" column="24" selection-start-line="190" selection-start-column="13" selection-end-line="190" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -681,100 +769,220 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/BlockingQueue.java">
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/ScheduledThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5302">
-          <caret line="275" column="6" selection-start-line="275" selection-start-column="6" selection-end-line="275" selection-end-column="6" />
+        <state relative-caret-position="1618">
+          <caret line="120" column="13" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/Lock.java">
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/SynchronousQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="183" column="9" selection-start-line="183" selection-start-column="9" selection-end-line="183" selection-end-column="9" />
+        <state relative-caret-position="-968">
+          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/lock/ReentrantLockTest.java">
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/Executors.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="74" column="70" lean-forward="true" selection-start-line="74" selection-start-column="70" selection-end-line="74" selection-end-column="70" />
+        <state relative-caret-position="298">
+          <caret line="87" column="33" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/ReadWriteLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="118" column="17" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/MyThreadExecutePool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/NIOClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="1731" column="26" selection-start-line="1731" selection-start-column="26" selection-end-line="1731" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/AbstractOwnableSynchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#987#988#0" expanded="true" />
+            <element signature="e#1663#1664#0" expanded="true" />
+            <element signature="e#1708#1709#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/ReentrantReadWriteLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10083">
+          <caret line="798" column="31" selection-start-line="798" selection-start-column="31" selection-end-line="798" selection-end-column="31" />
+          <folding>
+            <element signature="e#10079#10080#0" expanded="true" />
+            <element signature="e#10135#10136#0" expanded="true" />
+            <element signature="e#25317#25318#0" expanded="true" />
+            <element signature="e#25381#25382#0" expanded="true" />
+            <element signature="e#26141#26142#0" expanded="true" />
+            <element signature="e#26195#26196#0" expanded="true" />
+            <element signature="e#26239#26240#0" expanded="true" />
+            <element signature="e#26293#26294#0" expanded="true" />
+            <element signature="e#26818#26819#0" expanded="true" />
+            <element signature="e#26858#26859#0" expanded="true" />
+            <element signature="e#27298#27299#0" expanded="true" />
+            <element signature="e#27343#27344#0" expanded="true" />
+            <element signature="e#30177#30178#0" expanded="true" />
+            <element signature="e#30226#30227#0" expanded="true" />
+            <element signature="e#33491#33492#0" expanded="true" />
+            <element signature="e#33536#33537#0" expanded="true" />
+            <element signature="e#33790#33791#0" expanded="true" />
+            <element signature="e#33855#33856#0" expanded="true" />
+            <element signature="e#34878#34879#0" expanded="true" />
+            <element signature="e#34918#34919#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/Condition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
+        <state relative-caret-position="-124">
           <caret line="178" column="17" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pers/vay/Lock/ReentrantLockTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/Join.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="183" column="9" selection-start-line="183" selection-start-column="9" selection-end-line="183" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/LockSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4764">
+          <caret line="171" column="23" selection-start-line="171" selection-start-column="23" selection-end-line="171" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/lock/LockSupportTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/lock/ReentrantLockTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="87" column="72" selection-start-line="87" selection-start-column="72" selection-end-line="87" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pers/vay/Lock/ReentrantLockTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2208">
+          <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="945" column="26" selection-start-line="945" selection-start-column="26" selection-end-line="945" selection-end-column="26" />
+        <state relative-caret-position="-1451">
+          <caret line="462" column="11" selection-start-line="462" selection-start-column="11" selection-end-line="462" selection-end-column="11" />
           <folding>
+            <element signature="e#15704#15705#0" expanded="true" />
+            <element signature="e#15770#15771#0" expanded="true" />
             <element signature="e#36709#36710#0" expanded="true" />
             <element signature="e#36767#36768#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/StampedLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="190" column="24" selection-start-line="190" selection-start-column="13" selection-end-line="190" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/ReentrantReadWriteLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="214" column="35" lean-forward="true" selection-start-line="214" selection-start-column="35" selection-end-line="214" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="115" column="57" lean-forward="true" selection-start-line="115" selection-start-column="57" selection-end-line="115" selection-end-column="57" />
+        <state relative-caret-position="1256">
+          <caret line="284" column="20" lean-forward="true" selection-start-line="284" selection-start-column="20" selection-end-line="284" selection-end-column="20" />
           <folding>
+            <element signature="e#5562#5563#0" expanded="true" />
+            <element signature="e#5614#5615#0" expanded="true" />
+            <element signature="e#5811#5812#0" expanded="true" />
+            <element signature="e#5878#5879#0" expanded="true" />
+            <element signature="e#5914#5915#0" expanded="true" />
+            <element signature="e#5960#5961#0" expanded="true" />
+            <element signature="e#6849#6850#0" expanded="true" />
+            <element signature="e#6907#6908#0" expanded="true" />
             <element signature="e#7116#7117#0" expanded="true" />
             <element signature="e#7150#7151#0" expanded="true" />
             <element signature="e#8176#8177#0" expanded="true" />
             <element signature="e#8216#8217#0" expanded="true" />
             <element signature="e#9117#9118#0" expanded="true" />
             <element signature="e#9144#9145#0" expanded="true" />
+            <element signature="e#17535#17536#0" expanded="true" />
+            <element signature="e#17577#17578#0" expanded="true" />
+            <element signature="e#18553#18554#0" expanded="true" />
+            <element signature="e#18595#18596#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7300">
-          <caret line="856" column="59" lean-forward="true" selection-start-line="856" selection-start-column="59" selection-end-line="856" selection-end-column="59" />
+        <state relative-caret-position="1104">
+          <caret line="385" column="64" lean-forward="true" selection-start-line="385" selection-start-column="64" selection-end-line="385" selection-end-column="64" />
           <folding>
+            <element signature="e#20991#20992#0" expanded="true" />
+            <element signature="e#21042#21043#0" expanded="true" />
             <element signature="e#22675#22676#0" expanded="true" />
             <element signature="e#22703#22704#0" expanded="true" />
             <element signature="e#22933#22934#0" expanded="true" />
             <element signature="e#22965#22966#0" expanded="true" />
+            <element signature="e#32644#32645#0" expanded="true" />
+            <element signature="e#32694#32695#0" expanded="true" />
             <element signature="e#41392#41393#0" expanded="true" />
             <element signature="e#41449#41450#0" expanded="true" />
+            <element signature="e#42562#42563#0" expanded="true" />
+            <element signature="e#42619#42620#0" expanded="true" />
+            <element signature="e#44444#44445#0" expanded="true" />
+            <element signature="e#44501#44502#0" expanded="true" />
+            <element signature="e#45599#45600#0" expanded="true" />
+            <element signature="e#45656#45657#0" expanded="true" />
+            <element signature="e#85889#85890#0" expanded="true" />
+            <element signature="e#85959#85960#0" expanded="true" />
           </folding>
         </state>
       </provider>
