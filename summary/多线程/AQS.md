@@ -1,5 +1,7 @@
 # AQS框架
 
+[TOC]
+
 说起Java并发编程就不得不提AQS，那么什么是AQS呢？AQS是java.util.concurrent包中的一个虚拟类——AbstractQueuedSynchronizer。这个类为concurrent包中的同步类提供了基础实现思路。
 
 既然说到并发编程，那么就离不开线程的暂停与执行。在Java中，有且仅有四种方式使线程暂停
@@ -11,6 +13,8 @@
 
 AQS框架中的线程暂停使用的就是第四种——LockSupport#park方法，且通过实现Condition接口间接实现了第二种
 
+## 内部类
+
 在AQS框架中，我们维护一个节点有状态区分的双向链表，这个双向链表称为CLH队列。
 
 在AQS框架中，有两个内部类
@@ -20,13 +24,63 @@ AQS框架中的线程暂停使用的就是第四种——LockSupport#park方法�
 
 前者用来实现CLH列表，后者则间接实现Object#wait和Object#notify、Object#notifyAll
 
+### Node
+
+Node作为构成CLH队列的节点，它有如下几个域
+
+| 域名       | 备注     |
+| ---------- | -------- |
+| prev       | 前序节点 |
+| next       | 后序节点 |
+| waitstatus | 节点状态 |
+
+而对于waitstatus，有指定的几个值分别代表着不同的意思
+
+- cancalled
+- signal
+- condition
+- pr
+
+在AbstractQueueSynchronizater类中保存CLH列表的首尾节点以及列表的状态
+
+| 域名   | 备注   |
+| ------ | ------ |
+| head   | 首节点 |
+| tail   | 尾节点 |
+| status | 状态   |
+
+status代表当前锁被多少个节点所申请
+
+还有一个常量SHARE，
+
+### ConditionObject
+
+ConditionObject类是Condition接口的实现类，在ConditionObject类中，同样维护了一个由Node节点构成的链表，并保存这个链表的首尾节点
+
+| 域名 | 备注   |
+| ---- | ------ |
+| head | 首节点 |
+| tail | 尾节点 |
+
+类比Object#wait方法，在使用这个方法之前必须获取synchronized的锁。同样的，在使用Condition#await方法时，要获得对应的lock，否则就会抛出异常，那么具体时如何实现的呢？
+
+再调用await时，首先会判断当前线程是否持有锁，若持有锁，则释放锁，并将该节点加入链表尾部进行等待，当执行signal方法时，对链表首节点释放
+
+## 公用方法
+
 在AQS框架中有这些方法可供使用
 
 请求锁的方法
 
 acquire
 
+非公平锁：首先使用cas进行抢占，抢占失败后进行正常获取，获取不到则进入CLH队列中排队等待
+
+公平锁：尝试获取，获取不到则进入CLH队列中排队等待
+
 tryacquire
+
+使用cas进行抢占，抢占失败后进行正常获取，获取不到则进入CLH队列中排队等待
 
 请求共享锁的方法
 
@@ -36,4 +90,19 @@ acquireShare
 
 release
 
+releaseshare
+
+## 设计模式
+
 在AQS框架中使用到了模板方法模式
+
+在AbstractQueueSynchronizer类中规定模板
+
+```java
+protected void acquire() {
+    if(!tryAcquire()&&ShouldParkifFailAcquire()&&ParkAfterAcquire())
+        Thread.intrrrupt();
+}
+```
+
+其中tryAcquire方法由子类进行具体实现
