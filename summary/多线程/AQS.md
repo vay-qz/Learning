@@ -53,6 +53,31 @@ Node作为构成CLH队列的节点，它有如下几个域
 | tail   | 尾节点                         |
 | status | 状态，记录当前锁被多少节点申请 |
 
+那么接下来我们跟着两个AbstractQueueSynchronizer的实现类来熟悉一下AQS框架是如何实现锁的
+
+
+
+#### ReentrantLock
+
+AbstractQueueSynchronizer推荐其实现类作为一个内部类，在ReentrantLock中AbstractQueueSynchronizer的实现类就是作为内部类出现的，ReentrantLock的类图如下
+
+可以看到Syns类继承了AbstractQueueSynchronizer类，并且实现了部分方法，而FairLock和NonFairLock则是实现了Syns的全部方法。那么我们就从ReentrantLock类的职责进而分析其代码逻辑
+
+ReentrantLock从名字而言，这是一个可重入锁，那么顾名思义，首先这个类是一个锁，其次这个锁是可重入的。作为锁而言，最重要的就是上锁和解锁两个功能，以下就是ReentrantLock的上锁解锁方法
+
+```mermaid
+graph TB
+	A(ReentrantLock)-->B(上锁)
+	A-->C(解锁)
+	B-->D(lock)
+	B-->E(tryLock)
+	B-->F(lockInerruptibly)
+	B-->G(trylock long timeout, TimeUnit unit)
+	C-->H(unlock)
+```
+
+初始值为0，排队后将节点状态设置为SIGNAL
+
 
 
 ### ConditionObject
@@ -75,7 +100,7 @@ graph TD
 	A-->F(awaitUntil)
 ```
 
-
+两次重入锁的话一次卸载不下来
 
 ## 公用方法
 

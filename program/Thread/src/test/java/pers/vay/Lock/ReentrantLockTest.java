@@ -56,7 +56,7 @@ public class ReentrantLockTest {
 
     @Test
     public void condition_same_object() {
-        Lock lock = new ReentrantLock();
+        ReentrantLock lock = new ReentrantLock();
         lock.lock();
         Condition condition = lock.newCondition();
         new ConditionThread(condition, lock).start();
