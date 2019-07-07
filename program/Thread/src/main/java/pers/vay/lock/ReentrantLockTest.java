@@ -2,6 +2,7 @@ package pers.vay.lock;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -63,6 +64,21 @@ public class ReentrantLockTest {
         }
     }
 
+    public void spin_test() {
+        ReentrantLock lock = new ReentrantLock();
+        lock.lock();
+        new Thread(()->lock.lock(), "thread 1").start();
+        lock.unlock();
+        new Thread(()->{
+            lock.lock();
+            try {
+                Thread.sleep(1000 * 60 * 2);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }, "thread 2").start();
+    }
+
 
     class FairReentrantLockThread extends Thread {
         private Lock lock;
@@ -86,5 +102,6 @@ public class ReentrantLockTest {
         ReentrantLockTest reentrantLockTest = new ReentrantLockTest();
 //        reentrantLockTest.reentrantLock_fairlock_getlock_inorder();
 //        reentrantLockTest.reentrantLock_norfairlock_getlock_inorder();
+        reentrantLockTest.spin_test();
     }
 }
