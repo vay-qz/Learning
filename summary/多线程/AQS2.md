@@ -37,12 +37,12 @@ static final int PROPAGATE = -3;
 
 在AbstractQueueSynchronizer类中，主要维护四个域
 
-| 域名            | 类型         | 备注     |
-| --------------- | ------------ | -------- |
-| first           | Node         | 首节点   |
-| last            | Node         | 尾节点   |
-| status          | volitite int | 状态     |
-| exclusizeThread | Thread       | 独占线程 |
+| 域名                 | 类型         | 备注     |
+| -------------------- | ------------ | -------- |
+| first                | Node         | 首节点   |
+| last                 | Node         | 尾节点   |
+| status               | volitite int | 状态     |
+| exclusiveOwnerThread | Thread       | 独占线程 |
 
 既然AQS是锁框架，那么就离不开锁的常用操作上锁、解锁、等待锁，那么AQS是如何实现的呢？
 
@@ -57,6 +57,8 @@ static final int PROPAGATE = -3;
 :::
 
 要了解AQS框架就首先要明白CLH队列，接下来我们就从三个类来了解AQS
+
+
 
 ## ReentrantLock
 
@@ -116,6 +118,7 @@ final boolean acquireQueued(final Node node, int arg) {
     boolean failed = true;
     try {
         boolean interrupted = false;
+        //死循环，触发抛出异常或者获取到锁才会返回
         for (;;) {
             final Node p = node.predecessor();
             if (p == head && tryAcquire(arg)) {
@@ -125,6 +128,7 @@ final boolean acquireQueued(final Node node, int arg) {
                 return interrupted;
             }
             if (shouldParkAfterFailedAcquire(p, node) &&
+                //在这里暂停
                 parkAndCheckInterrupt())
                 interrupted = true;
         }
@@ -149,4 +153,30 @@ graph LR
 	F--失败-->G
 ```
 
-可以看到，在acquire方法中影响了status和exclusizeThread，在acquireQueued方法中影响了first和last
+可以看到，在不同的方法中分别对咱们的AQS域产生了影响
+
+- lock()：第一个if判断如果成功则会影响status和exclusiveOwnerThread
+- lock()：第一个if判断如果失败则会在子方法中影响first和last
+
+同样的，重入的实现在上述代码中同样得到了实现，就在tryAcquire()方法中。
+
+在上述流程图中可以看到，线程是使用LockSupport#park()方法进行暂停的，那么前序节点是如何对其进行唤醒呢？让我们一起来看一看unlock方法
+
+```java
+public void unlock() {
+    sync.release(1);
+}
+
+public final boolean release(int arg) {
+    if (tryRelease(arg)) {
+        Node h = head;
+        if (h != null && h.waitStatus != 0)
+            //unpark后继节点
+            unparkSuccessor(h);
+        return true;
+    }
+    return false;
+}
+```
+
+可以看到，在unlock方法中会对起后继节点调用unpark方法
