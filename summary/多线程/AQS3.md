@@ -171,4 +171,68 @@ ReentrantLock是AQS框架的实现类之一，我们可以通过对这个类的�
 
 ReentrantLock是一个可重入的锁，其类图如下
 
-在ReentrantLock类中，我们就可以回答如何上锁的问题了，ReentrantLock不止是实现了AQS框架，并且引入了一个新的概念——抢占，就是上图中的FairLock类和NorFairLock类
+在ReentrantLock类中，我们就可以回答如何上锁的问题了，值得一提的是，ReentrantLock在AQS框架的帮助下实现了Lock接口
+
+同样的，我们先来看一段代码
+
+```java
+final boolean nonfairTryAcquire(int acquires) {
+    final Thread current = Thread.currentThread();
+    int c = getState();
+    //排他
+    if (c == 0) {
+        //上锁
+        if (compareAndSetState(0, acquires)) {
+            setExclusiveOwnerThread(current);
+            return true;
+        }
+    }
+    //重入
+    else if (current == getExclusiveOwnerThread()) {
+        int nextc = c + acquires;
+        if (nextc < 0) // overflow
+            throw new Error("Maximum lock count exceeded");
+        setState(nextc);
+        return true;
+    }
+    return false;
+}
+```
+
+可以看到，上锁有两个步骤来完成的
+
+1. 设置status的值
+2. 设置独享线程为当前线程
+
+在这里就使用到了AQS框架中的另外两个域
+
+| 域名       | 类型         | 备注     |
+| ---- | ---- | ---- |
+| status               | volitite int | 状态     |
+| exclusiveOwnerThread | Thread       | 独占线程 |
+
+只有当status为0是，说明这个锁从未被获取过，通过对status值的判断实现了排他性，当然还有一个重入的概念，我们下边再介绍
+
+知道了如何上锁，那我们想一想应该如何解锁的？既然上锁改变了两个值，那么解锁自然就是将改变的这两个值还原就可以了，来看看ReentrantLock是不是这样实现的呢？
+
+```java
+protected final boolean tryRelease(int releases) {
+    int c = getState() - releases;
+    if (Thread.currentThread() != getExclusiveOwnerThread())
+        throw new IllegalMonitorStateException();
+    boolean free = false;
+    //重入是否都已释放
+    if (c == 0) {
+        free = true;
+        //还原独占线程
+        setExclusiveOwnerThread(null);
+    }
+    //还原status
+    setState(c);
+    return free;
+}
+```
+
+果然不出我们所料
+
+ReentrantLock不止是实现了AQS框架，并且引入了两个新的概念——抢占、重入
