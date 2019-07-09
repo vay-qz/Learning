@@ -1,4 +1,4 @@
-# AQS框架——CLH Queue
+# AQS框架
 
 AbstractQueueSynchronizer抽象类就是AQS框架，这个类为使用Java类实现锁提供了规范与思路。要理解AQS框架，最重要的是理解“CLH Queue”，这是队列的数据结构为双向链表，链表上每个节点的值只有固定的5个，分别代表不同的涵义，接下来我们就从CLH队列为切入点了解AQS
 
@@ -37,10 +37,138 @@ static final int PROPAGATE = -3;
 
 上边那四个再加上一个无意义的0值，就是waitStatus所可以取到的值
 
-开头我们说到，AQS框架为使用Java实现锁提供了规范和思路，那么它到底是如何规范的呢？首先我们抛出三个问题
+开头我们说到，AQS框架为使用Java实现锁提供了规范和思路，那么它到底是如何规范的呢？首先我们抛出三个问题：
 
 1. 如何实现上锁？
 2. 如何实现A获取到锁之后其余线程获取失败并等待？
 3. 在A释放锁后如何通知等待线程可以获取锁了？
 
-在AQS框架中
+我们通过看几个方法来理解这三个问题，首先说第一个问题，既然是上锁，那么方法名一定是和lock相关的，全局搜索发现并没有方法名是和lock相关的，难道AQS没有上锁机制？肯定是不可能的，我们在acquire的注释中找到了lock字眼，那么就来看一下acquire方法吧
+
+```java
+public final void acquire(int arg) {
+    //尝试获取锁
+    if (!tryAcquire(arg) &&
+        //没获取到，排队去了
+        acquireQueued(addWaiter(Node.EXCLUSIVE), arg))
+        selfInterrupt();
+}
+```
+
+ok，那说明咱们第一个问题的答案在tryAcquire方法中，再看一段
+
+```java
+protected boolean tryAcquire(int arg) {
+	throw new UnsupportedOperationException();
+}
+```
+
+很尴尬，AQS框架中并不负责上锁方法的实现，而是把这个方法的实现交给了子类去完成
+
+::: tip
+
+这种将实现下沉的代码实现称为模板方法模式，是各种优秀框架源码中常用的设计模式之一
+
+:::
+
+那么第二个问题，emmm...貌似有点大，分解一下
+
+- A线程获取锁其余线程如何获取失败？
+- 如何实现获取锁失败后等待？
+
+很明显，分解后的第一个问题也在tryAcuqire里，手动笑哭，AQS好懒。。。接下来我们贴第二个问题的一段代码
+
+```java
+final boolean acquireQueued(final Node node, int arg) {
+    boolean failed = true;
+    try {
+        boolean interrupted = false;
+        for (;;) {
+            final Node p = node.predecessor();
+            //前序节点是头结点吗？是的话我就要尝试获取锁了
+            if (p == head && tryAcquire(arg)) {
+                setHead(node);
+                p.next = null; // help GC
+                failed = false;
+                return interrupted;
+            }
+            //获取锁失败后应该暂停吗？应该的话就暂停吧
+            if (shouldParkAfterFailedAcquire(p, node) &&
+                parkAndCheckInterrupt())
+                interrupted = true;
+        }
+    } finally {
+        //只有获取到锁才会将这个标志改成false，非正常退出都会把这个节点取消掉
+        if (failed)
+            cancelAcquire(node);
+    }
+} 
+//将当前线程做成一个Node节点，排队到CLH Queue，下边代码是添加到双向链表的代码，没啥说的
+private Node addWaiter(Node mode) {
+    Node node = new Node(Thread.currentThread(), mode);
+    // Try the fast path of enq; backup to full enq on failure
+    Node pred = tail;
+    if (pred != null) {
+        node.prev = pred;
+        if (compareAndSetTail(pred, node)) {
+            pred.next = node;
+            return node;
+        }
+    }
+    //这个方法里也是把Node节点排队到CLH Queue
+    enq(node);
+    return node;
+}
+```
+
+可以看到，在acquireQueued()方法中有一个死循环，只有前序节点是头结点并且尝试获取锁成功才会返回，但是大牛的底层代码一定不会这么蠢，否则也太浪费CPU了，于是增加了shouldParkAfterFailedAcquire()和parkAndCheckInterrupt()方法来将线程暂停掉。那么当前序节点的状态为什么时我们需要对其进行暂停呢？
+
+- CANCELLED：前序节点都被取消了肯定不应该暂停啊，赶紧去抢锁才对
+- SIGNAL：当前节点的后继节点应该被释放，那后继节点肯定要先被暂停才能被释放啊
+- Condition：Condition队列专用，不作考虑
+- PROPAGATE：无条件传播，也应该释放
+
+```java
+private static boolean shouldParkAfterFailedAcquire(Node pred, Node node) {
+    int ws = pred.waitStatus;
+    //SIGNAL
+    if (ws == Node.SIGNAL)
+        return true;
+    //CANCELLED
+    if (ws > 0) {
+        do {
+            node.prev = pred = pred.prev;
+        } while (pred.waitStatus > 0);
+        pred.next = node;
+    //将前序节点的状态设置为SIGNAL
+    } else {
+        compareAndSetWaitStatus(pred, ws, Node.SIGNAL);
+    }
+    return false;
+}
+```
+
+ok，接下来我们来了解第三个问题，释放后序节点，既然是释放，那我们就来看一下release方法吧
+
+```java
+public final boolean release(int arg) {
+    //尝试释放
+    if (tryRelease(arg)) {
+        Node h = head;
+        if (h != null && h.waitStatus != 0)
+            unparkSuccessor(h);
+        return true;
+    }
+    return false;
+}
+```
+
+没错，在release方法中会让后继节点继续运行，tryRelease也是一个模板方法，由子类完成
+
+ReentrantLock是AQS框架的实现类之一，我们可以通过对这个类的学习来看看加锁和解锁具体是如何实现的
+
+## ReentrantLock
+
+ReentrantLock是一个可重入的锁，其类图如下
+
+在ReentrantLock类中，我们就可以回答如何上锁的问题了，ReentrantLock不止是实现了AQS框架，并且引入了一个新的概念——抢占，就是上图中的FairLock类和NorFairLock类
