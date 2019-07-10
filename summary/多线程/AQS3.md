@@ -233,6 +233,166 @@ protected final boolean tryRelease(int releases) {
 }
 ```
 
-果然不出我们所料
+果然不出我们所料，在解锁时将独占线程设置为null，并减少status到0
 
-ReentrantLock不止是实现了AQS框架，并且引入了两个新的概念——抢占、重入
+ReentrantLock不止是实现了AQS框架，并且引入了两个新的概念
+
+- 抢占：一个线程在尝试获取锁时可以不用排队获取锁
+- 重入：当一个线程获取到锁后本线程还可以再一次获取该锁
+
+重入的代码逻辑在上述两段代码已有体现，其流程图如下
+
+```mermaid
+graph LR
+	A(申请锁)-->B(status不为0)
+	B-->C{判断独占线程<br>是否为当前线程}
+	C--是-->D(status++)
+	C--否-->E(获取失败)
+```
+
+重入也赋予了status新的概念：记录持有锁线程的重入次数
+
+而抢占的概念则是如下一段代码
+
+```java
+final void lock() {
+    //抢占
+    if (compareAndSetState(0, 1))
+        setExclusiveOwnerThread(Thread.currentThread());
+    else
+        acquire(1);
+}
+```
+
+在实际申请锁之前使用CAS对status进行修改，修改成功就说明是抢占到了。ReentrantLock类的使用其实是使用其内部的FairLock和NorFairLock，抢占这个行为只存在于NorFairLock。
+
+::: tip
+
+抢占行为不止在于上述代码
+
+:::
+
+## Condition
+
+至此为止，对于AQS中Node的waitStatus变量，我们只用到了 CANCELED、0、SIGNAL，而对于CONDITION和PROPAGATE却都还没有用到。Condition接口用于实现Object的锁相关方法，在AbstractQueueSynchronizer中，内部类ConditionObject对这个接口进行了实现。
+
+在ConditionObject中同样维护这一个由Node构成的双向链表，这个链表称为Condition Queue，那么ConditionObject中自然就要维护起首尾节点
+
+| 域名      | 备注   |
+| --------- | ------ |
+| FirstNode | 首节点 |
+| LastNode  | 尾节点 |
+
+我们先来回忆一下Object#wait的表现
+
+- 调用Object#wait的区域一定是在Synchronized块儿内？
+- 当调用Object#wait方法后，锁被释放？
+- 当另一个线程对其进行notify唤醒时，一定要先获取起锁
+
+那么当锁是AQS框架时，如何实现这三个特性呢？我们带着这三个问题一起来看一段源码
+
+```java
+public final void await() throws InterruptedException {
+    if (Thread.interrupted())
+        throw new InterruptedException();
+    //将当前线程做成Node添加到Condition Queue
+    Node node = addConditionWaiter();
+    //完成释放锁，不管重入了几次
+    int savedState = fullyRelease(node);
+    while (!isOnSyncQueue(node)) {
+        LockSupport.park(this);
+        if ((interruptMode = checkInterruptWhileWaiting(node)) != 0)
+            break;
+    }
+    ...
+}
+final int fullyRelease(Node node) {
+    boolean failed = true;
+    try {
+        int savedState = getState();
+        //就是这里，release方法是要释放锁的，释放锁的前提是拥有锁
+        if (release(savedState)) {
+            failed = false;
+            return savedState;
+        } else {
+            throw new IllegalMonitorStateException();
+        }
+    } finally {
+        if (failed)
+            node.waitStatus = Node.CANCELLED;
+    }
+}
+```
+
+如上述代码所示，前两个问题的答案就在fullyRelease中，在线程暂停之前要先将锁彻底释放掉，而在release中，如果想要释放掉，那首先这个线程要持有锁。
+
+在回答第三个问题之前我们先来看一下addConditionWaiter()方法
+
+```java
+private Node addConditionWaiter() {
+    Node t = lastWaiter;
+    // If lastWaiter is cancelled, clean out.
+    if (t != null && t.waitStatus != Node.CONDITION) {
+        unlinkCancelledWaiters();
+        t = lastWaiter;
+    }
+    //look,这里用到了常量Node.CONDITION
+    Node node = new Node(Thread.currentThread(), Node.CONDITION);
+    if (t == null)
+        firstWaiter = node;
+    else
+        t.nextWaiter = node;
+    lastWaiter = node;
+    return node;
+}
+```
+
+嗯，每错，看这个方法的目的有两个，一：了解CONDITION就是在这里设置的，二：节点从结果上来看是把Sync Queue上的节点卸下来安到了Condition Queue，但是实际上是先新建一个节点按到Condition Queue上，然后才从Sync Queue上卸下来，这两者并不是同一个对象
+
+第三个问题的答案当然要在ConditionObject#signal中获得了
+
+```java
+public final void signal() {
+    //就是这里了，通过判断当前线程是否是独占线程来确认当前线程是否持有锁
+    if (!isHeldExclusively())
+        throw new IllegalMonitorStateException();
+    Node first = firstWaiter;
+    if (first != null)
+        doSignal(first);
+}
+```
+
+ok，这三个问题清楚了之后Condition基本上就理解了
+
+## ReentrantReadWirteLock
+
+现在就只剩下一个常量我们没有用到了：PROPAGATE，这个常量在ReentrantReadWirteLock类中有用到，既然是读写锁，那么ReentrantReadWirteLock类的特性有哪些呢？
+
+- 当读锁被占有时，后续依然可以获取读锁
+- 当读锁被占有时，写锁不可被获取
+- 当写锁被占有时，读写锁都不可被获取
+- 由类名可知，锁可重入
+
+status这个域是用来记录重入锁的次数的，非0即为锁被获取，那么就有几个问题会被抛出
+
+- 如何用一个值既要记录读锁的重入数，又要记录写锁的重入数？
+- 读锁是可以被多个线程共同持有的，每个线程又有自己的重入数，如何记录？
+
+ReentrantReadWirteLock的类图如下
+
+可以看到，在ReentrantReadWirteLock类中多出了两个内部类，其源码如下
+
+```java
+static final class HoldCounter {
+    int count = 0;
+    final long tid = getThreadId(Thread.currentThread());
+}
+
+static final class ThreadLocalHoldCounter
+    extends ThreadLocal<HoldCounter> {
+    public HoldCounter initialValue() {
+        return new HoldCounter();
+    }
+}
+```
+
