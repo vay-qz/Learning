@@ -3,8 +3,12 @@ package pers.vay.lock;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class ReentrantLockTest {
 
@@ -79,6 +83,20 @@ public class ReentrantLockTest {
         }, "thread 2").start();
     }
 
+    public void readlocktest() {
+        ReentrantReadWriteLock readWriteLock = new ReentrantReadWriteLock();
+        readWriteLock.writeLock().lock();
+        new Thread(()->readWriteLock.readLock().lock()).start();
+        new Thread(()->readWriteLock.readLock().lock()).start();
+        new Thread(()->readWriteLock.readLock().lock()).start();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        readWriteLock.writeLock().unlock();
+    }
+
 
     class FairReentrantLockThread extends Thread {
         private Lock lock;
@@ -102,6 +120,6 @@ public class ReentrantLockTest {
         ReentrantLockTest reentrantLockTest = new ReentrantLockTest();
 //        reentrantLockTest.reentrantLock_fairlock_getlock_inorder();
 //        reentrantLockTest.reentrantLock_norfairlock_getlock_inorder();
-        reentrantLockTest.spin_test();
+        reentrantLockTest.readlocktest();
     }
 }

@@ -1,0 +1,24 @@
+
+esquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š‡)
+msquid:S00100C"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹€í8ÆáÛ×½-
+?squid:S1148;"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+fsquid:S00100,"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»¢ºæ
+]squid:S2142:"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+dsquid:S2142W"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8îöŞ×½-
+[
+squid:S106Z"9Replace this use of System.out or System.err by a logger.(ìÑÑÈÿÿÿÿÿ8âÃß×½-
+gsquid:CommentedOutCodeLiner"<This block of commented-out lines of code should be removed.(´õÂ­úÿÿÿÿ
+[
+squid:S106T"9Replace this use of System.out or System.err by a logger.(ìÑÑÈÿÿÿÿÿ8‚â×½-
+]squid:S2274V":Remove this call to "wait" or move it into a "while" loop.(¹Çíøÿÿÿÿ8îöŞ×½-
+osquid:UselessImportCheck"?Remove this unused import 'java.util.concurrent.BlockingQueue'.(÷ÙÑÿÿÿÿÿ8ÆáÛ×½-
+Jsquid:S1612F",Replace this lambda with a method reference.(×ß‹«8ÆáÛ×½-
+ƒsquid:S2273V"`Move this call to "wait()" into a synchronized block to be sure the monitor on "Object" is held.(¹Çíøÿÿÿÿ8îöŞ×½-
+isquid:S2184K"FCast one of the operands of this multiplication operation to a "long".(Ğ‘‡Ëûÿÿÿÿ8ÆáÛ×½-
+T
+squid:S106i"9Replace this use of System.out or System.err by a logger.(Ô¤Ú†ûÿÿÿÿ
+]squid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+Fsquid:S1148M"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÆáÛ×½-
+Fsquid:S1148X"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8îöŞ×½-
+dsquid:S2142L"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ÆáÛ×½-
+?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
