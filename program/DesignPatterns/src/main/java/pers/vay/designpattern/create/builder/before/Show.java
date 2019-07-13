@@ -1,6 +1,6 @@
 package pers.vay.designpattern.create.builder.before;
 
-import pers.vay.designpattern.create.builder.after.Angle;
+import pers.vay.designpattern.create.builder.before.Angle;
 
 /**
  * @author qiaozhe
