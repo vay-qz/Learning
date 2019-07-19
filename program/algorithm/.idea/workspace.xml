@@ -2,24 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e5df7b2-3e99-498f-b07c-a2bfa1a2e2a8" name="Default Changelist" comment="【*】n数之和">
-      <change afterPath="$PROJECT_DIR$/src/main/java/binary_tree/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/binary_tree/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thread/FooCountDown.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thread/FooSeq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thread/FooVolatile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thread/PrintCC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignPatterns/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/thread/FooCyclicBarrier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__org_junit_platform_junit_platform_launcher_1_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__org_junit_platform_junit_platform_launcher_1_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_4_12_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_4_12_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__org_opentest4j_opentest4j_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/.idea/libraries/Maven__org_opentest4j_opentest4j_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Thread/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/target/classes/pers/vay/aqs/CyclicBarrierTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/target/classes/pers/vay/aqs/CyclicBarrierTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/target/classes/pers/vay/aqs/SemaphoreTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/target/classes/pers/vay/aqs/SemaphoreTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thread/PrintCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/thread/PrintCC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/thread/FooSeq.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thread/FooSeq.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/thread/PrintCC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/thread/PrintCC.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CheckStyle-IDEA-workspace">
+    <option name="configuration">
+      <map>
+        <entry key="last-active-plugin-version" value="5.23.0" />
+      </map>
+    </option>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="42428551">
@@ -65,64 +83,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestAlg.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mh/TestAlg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2425">
+            <state relative-caret-position="831">
               <caret line="97" column="54" selection-start-line="97" selection-start-column="54" selection-end-line="97" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="FooCyclicBarrier.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/thread/FooCyclicBarrier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FooVolatile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/thread/FooVolatile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state relative-caret-position="180">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="FooSeq.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/thread/FooSeq.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="19" selection-start-line="19" selection-end-line="39" selection-end-column="5" />
+            <state relative-caret-position="52">
+              <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name="FooCountDown.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/thread/FooCountDown.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="90">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="PrintCC.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/thread/PrintCC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="648">
+              <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="BinaryTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/binary_tree/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
+            <state relative-caret-position="36">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/binary_tree/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="90">
               <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -131,10 +161,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="270">
               <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
             </state>
           </provider>
@@ -172,9 +202,10 @@
         <option value="$PROJECT_DIR$/src/main/java/binary_tree/BinaryTree.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/binary_tree/Node.java" />
-        <option value="$PROJECT_DIR$/src/main/java/thread/PrintCC.java" />
         <option value="$PROJECT_DIR$/src/main/java/thread/FooSeq.java" />
         <option value="$PROJECT_DIR$/src/main/java/thread/FooCountDown.java" />
+        <option value="$PROJECT_DIR$/src/main/java/thread/PrintCC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/thread/FooCyclicBarrier.java" />
       </list>
     </option>
   </component>
@@ -196,6 +227,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -228,30 +261,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="binary_tree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mh" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="thread" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,7 +304,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FooSeq">
+  <component name="RunManager" selected="Application.PrintCC">
     <configuration name="FooSeq" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="thread.FooSeq" />
       <module name="algorithm" />
@@ -299,9 +314,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="PrintCC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="thread.PrintCC" />
@@ -312,9 +324,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="TestAlgTest.nSumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
@@ -324,13 +333,20 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="mh" />
       <option name="MAIN_CLASS_NAME" value="mh.TestAlgTest" />
       <option name="METHOD_NAME" value="nSumTest" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="TestAlgTest.threeSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
@@ -340,13 +356,20 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="mh" />
       <option name="MAIN_CLASS_NAME" value="mh.TestAlgTest" />
       <option name="METHOD_NAME" value="threeSum" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="TestAlgTest.twoSumWithHashTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
@@ -356,13 +379,20 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="mh" />
       <option name="MAIN_CLASS_NAME" value="mh.TestAlgTest" />
       <option name="METHOD_NAME" value="twoSumWithHashTest" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <list>
       <item itemvalue="JUnit.TestAlgTest.threeSum" />
@@ -373,8 +403,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FooSeq" />
         <item itemvalue="Application.PrintCC" />
+        <item itemvalue="Application.FooSeq" />
         <item itemvalue="JUnit.TestAlgTest.nSumTest" />
         <item itemvalue="JUnit.TestAlgTest.twoSumWithHashTest" />
         <item itemvalue="JUnit.TestAlgTest.threeSum" />
@@ -398,6 +428,7 @@
       <workItem from="1563283546748" duration="2586000" />
       <workItem from="1563371864255" duration="176000" />
       <workItem from="1563409112913" duration="2537000" />
+      <workItem from="1563511616936" duration="2811000" />
     </task>
     <task id="LOCAL-00001" summary="【*】n数之和">
       <created>1558853559327</created>
@@ -442,39 +473,46 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25303000" />
+    <option name="totallyTimeSpent" value="28114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18869936" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.17698154" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32899022" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286334" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32899022" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Mongo Explorer" order="0" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="4" />
+      <window_info anchor="bottom" id="Statistic" order="1" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info id="UI Designer" order="5" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.3995657" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32824427" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32279173" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32899022" />
+      <window_info anchor="bottom" id="CheckStyle" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.3286334" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18869936" />
+      <window_info anchor="bottom" id="SonarLint" order="2" />
+      <window_info id="Learn" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,79 +559,44 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2020">
-          <caret line="142" column="23" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1600">
-          <caret line="106" column="40" selection-start-line="106" selection-start-column="40" selection-end-line="106" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/AbstractList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9020">
-          <caret line="496" column="16" selection-start-line="496" selection-start-column="10" selection-end-line="496" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/Java/jdk1.7/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="462" column="30" selection-start-line="462" selection-start-column="30" selection-end-line="462" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="374" column="14" selection-start-line="374" selection-start-column="14" selection-end-line="374" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1940">
-          <caret line="276" column="60" selection-start-line="276" selection-start-column="55" selection-end-line="276" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mh/TestAlgTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mh/TestAlg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2425">
+        <state relative-caret-position="1746">
           <caret line="97" column="54" selection-start-line="97" selection-start-column="54" selection-end-line="97" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/thread/FooVolatile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/thread/FooSeq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" selection-start-line="19" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/thread/PrintCC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/binary_tree/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
+        <state relative-caret-position="36">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/binary_tree/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="90">
           <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -601,31 +604,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/thread/PrintCC.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/thread/FooVolatile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/thread/FooSeq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="19" selection-start-line="19" selection-end-line="39" selection-end-column="5" />
+        <state relative-caret-position="270">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/thread/FooCountDown.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
+        <state relative-caret-position="306">
           <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/Arrays.java" />
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/ArrayList.java" />
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/AbstractList.java" />
+    <entry file="jar://E:/Java/jdk1.7/src.zip!/java/util/HashMap.java" />
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/Map.java" />
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/util/HashMap.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/mh/TestAlgTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/binary_tree/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/binary_tree/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/thread/FooVolatile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mh/TestAlg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="831">
+          <caret line="97" column="54" selection-start-line="97" selection-start-column="54" selection-end-line="97" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/CountDownLatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="155" column="13" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/thread/FooSeq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/thread/FooCountDown.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/thread/PrintCC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/thread/FooCyclicBarrier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -669,7 +747,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.6</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
