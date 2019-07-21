@@ -1,7 +1,7 @@
 package thread;
 
 public class PrintCC {
-    private FooVolatile foo = new FooVolatile();
+    private FooCyclicBarrier foo = new FooCyclicBarrier();
 
     void one(){
         new Thread(()->{
