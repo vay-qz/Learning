@@ -1,5 +1,9 @@
 package linked_list;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
 public class Solution {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -81,6 +85,36 @@ public class Solution {
             max = num;
         }
         return max;
+    }
+
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int prefix1 = -1;
+        int prefix2 = -1;
+        int sum = nums1.length + nums2.length;
+        List<Integer> res = new ArrayList<>();
+        getRes(prefix1, prefix2, res, nums1, nums2);
+        res.sort(Comparator.comparingInt(a -> a));
+        if(sum % 2 == 1) {
+            return res.get(sum/2-prefix1-prefix2);
+        }else {
+            return res.get(sum/2-prefix1-prefix2) + res.get(sum/2-prefix1-prefix2-1);
+        }
+    }
+
+    private void getRes(int prefix1, int prefix2, List<Integer> res, int[] nums1, int[] nums2) {
+        if(nums1.length <= 2 && nums2.length <= 2) {
+            res.add(nums1);
+            res.add(nums2);
+            return;
+        }
+        int mid1 = nums1[nums1.length/2];
+        int mid2 = nums2[nums2.length/2];
+        if(mid1 < mid2) {
+            getRes(prefix1, prefix2, res, nums1[nums1.length/2~nums1.length], nums2[0~nums1.length/2]);
+        }else {
+            getRes(prefix1, prefix2, res, nums1[0~nums1.length/2], nums2[nums2.length/2~nums2.length]);
+        }
+
     }
 
 }
