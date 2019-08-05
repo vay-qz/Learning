@@ -1,8 +1,6 @@
 package linked_list;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class Solution {
 
@@ -97,23 +95,78 @@ public class Solution {
         if(sum % 2 == 1) {
             return res.get(sum/2-prefix1-prefix2);
         }else {
-            return res.get(sum/2-prefix1-prefix2) + res.get(sum/2-prefix1-prefix2-1);
+            return (res.get(sum/2-prefix1-prefix2) + res.get(sum/2-prefix1-prefix2-1)) / 2;
         }
     }
 
     private void getRes(int prefix1, int prefix2, List<Integer> res, int[] nums1, int[] nums2) {
         if(nums1.length <= 2 && nums2.length <= 2) {
-            res.add(nums1);
-            res.add(nums2);
+            addArray2List(res, nums1);
+            addArray2List(res, nums2);
             return;
         }
-        int mid1 = nums1[nums1.length/2];
-        int mid2 = nums2[nums2.length/2];
+        int mid1 = getMidian(nums1);
+        int mid2 = getMidian(nums2);
+        int[] nums1After;
+        int[] nums2After;
         if(mid1 < mid2) {
-            getRes(prefix1, prefix2, res, nums1[nums1.length/2~nums1.length], nums2[0~nums1.length/2]);
+            if(nums1.length <= 2) {
+                nums1After = nums1;
+            }else {
+                int nums1Mid;
+                if(nums1.length % 2 == 0) {
+                    nums1Mid = nums1.length/2 - 1;
+                }else {
+                    nums1Mid = nums1.length/2;
+                }
+                nums1After = Arrays.copyOfRange(nums1, nums1Mid, nums1.length);
+                prefix1 += nums1Mid;
+            }
+            if(nums2.length <= 2) {
+                nums2After = nums2;
+            }else {
+                nums2After = Arrays.copyOfRange(nums2, 0, nums2.length/2);
+            }
         }else {
-            getRes(prefix1, prefix2, res, nums1[0~nums1.length/2], nums2[nums2.length/2~nums2.length]);
+            if(nums1.length <= 2) {
+                nums1After = nums1;
+            }else {
+                nums1After = Arrays.copyOfRange(nums1, 0, nums1.length/2);
+            }
+            if(nums2.length <= 2) {
+                nums2After = nums2;
+            }else {
+                int nums2Mid;
+                if(nums2.length % 2 == 0) {
+                    nums2Mid = nums2.length/2 - 1;
+                }else {
+                    nums2Mid = nums2.length/2;
+                }
+                prefix2 += nums2Mid;
+                nums2After = Arrays.copyOfRange(nums2, nums2Mid, nums2.length);
+            }
         }
+        getRes(prefix1, prefix2, res, nums1After, nums2After);
+
+    }
+
+    private int getMidian(int[] nums) {
+        if(nums.length%2==0) {
+            return (nums[nums.length/2] + nums[nums.length/2 - 1])/2;
+        }else {
+            return nums[nums.length/2];
+        }
+    }
+
+    private void addArray2List(List res, int[] nums) {
+        for(int i = 0; i < nums.length; i++) {
+            res.add(nums[i]);
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] a = {2, 5, 8, 52, 411};
+        int[] b = {5, 9, 23, 73, 654, 3000};
 
     }
 
