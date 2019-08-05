@@ -86,21 +86,30 @@ public class Solution {
     }
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        if(nums1.length == 0) {
+            return getMidian(nums2);
+        }
+        if(nums2.length == 0) {
+            return getMidian(nums1);
+        }
         int prefix1 = 0;
         int prefix2 = 0;
         int sum = nums1.length + nums2.length;
         List<Integer> res = new ArrayList<>();
-        getRes(prefix1, prefix2, res, nums1, nums2);
+        List<Integer> prefix = new ArrayList<>();
+        getRes(prefix1, prefix2, res, prefix, nums1, nums2);
         res.sort(Comparator.comparingInt(a -> a));
         if(sum % 2 == 1) {
-            return res.get(sum/2-prefix1-prefix2);
+            return res.get(sum/2-prefix.get(0)-prefix.get(1));
         }else {
-            return ((double)res.get(sum/2-prefix1-prefix2) + res.get(sum/2-prefix1-prefix2-1)) / 2.0;
+            return ((double)res.get(sum/2-prefix.get(0)-prefix.get(1)) + res.get(sum/2-prefix.get(0)-prefix.get(1)-1)) / 2.0;
         }
     }
 
-    private void getRes(int prefix1, int prefix2, List<Integer> res, int[] nums1, int[] nums2) {
+    private void getRes(int prefix1, int prefix2, List<Integer> res, List<Integer> prefix, int[] nums1, int[] nums2) {
         if(nums1.length <= 2 && nums2.length <= 2) {
+            prefix.add(prefix1);
+            prefix.add(prefix2);
             addArray2List(res, nums1);
             addArray2List(res, nums2);
             return;
@@ -127,7 +136,7 @@ public class Solution {
             }else {
                 nums2After = Arrays.copyOfRange(nums2, 0, nums2.length/2);
             }
-        }else {
+        }else if(mid1 > mid2){
             if(nums1.length <= 2) {
                 nums1After = nums1;
             }else {
@@ -145,8 +154,10 @@ public class Solution {
                 prefix2 += nums2Mid;
                 nums2After = Arrays.copyOfRange(nums2, nums2Mid, nums2.length);
             }
+        }else {
+
         }
-        getRes(prefix1, prefix2, res, nums1After, nums2After);
+        getRes(prefix1, prefix2, res, prefix, nums1After, nums2After);
 
     }
 
