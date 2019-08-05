@@ -86,8 +86,8 @@ public class Solution {
     }
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        int prefix1 = -1;
-        int prefix2 = -1;
+        int prefix1 = 0;
+        int prefix2 = 0;
         int sum = nums1.length + nums2.length;
         List<Integer> res = new ArrayList<>();
         getRes(prefix1, prefix2, res, nums1, nums2);
@@ -95,7 +95,7 @@ public class Solution {
         if(sum % 2 == 1) {
             return res.get(sum/2-prefix1-prefix2);
         }else {
-            return (res.get(sum/2-prefix1-prefix2) + res.get(sum/2-prefix1-prefix2-1)) / 2;
+            return ((double)res.get(sum/2-prefix1-prefix2) + res.get(sum/2-prefix1-prefix2-1)) / 2.0;
         }
     }
 
@@ -105,8 +105,8 @@ public class Solution {
             addArray2List(res, nums2);
             return;
         }
-        int mid1 = getMidian(nums1);
-        int mid2 = getMidian(nums2);
+        double mid1 = getMidian(nums1);
+        double mid2 = getMidian(nums2);
         int[] nums1After;
         int[] nums2After;
         if(mid1 < mid2) {
@@ -150,9 +150,9 @@ public class Solution {
 
     }
 
-    private int getMidian(int[] nums) {
+    private double getMidian(int[] nums) {
         if(nums.length%2==0) {
-            return (nums[nums.length/2] + nums[nums.length/2 - 1])/2;
+            return ((double)nums[nums.length/2] + (double)nums[nums.length/2 - 1])/(double)2;
         }else {
             return nums[nums.length/2];
         }
@@ -167,7 +167,8 @@ public class Solution {
     public static void main(String[] args) {
         int[] a = {2, 5, 8, 52, 411};
         int[] b = {5, 9, 23, 73, 654, 3000};
-
+        Solution solution = new Solution();
+        System.out.println(solution.findMedianSortedArrays(a, b));
     }
 
 }
