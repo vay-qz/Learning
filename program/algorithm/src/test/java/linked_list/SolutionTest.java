@@ -67,4 +67,17 @@ class SolutionTest {
         Assert.assertEquals(2.5, solution.findMedianSortedArrays(new int[]{1}, new int[]{2,3,4,5,6}), 0.01);
     }
 
+    @Test
+    public void findMedianSortedArrays2() {
+        Solution solution = new Solution();
+        Assert.assertEquals(23.0, solution.findMedianSortedArrays2(new int[]{2, 5, 8, 52, 411}, new int[]{5, 9, 23, 73, 654, 3000}), 0.01);
+        Assert.assertEquals(5.0, solution.findMedianSortedArrays2(new int[]{2, 5}, new int[]{5, 9}), 0.01);
+//        Assert.assertEquals(5.0, solution.findMedianSortedArrays2(new int[]{2}, new int[]{5, 9}), 0.01);
+//        Assert.assertEquals(7.0, solution.findMedianSortedArrays2(new int[]{}, new int[]{5, 9}), 0.01);
+//        Assert.assertEquals(2.5, solution.findMedianSortedArrays2(new int[]{}, new int[]{1,2,3,4}), 0.01);
+//        Assert.assertEquals(2, solution.findMedianSortedArrays2(new int[]{1,1,3,3}, new int[]{1,1,3,3}), 0.01);
+//        Assert.assertEquals(2.5, solution.findMedianSortedArrays2(new int[]{1}, new int[]{2,3,4}), 0.01);
+//        Assert.assertEquals(2.5, solution.findMedianSortedArrays2(new int[]{1}, new int[]{2,3,4,5,6}), 0.01);
+    }
+
 }
