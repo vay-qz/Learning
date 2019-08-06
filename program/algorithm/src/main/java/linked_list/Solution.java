@@ -134,13 +134,13 @@ public class Solution {
             if(nums2.length <= 2) {
                 nums2After = nums2;
             }else {
-                nums2After = Arrays.copyOfRange(nums2, 0, nums2.length/2);
+                nums2After = Arrays.copyOfRange(nums2, 0, nums2.length/2 + 1);
             }
         }else if(mid1 > mid2){
             if(nums1.length <= 2) {
                 nums1After = nums1;
             }else {
-                nums1After = Arrays.copyOfRange(nums1, 0, nums1.length/2);
+                nums1After = Arrays.copyOfRange(nums1, 0, nums1.length/2 + 1);
             }
             if(nums2.length <= 2) {
                 nums2After = nums2;
@@ -155,10 +155,23 @@ public class Solution {
                 nums2After = Arrays.copyOfRange(nums2, nums2Mid, nums2.length);
             }
         }else {
-
+            deal(prefix1, res, prefix, nums1);
+            deal(prefix2, res, prefix, nums2);
+            return;
         }
         getRes(prefix1, prefix2, res, prefix, nums1After, nums2After);
 
+    }
+
+    private void deal(int prefix1, List<Integer> res, List<Integer> prefix, int[] nums) {
+        if(nums.length % 2 ==0) {
+            res.add(nums[nums.length/2]);
+            res.add(nums[nums.length/2-1]);
+            prefix.add(prefix1 + nums.length/2 - 1);
+        }else {
+            res.add(nums[nums.length/2]);
+            prefix.add(prefix1 + nums.length/2);
+        }
     }
 
     private double getMidian(int[] nums) {
@@ -173,13 +186,6 @@ public class Solution {
         for(int i = 0; i < nums.length; i++) {
             res.add(nums[i]);
         }
-    }
-
-    public static void main(String[] args) {
-        int[] a = {2, 5, 8, 52, 411};
-        int[] b = {5, 9, 23, 73, 654, 3000};
-        Solution solution = new Solution();
-        System.out.println(solution.findMedianSortedArrays(a, b));
     }
 
 }

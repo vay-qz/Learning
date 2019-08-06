@@ -62,7 +62,9 @@ class SolutionTest {
         Assert.assertEquals(5.0, solution.findMedianSortedArrays(new int[]{2}, new int[]{5, 9}), 0.01);
         Assert.assertEquals(7.0, solution.findMedianSortedArrays(new int[]{}, new int[]{5, 9}), 0.01);
         Assert.assertEquals(2.5, solution.findMedianSortedArrays(new int[]{}, new int[]{1,2,3,4}), 0.01);
-        Assert.assertEquals(2.5, solution.findMedianSortedArrays(new int[]{1,1,3,3}, new int[]{1,1,3,3}), 0.01);
+        Assert.assertEquals(2, solution.findMedianSortedArrays(new int[]{1,1,3,3}, new int[]{1,1,3,3}), 0.01);
+        Assert.assertEquals(2.5, solution.findMedianSortedArrays(new int[]{1}, new int[]{2,3,4}), 0.01);
+        Assert.assertEquals(2.5, solution.findMedianSortedArrays(new int[]{1}, new int[]{2,3,4,5,6}), 0.01);
     }
 
 }
