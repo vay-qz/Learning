@@ -3,6 +3,7 @@ package linked_list;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 
 public class Solution {
 
@@ -216,6 +217,105 @@ public class Solution {
 
         return builder.toString();
 
+    }
+
+    public String convert_official(String s, int numRows) {
+        if(numRows == 1) {
+            return s;
+        }
+        List<StringBuilder> strs = new ArrayList<>();
+        for(int i = 0; i < numRows; i++) {
+            strs.add(new StringBuilder());
+        }
+
+        int row = 0;
+        int dir = -1;
+        for(char c : s.toCharArray()) {
+            strs.get(row).append(c);
+            if(row == numRows - 1 || row == 0) {
+                dir *= -1;
+            }
+            row += dir;
+        }
+        StringBuilder res = new StringBuilder();
+        for(StringBuilder stringBuilder : strs) {
+            res.append(stringBuilder);
+        }
+        return res.toString();
+
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        while(in.hasNextInt()) {
+            int n = in.nextInt();
+            List<int[]> ti = new ArrayList<>();
+            for(int i = 0; i < n; i++) {
+                int hour = in.nextInt();
+                int min = in.nextInt();
+                int[] a = new int[]{hour, min};
+                ti.add(a);
+            }
+            int cost = in.nextInt();
+            int beginHour = in.nextInt();
+            int beginMin = in.nextInt();
+            int[] ok = sub(beginHour, beginMin, cost);
+            for(int t = ti.size() - 1; t >= 0; t--) {
+                if(!campare(ti.get(t)[0], ti.get(t)[1], ok[0], ok[1])) {
+                    System.out.println(ti.get(t)[0] + " " + ti.get(t)[1]);
+                    break;
+                }
+            }
+        }
+    }
+
+    public int[] test(List<int[]> ti, int cost, int beginHour, int beginMin) {
+        int[] ok = sub(beginHour, beginMin, cost);
+        for(int t = ti.size() - 1; t >= 0; t--) {
+            if(!campare(ti.get(t)[0], ti.get(t)[1], ok[0], ok[1])) {
+//                System.out.println(ti.get(t)[0] + " " + ti.get(t)[1]);
+//                break;
+                return ti.get(t);
+
+            }
+        }
+        return null;
+    }
+
+    private static boolean campare(int hour1, int min1, int hour2, int min2) {
+        if(hour1 < hour2) {
+//            if(hour2 > 22) {
+//
+//            }
+            return false;
+        }
+        if(hour1 > hour2) {
+            return true;
+        }
+        if(min1 < min2) {
+            return false;
+        }
+        if(min1 > min2) {
+            return true;
+        }
+        return false;
+    }
+
+    private static int[] sub(int hour, int min, int cost) {
+        int t = 0;
+        int minRes;
+        while(true) {
+            if((min + 60 * t) >= cost) {
+                minRes = min + 60 * t - cost;
+                break;
+            }
+            t++;
+        }
+        hour -= t;
+        if(hour < 0) {
+            hour +=24;
+        }
+        return new int[]{hour, minRes};
     }
 
 }

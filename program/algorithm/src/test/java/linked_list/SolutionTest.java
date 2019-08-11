@@ -3,6 +3,9 @@ package linked_list;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class SolutionTest {
@@ -76,6 +79,32 @@ class SolutionTest {
         Assert.assertEquals(solution.convert("A", 1), "A");
         Assert.assertEquals(solution.convert("AB", 1), "AB");
         Assert.assertEquals(solution.convert("ABCDE", 2), "ACEBD");
+    }
+
+    @Test
+    public void convert_official() {
+        Solution solution = new Solution();
+        Assert.assertEquals(solution.convert_official("LEETCODEISHIRING", 3), "LCIRETOESIIGEDHN");
+        Assert.assertEquals(solution.convert_official("LEETCODEISHIRING", 4), "LDREOEIIECIHNTSG");
+        Assert.assertEquals(solution.convert_official("PAYPALISHIRING", 3), "PAHNAPLSIIGYIR");
+        Assert.assertEquals(solution.convert_official("A", 1), "A");
+        Assert.assertEquals(solution.convert_official("AB", 1), "AB");
+        Assert.assertEquals(solution.convert_official("ABCDE", 2), "ACEBD");
+    }
+
+
+    @Test
+    public void test() {
+        Solution solution = new Solution();
+        int[] a = {22, 19};
+//        int[] b = {6, 0};
+//        int[] c = {7, 0};
+        List<int[]> ti = new ArrayList<>();
+        ti.add(a);
+//        ti.add(b);
+//        ti.add(c);
+        Assert.assertEquals(solution.test(ti, 100, 0, 0), a);
+
     }
 
 }

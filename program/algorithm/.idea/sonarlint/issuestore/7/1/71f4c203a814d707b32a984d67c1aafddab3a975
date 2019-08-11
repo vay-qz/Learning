@@ -1,7 +1,10 @@
 
-:squid:S1643M"Use a StringBuilder instead.(üêú8Ÿ÷Ò‹Æ-
-usquid:S3776m"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(¶ÿìùÿÿÿÿ8šõ—¤Æ-
-=squid:S2129<" Remove this "String" constructor(¦ú×D8Ÿ÷Ò‹Æ-
-:squid:S1643@"Use a StringBuilder instead.(ç¸Ñ8Ÿ÷Ò‹Æ-
-vsquid:S3776¿"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Ÿã’¼şÿÿÿÿ8 şœ Ç-
-psquid:S00117Á"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì­óD8 şœ Ç-
+ssquid:S00100İ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õµÈÔıÿÿÿÿ8øıÈûÇ-
+vsquid:S3776¤"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(¡€ğûÿÿÿÿ8ø¹ÅûÇ-
+:squid:S1643B"Use a StringBuilder instead.(ç¸Ñ8Ÿ÷Ò‹Æ-
+:squid:S1643O"Use a StringBuilder instead.(üêú8Ÿ÷Ò‹Æ-
+=squid:S2129>" Remove this "String" constructor(¦ú×D8Ÿ÷Ò‹Æ-
+Dsquid:S2129¾" Remove this "String" constructor(Âàğİúÿÿÿÿ8ø¹ÅûÇ-
+Dsquid:S2129Å" Remove this "String" constructor(ªøÖúúÿÿÿÿ8ø¹ÅûÇ-
+@squid:S1643À"Use a StringBuilder instead.(³Ó¬¢ÿÿÿÿÿ8ø¹ÅûÇ-
+;squid:S1643Ç"Use a StringBuilder instead.(æÙÓˆ8ø¹ÅûÇ-

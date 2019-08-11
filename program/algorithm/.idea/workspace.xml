@@ -2,13 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="424b138f-b80c-4a1c-8a25-a8609ef10a76" name="Default" comment="1">
+      <change afterPath="$PROJECT_DIR$/../DesignPatterns/src/main/java/pers/vay/designpattern/action/command/before/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DesignPatterns/src/main/java/pers/vay/designpattern/action/command/before/Cook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesignPatterns/.idea/sonarlint/issuestore/0/6/062ce836570318dc0053ccb74912b7cb13b1d4b8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesignPatterns/.idea/sonarlint/issuestore/0/a/0a03bfe2d5f97d30b3ef4a03e34253689bfdad55" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesignPatterns/.idea/sonarlint/issuestore/1/b/1b86db42f69fb37450452b3260b26ceb995493aa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesignPatterns/.idea/sonarlint/issuestore/3/f/3fb35e18410da40e02aeaa02035c4d2b820f7d07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesignPatterns/.idea/sonarlint/issuestore/4/d/4d71a75512c810f83f205f7c47ebde299d63f15a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesignPatterns/.idea/sonarlint/issuestore/8/d/8ddbf3c69b5eb3879d035bec848854496d2d0341" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesignPatterns/.idea/sonarlint/issuestore/9/d/9d1b16bd5d5696e5aa246c3cfd58f15c36c4fbbd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesignPatterns/.idea/sonarlint/issuestore/b/5/b587023882f0163b345e82b3389ea4b5a124d8fe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesignPatterns/.idea/sonarlint/issuestore/b/7/b79efefee1ad9df57cdee7d0d02f33b95cad0b83" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesignPatterns/.idea/sonarlint/issuestore/c/9/c92c3d91d203908bd19aeb84461f27fca92410ca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesignPatterns/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignPatterns/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DesignPatterns/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignPatterns/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../about/.idea/sonarlint/issuestore/0/7/076b71c7f0945de21e36ea1bb2fefb2e240b1112" beforeDir="false" afterPath="$PROJECT_DIR$/../about/.idea/sonarlint/issuestore/0/7/076b71c7f0945de21e36ea1bb2fefb2e240b1112" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../about/.idea/sonarlint/issuestore/7/b/7baeff4835fbeaa3e46ebbd528c1941d283c9a84" beforeDir="false" afterPath="$PROJECT_DIR$/../about/.idea/sonarlint/issuestore/7/b/7baeff4835fbeaa3e46ebbd528c1941d283c9a84" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../about/.idea/sonarlint/issuestore/9/0/9021d633fd9b3534d20568b473076d3237d70345" beforeDir="false" afterPath="$PROJECT_DIR$/../about/.idea/sonarlint/issuestore/9/0/9021d633fd9b3534d20568b473076d3237d70345" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../about/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../about/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/71f4c203a814d707b32a984d67c1aafddab3a975" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/71f4c203a814d707b32a984d67c1aafddab3a975" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/9990ecfb9e35b6dbfe77ae33e8cd9d7337a4fc04" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/9990ecfb9e35b6dbfe77ae33e8cd9d7337a4fc04" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/linked_list/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/linked_list/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/linked_list/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/linked_list/SolutionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/linked_list/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/linked_list/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/linked_list/SolutionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/linked_list/SolutionTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,11 +89,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/linked_list/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="166" column="9" lean-forward="true" selection-start-line="166" selection-start-column="9" selection-end-line="166" selection-end-column="9" />
+            <state relative-caret-position="363">
+              <caret line="297" column="25" lean-forward="true" selection-start-line="297" selection-start-column="25" selection-end-line="297" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,11 +101,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="ThreadPoolExecutor.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4551">
+              <caret line="318" column="13" selection-start-line="318" selection-start-column="13" selection-end-line="318" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SolutionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/linked_list/SolutionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="72" column="89" lean-forward="true" selection-start-line="72" selection-start-column="89" selection-end-line="75" selection-end-column="59" />
+            <state relative-caret-position="651">
+              <caret line="103" column="20" lean-forward="true" selection-start-line="103" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -97,6 +128,15 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>convert</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>convert_offical</replace>
+      <replace>convert_official</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -109,8 +149,8 @@
         <option value="$PROJECT_DIR$/src/main/java/thread/H2O.java" />
         <option value="$PROJECT_DIR$/src/test/java/linked_list/ListNodeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/linked_list/ListNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/linked_list/Solution.java" />
         <option value="$PROJECT_DIR$/src/test/java/linked_list/SolutionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/linked_list/Solution.java" />
       </list>
     </option>
   </component>
@@ -131,6 +171,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -175,11 +216,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="ThreadPoolExe&#9;PSI&#9;JAVA://java.util.concurrent.ThreadPoolExecutor" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565495781664" />
@@ -207,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionTest.convert">
+  <component name="RunManager" selected="JUnit.SolutionTest.test">
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="linked_list.Solution" />
       <module name="algorithm" />
@@ -218,31 +259,10 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ListNodeTest.reverse_more_than_three_node" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="linked_list.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="linked_list" />
-      <option name="MAIN_CLASS_NAME" value="linked_list.ListNodeTest" />
-      <option name="METHOD_NAME" value="reverse_more_than_three_node" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -254,15 +274,43 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="linked_list" />
       <option name="MAIN_CLASS_NAME" value="linked_list.SolutionTest" />
       <option name="METHOD_NAME" value="convert" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SolutionTest.convert_official" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linked_list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="linked_list" />
+      <option name="MAIN_CLASS_NAME" value="linked_list.SolutionTest" />
+      <option name="METHOD_NAME" value="convert_official" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="SolutionTest.findMedianSortedArrays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
@@ -272,17 +320,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="linked_list" />
       <option name="MAIN_CLASS_NAME" value="linked_list.SolutionTest" />
       <option name="METHOD_NAME" value="findMedianSortedArrays" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
-    <configuration name="SolutionTest.findMedianSortedArrays2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -290,46 +343,79 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="linked_list" />
       <option name="MAIN_CLASS_NAME" value="linked_list.SolutionTest" />
-      <option name="METHOD_NAME" value="findMedianSortedArrays2" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ListNodeTest.reverse_more_than_three_node" />
       <item itemvalue="Application.Solution" />
       <item itemvalue="JUnit.SolutionTest.findMedianSortedArrays" />
-      <item itemvalue="JUnit.SolutionTest.findMedianSortedArrays2" />
       <item itemvalue="JUnit.SolutionTest.convert" />
+      <item itemvalue="JUnit.SolutionTest.convert_official" />
+      <item itemvalue="JUnit.SolutionTest.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SolutionTest.convert" />
-        <item itemvalue="JUnit.SolutionTest.findMedianSortedArrays2" />
-        <item itemvalue="JUnit.SolutionTest.findMedianSortedArrays" />
+        <item itemvalue="JUnit.SolutionTest.test" />
         <item itemvalue="Application.Solution" />
-        <item itemvalue="JUnit.ListNodeTest.reverse_more_than_three_node" />
+        <item itemvalue="JUnit.SolutionTest.convert_official" />
+        <item itemvalue="JUnit.SolutionTest.convert" />
+        <item itemvalue="JUnit.SolutionTest.findMedianSortedArrays" />
       </list>
     </recent_temporary>
   </component>
@@ -358,6 +444,8 @@
       <workItem from="1565358031151" duration="4998000" />
       <workItem from="1565401930450" duration="11665000" />
       <workItem from="1565486573822" duration="8829000" />
+      <workItem from="1565506228765" duration="2078000" />
+      <workItem from="1565521618650" duration="6814000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1563857006085</created>
@@ -384,78 +472,79 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SolutionTest_convert - 2019.08.11 at 11h 26m 42s.xml">
-      <configuration name="SolutionTest.convert" configurationId="JUnit" />
+    <history-entry file="SolutionTest_test - 2019.08.11 at 20h 16m 23s.xml">
+      <configuration name="SolutionTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_convert - 2019.08.11 at 11h 27m 21s.xml">
-      <configuration name="SolutionTest.convert" configurationId="JUnit" />
+    <history-entry file="SolutionTest_test - 2019.08.11 at 20h 53m 05s.xml">
+      <configuration name="SolutionTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_convert - 2019.08.11 at 11h 28m 30s.xml">
-      <configuration name="SolutionTest.convert" configurationId="JUnit" />
+    <history-entry file="SolutionTest_test - 2019.08.11 at 20h 53m 31s.xml">
+      <configuration name="SolutionTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_convert - 2019.08.11 at 11h 29m 19s.xml">
-      <configuration name="SolutionTest.convert" configurationId="JUnit" />
+    <history-entry file="SolutionTest_test - 2019.08.11 at 20h 54m 23s.xml">
+      <configuration name="SolutionTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_convert - 2019.08.11 at 11h 29m 40s.xml">
-      <configuration name="SolutionTest.convert" configurationId="JUnit" />
+    <history-entry file="SolutionTest_test - 2019.08.11 at 20h 54m 37s.xml">
+      <configuration name="SolutionTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_convert - 2019.08.11 at 11h 30m 16s.xml">
-      <configuration name="SolutionTest.convert" configurationId="JUnit" />
+    <history-entry file="SolutionTest_test - 2019.08.11 at 20h 55m 50s.xml">
+      <configuration name="SolutionTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_convert - 2019.08.11 at 11h 39m 20s.xml">
-      <configuration name="SolutionTest.convert" configurationId="JUnit" />
+    <history-entry file="SolutionTest_test - 2019.08.11 at 20h 57m 03s.xml">
+      <configuration name="SolutionTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_convert - 2019.08.11 at 11h 40m 37s.xml">
-      <configuration name="SolutionTest.convert" configurationId="JUnit" />
+    <history-entry file="SolutionTest_test - 2019.08.11 at 20h 57m 43s.xml">
+      <configuration name="SolutionTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_convert - 2019.08.11 at 11h 40m 58s.xml">
-      <configuration name="SolutionTest.convert" configurationId="JUnit" />
+    <history-entry file="SolutionTest_test - 2019.08.11 at 20h 58m 22s.xml">
+      <configuration name="SolutionTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_convert - 2019.08.11 at 11h 41m 04s.xml">
-      <configuration name="SolutionTest.convert" configurationId="JUnit" />
+    <history-entry file="SolutionTest_test - 2019.08.11 at 20h 59m 04s.xml">
+      <configuration name="SolutionTest.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78622000" />
+    <option name="totallyTimeSpent" value="87514000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27665246" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Learn" order="7" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23127036" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.31487513" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="CheckStyle" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Statistic" order="11" />
-      <window_info anchor="bottom" id="SonarLint" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32681867" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32995737" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Mongo Explorer" order="10" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Statistic" order="11" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3140676" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32606325" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23118865" />
+      <window_info anchor="bottom" id="CheckStyle" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27665246" />
+      <window_info anchor="bottom" id="SonarLint" order="12" />
+      <window_info id="Learn" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32995737" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,14 +563,54 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/linked_list/Solution.java</url>
-          <line>164</line>
+          <line>249</line>
           <properties />
-          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/linked_list/Solution.java</url>
+          <line>272</line>
+          <properties />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/linked_list/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/linked_list/SolutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linked_list/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2952">
+          <caret line="166" column="9" lean-forward="true" selection-start-line="166" selection-start-column="9" selection-end-line="166" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/linked_list/SolutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="72" column="89" lean-forward="true" selection-start-line="72" selection-start-column="89" selection-end-line="75" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://D:/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/misc/Unsafe.class" />
     <entry file="jar://D:/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/atomic/AtomicInteger.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/thread/FooSeq.java">
@@ -512,10 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
           <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding>
-            <element signature="e#98#99#0" expanded="true" />
-            <element signature="e#126#127#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -530,10 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding>
-            <element signature="e#74#75#0" expanded="true" />
-            <element signature="e#109#110#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -551,31 +672,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/StringBuffer.java">
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/StringBuffer.java" />
+    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/String.java" />
+    <entry file="jar://D:/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1802">
-          <caret line="96" column="20" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="655" column="16" selection-start-line="655" selection-start-column="16" selection-end-line="655" selection-end-column="16" />
+        <state relative-caret-position="-4551">
+          <caret line="318" column="13" selection-start-line="318" selection-start-column="13" selection-end-line="318" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/linked_list/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="72" column="89" lean-forward="true" selection-start-line="72" selection-start-column="89" selection-end-line="75" selection-end-column="59" />
+        <state relative-caret-position="651">
+          <caret line="103" column="20" lean-forward="true" selection-start-line="103" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/linked_list/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="166" column="9" lean-forward="true" selection-start-line="166" selection-start-column="9" selection-end-line="166" selection-end-column="9" />
+        <state relative-caret-position="363">
+          <caret line="297" column="25" lean-forward="true" selection-start-line="297" selection-start-column="25" selection-end-line="297" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
