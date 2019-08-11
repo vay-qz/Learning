@@ -1,6 +1,8 @@
 package linked_list;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Solution {
 
@@ -86,139 +88,134 @@ public class Solution {
     }
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        if(nums1.length == 0) {
-            return getMidian(nums2);
-        }
-        if(nums2.length == 0) {
-            return getMidian(nums1);
-        }
-        int prefix1 = 0;
-        int prefix2 = 0;
-        int sum = nums1.length + nums2.length;
-        List<Integer> res = new ArrayList<>();
-        List<Integer> prefix = new ArrayList<>();
-        getRes(prefix1, prefix2, res, prefix, nums1, nums2);
-        res.sort(Comparator.comparingInt(a -> a));
-        if(sum % 2 == 1) {
-            return res.get(sum/2-prefix.get(0)-prefix.get(1));
+        int sumNum = nums1.length + nums2.length;
+        int first = (sumNum + 1) / 2;
+        int second = (sumNum + 2) /2;
+        if(first == second) {
+            return getKth(nums1, 0, nums1.length, nums2, 0, nums2.length, first);
         }else {
-            return ((double)res.get(sum/2-prefix.get(0)-prefix.get(1)) + res.get(sum/2-prefix.get(0)-prefix.get(1)-1)) / 2.0;
+            return (getKth(nums1, 0, nums1.length, nums2, 0, nums2.length, first) +
+                    getKth(nums1, 0, nums1.length, nums2, 0, nums2.length, second)) * 0.5;
         }
     }
 
-    private void getRes(int prefix1, int prefix2, List<Integer> res, List<Integer> prefix, int[] nums1, int[] nums2) {
-        if(nums1.length <= 2 && nums2.length <= 2) {
-            prefix.add(prefix1);
-            prefix.add(prefix2);
-            addArray2List(res, nums1);
-            addArray2List(res, nums2);
-            return;
+    /**
+     * 获取两个有序数组中第k小的数
+     * @param nums1 第一个数组
+     * @param head1 有效头位置
+     * @param length1 第一个数组的长度
+     * @param nums2 第二个数组
+     * @param head2 有效头位置
+     * @param length2 第二个数组的长度
+     * @param k k
+     * @return 第k小的数
+     */
+    private int getKth(int[] nums1, int head1, int length1, int[] nums2, int head2, int length2, int k) {
+        int remainLen1 = length1 - head1;
+        int remainLen2 = length2 - head2;
+        //保证nums1是长度较短的数组
+        if(remainLen1 > remainLen2) {
+            return getKth(nums2, head2, length2, nums1, head1, length1, k);
         }
-        double mid1 = getMidian(nums1);
-        double mid2 = getMidian(nums2);
-        int[] nums1After;
-        int[] nums2After;
-        if(mid1 < mid2) {
-            if(nums1.length <= 2) {
-                nums1After = nums1;
-            }else {
-                int nums1Mid;
-                if(nums1.length % 2 == 0) {
-                    nums1Mid = nums1.length/2 - 1;
-                }else {
-                    nums1Mid = nums1.length/2;
-                }
-                nums1After = Arrays.copyOfRange(nums1, nums1Mid, nums1.length);
-                prefix1 += nums1Mid;
-            }
-            if(nums2.length <= 2) {
-                nums2After = nums2;
-            }else {
-                nums2After = Arrays.copyOfRange(nums2, 0, nums2.length/2 + 1);
-            }
-        }else if(mid1 > mid2){
-            if(nums1.length <= 2) {
-                nums1After = nums1;
-            }else {
-                nums1After = Arrays.copyOfRange(nums1, 0, nums1.length/2 + 1);
-            }
-            if(nums2.length <= 2) {
-                nums2After = nums2;
-            }else {
-                int nums2Mid;
-                if(nums2.length % 2 == 0) {
-                    nums2Mid = nums2.length/2 - 1;
-                }else {
-                    nums2Mid = nums2.length/2;
-                }
-                prefix2 += nums2Mid;
-                nums2After = Arrays.copyOfRange(nums2, nums2Mid, nums2.length);
-            }
-        }else {
-            deal(prefix1, res, prefix, nums1);
-            deal(prefix2, res, prefix, nums2);
-            return;
+        //情况1，某一数组中的所有数都小于中位数
+        if(remainLen1 == 0) {
+            //k=1表示寻找数组中的第一最小值，即nums[0] = nums2[k-1]
+            return nums2[head2 + k - 1];
         }
-        getRes(prefix1, prefix2, res, prefix, nums1After, nums2After);
-
-    }
-
-    private void deal(int prefix1, List<Integer> res, List<Integer> prefix, int[] nums) {
-        if(nums.length % 2 ==0) {
-            res.add(nums[nums.length/2]);
-            res.add(nums[nums.length/2-1]);
-            prefix.add(prefix1 + nums.length/2 - 1);
+        //情况2，每个数组中都有小于或大于中位数的数
+        if(k == 1) {
+            return nums1[head1] < nums2[head2] ? nums1[head1] : nums2[head2];
+        }
+        int removeNum = k/2;
+        int remove1 = (remainLen1 < removeNum ? remainLen1 : removeNum);
+        int remove2 = (remainLen2 < removeNum ? remainLen2 : removeNum);
+        int newHead1 = head1 + remove1;
+        int newHead2 = head2 + remove2;
+        //比较的是两个数组中newHead之前的那个数的大小
+        if(nums1[newHead1 - 1] < nums2[newHead2 - 1]) {
+            return getKth(nums1, newHead1, length1, nums2, head2, length2, k - remove1);
         }else {
-            res.add(nums[nums.length/2]);
-            prefix.add(prefix1 + nums.length/2);
+            return getKth(nums1, head1, length1, nums2, newHead2, length2, k - remove2);
         }
     }
 
-    private double getMidian(int[] nums) {
-        if(nums.length%2==0) {
-            return ((double)nums[nums.length/2] + (double)nums[nums.length/2 - 1])/(double)2;
-        }else {
-            return nums[nums.length/2];
-        }
-    }
-
-    private void addArray2List(List res, int[] nums) {
+    public List<List<Integer>> permute(int[] nums) {
+        List<Integer> l = new ArrayList<>();
         for(int i = 0; i < nums.length; i++) {
-            res.add(nums[i]);
+            l.add(nums[i]);
+        }
+        List<List<Integer>> res = new ArrayList<>();
+        backtrack(res, l, 0);
+        return res;
+    }
+
+    private void backtrack(List<List<Integer>> res, List<Integer> nums, int index) {
+        if(index == nums.size()) {
+            res.add(new ArrayList<>(nums));
+            return;
+        }
+        for(int i = index + 1; i < nums.size(); i++) {
+            Collections.swap(nums, index, i);
+            backtrack(res, nums, index + 1);
+            Collections.swap(nums, index, i);
         }
     }
 
-    public double findMedianSortedArrays2(int[] nums1, int[] nums2) {
-        int sum = nums1.length + nums2.length;
-        int target_index = sum / 2;
-        int nums1Index = 0;
-        int nums2Index = 0;
-        while(target_index != 0) {
-            int t = target_index == 1 ? 1 : target_index/2;
-            if(t < nums1.length) {
-                nums1Index = t;
-            }else {
-                nums1Index = nums1.length - 1;
+    public String convert(String s, int numRows) {
+        if(s.length() <= numRows || numRows == 1) {
+            return s;
+        }
+        List<String> strs = new ArrayList<>();
+        List<String> strs2 = new ArrayList<>();
+        if(numRows == 2) {
+            StringBuilder builder = new StringBuilder();
+            for(int i = 0;i < s.length(); i+=2) {
+                builder.append(s.charAt(i));
             }
-            if(t < nums2.length) {
-                nums2Index = t;
-            }else {
-                nums2Index = nums2.length - 1;
+            for(int i = 1;i < s.length(); i+=2) {
+                builder.append(s.charAt(i));
             }
+            return builder.toString();
+        }
+        int begin = 0;
+        while(true) {
+            int end = s.length() < (2 * numRows + begin - 2) ? s.length() : (2 * numRows + begin - 2);
+            String a = s.substring(begin, end);
+            strs.add(a);
+            begin = end;
+            if(end == s.length()) {
+                break;
+            }
+        }
+        String fullEmpty = new String();
+        for(int i = 0; i < numRows; i++) {
+            fullEmpty += " ";
+        }
+        for(int i = 0; i < strs.size(); i++) {
+            String tmp = strs.get(i);
+            if(tmp.length() < numRows) {
+                String empty = new String();
+                for(int j = 0; j < numRows - tmp.length(); j++) {
+                    empty += " ";
+                }
+                strs2.add(empty + new StringBuilder(tmp).reverse().toString());
+                break;
+            }
+            strs2.add(new StringBuilder(tmp.substring(0, numRows)).reverse().toString());
+            strs2.add(" " + tmp.substring(numRows) + fullEmpty);
+        }
+        StringBuilder builder = new StringBuilder();
+        for(int i = 0; i < numRows; i++) {
+            for(int j = 0; j < strs2.size(); j++) {
+                char t = strs2.get(j).charAt(numRows - i - 1);
+                if(t != ' ') {
+                    builder.append(t);
+                }
+            }
+        }
 
-            if(nums1[nums1Index] < nums2[nums2Index]) {
-                nums1 = Arrays.copyOfRange(nums1, nums1Index, nums1.length);
-                target_index -= nums1Index;
-            }else {
-                nums2 = Arrays.copyOfRange(nums2, nums2Index, nums2.length);
-                target_index -= nums2Index;
-            }
-        }
-        if(sum % 2 == 1) {
-            return nums1[0] < nums2[0] ? nums1[0] : nums2[0];
-        }else {
-            return 0;
-        }
+        return builder.toString();
+
     }
 
 }
