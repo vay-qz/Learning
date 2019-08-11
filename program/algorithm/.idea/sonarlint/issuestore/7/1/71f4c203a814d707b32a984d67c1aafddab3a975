@@ -1,0 +1,7 @@
+
+:squid:S1643M"Use a StringBuilder instead.(üêžú8Ÿ÷Ò‹Æ-
+usquid:S3776m"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(¶ÿŽìùÿÿÿÿ8šõ—¤Æ-
+=squid:S2129<" Remove this "String" constructor(¦ú×D8Ÿ÷Ò‹Æ-
+:squid:S1643@"Use a StringBuilder instead.(ç¸žÑ8Ÿ÷Ò‹Æ-
+vsquid:S3776¿"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Ÿã’¼þÿÿÿÿ8 þœ Ç-
+psquid:S00117Á"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì­óD8 þœ Ç-

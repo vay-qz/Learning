@@ -1,15 +1,10 @@
 
-V
-squid:S106 "9Replace this use of System.out or System.err by a logger.(Î•¢¼8Ôò±ÿª-
-V
-squid:S106!"9Replace this use of System.out or System.err by a logger.(ü—‡8Ôò±ÿª-
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(ô´¿™8Ôò±ÿª-
-esquid:S1192 "GDefine a constant instead of duplicating this literal "model2" 3 times.(Î•¢¼8Ôò±ÿª-
-|squid:S1488V"YImmediately return this expression instead of assigning it to the temporary variable "a".(è£ğ‘ûÿÿÿÿ8Ôò±ÿª-
->squid:S2129`" Remove this "String" constructor(çáÙé8Ôò±ÿª-
->squid:S2129`" Remove this "String" constructor(çáÙé8Ôò±ÿª-
-~squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´ô şÿÿÿÿ8Ôò±ÿª-
-[
-squid:S106_"9Replace this use of System.out or System.err by a logger.(Å­Ëİúÿÿÿÿ8½’¨€«-
-‚"squid:ClassVariableVisibilityCheck["MMake s a static final constant or non-public and provide accessors if needed.(ÅæÇÚ8½’¨€«-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(ô´¿™8Ôò±ÿª-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(ü—‡8Ôò±ÿª-
+csquid:S1192"GDefine a constant instead of duplicating this literal "model2" 3 times.(Î•¢¼8Ôò±ÿª-
+zsquid:S1488"YImmediately return this expression instead of assigning it to the temporary variable "a".(è£ğ‘ûÿÿÿÿ8Ôò±ÿª-
+|squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´ô şÿÿÿÿ8Ôò±ÿª-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(Î•¢¼8Ôò±ÿª-

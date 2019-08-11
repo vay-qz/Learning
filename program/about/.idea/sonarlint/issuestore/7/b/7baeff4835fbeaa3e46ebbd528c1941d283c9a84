@@ -1,0 +1,5 @@
+
+tsquid:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(™šªÚ
+Qsquid:S1905"0Remove this unnecessary cast to "RuntimeMXBean".(°µ¨Èÿÿÿÿÿ8è“ê÷Æ-
+Ksquid:S1905"/Remove this unnecessary cast to "ThreadMXBean".(¨Î8è“ê÷Æ-
+Vsquid:S1191"5Use classes from the Java API instead of Sun classes.(ŒÄœ”ıÿÿÿÿ8è“ê÷Æ-

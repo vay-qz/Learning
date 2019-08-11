@@ -1,0 +1,6 @@
+
+0squid:S3878"Remove this array creation.(‚§±­
+m
+squid:S135"YReduce the total number of break and continue statements in this loop to use at most one.(£ÔÈï
+Osquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+asquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
