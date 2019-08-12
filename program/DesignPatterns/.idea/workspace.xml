@@ -3,13 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="12518090-2a20-4ab1-8241-57a6561ca546" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/safe/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/Folder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/safe/Folder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/ImageFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/safe/ImageFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/TVFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/TextFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/safe/TextFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../summary/设计模式/设计模式——组合模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../summary/设计模式/设计模式——组合模式.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,24 +69,24 @@
     <session id="210171519">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="19" />
+          <entry key="java" value="23" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="19" />
+          <entry key="JAVA" value="23" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="727" />
+          <entry key="java" value="907" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="727" />
+          <entry key="JAVA" value="907" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -102,7 +105,125 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/before/TVFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/safe/Component.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/open/TextFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding>
+                <element signature="e#326#327#0" expanded="true" />
+                <element signature="e#383#384#0" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/open/Component.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/open/ImageFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" selection-start-line="2" selection-end-line="23" selection-end-column="1" />
+              <folding>
+                <element signature="e#327#328#0" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+                <element signature="e#449#450#0" expanded="true" />
+                <element signature="e#506#507#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/open/Folder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" selection-start-line="5" selection-end-line="32" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/safe/Folder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/safe/ImageFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding>
+                <element signature="e#220#221#0" expanded="true" />
+                <element signature="e#256#257#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/safe/TextFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding>
+                <element signature="e#219#220#0" expanded="true" />
+                <element signature="e#259#260#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/command/after/command/AbstractCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -132,12 +253,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/role/Figure.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/builder/FigureBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/builder/AngleBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/builder/DemonBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder2/Beauty.java" />
         <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder2/Angle.java" />
         <option value="$PROJECT_DIR$/src/test/java/pers/vay/designpattern/create/builder2/ShowTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder2/Demon.java" />
@@ -179,10 +294,16 @@
         <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/before/TextFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/before/TVFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/before/Folder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/ImageFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/TextFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/TVFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/Folder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/ImageFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/TextFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/Component.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/safe/Component.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/open/Component.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/open/Folder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/open/ImageFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/open/TextFile.java" />
       </list>
     </option>
   </component>
@@ -248,12 +369,68 @@
               <item name="designpattern" type="462c0819:PsiDirectoryNode" />
               <item name="action" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="designpattern" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+              <item name="composite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="designpattern" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+              <item name="composite" type="462c0819:PsiDirectoryNode" />
+              <item name="after" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="designpattern" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+              <item name="composite" type="462c0819:PsiDirectoryNode" />
+              <item name="after" type="462c0819:PsiDirectoryNode" />
+              <item name="open" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="designpattern" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+              <item name="composite" type="462c0819:PsiDirectoryNode" />
+              <item name="after" type="462c0819:PsiDirectoryNode" />
+              <item name="safe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="designpattern" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+              <item name="composite" type="462c0819:PsiDirectoryNode" />
+              <item name="before" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -261,7 +438,7 @@
     <property name="SearchEverywhereHistoryKey" value="ExecutorSer&#9;PSI&#9;JAVA://java.util.concurrent.ExecutorService&#10;Runnable&#9;PSI&#9;JAVA://java.util.concurrent.Executors.RunnableAdapter&#10;softref&#9;PSI&#9;JAVA://java.lang.ref.SoftReference&#10;classlo&#9;PSI&#9;JAVA://java.lang.ClassLoader" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565536295195" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565621039509" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -279,20 +456,21 @@
       <recent name="pers.vay.designpattern.create.builder2" />
       <recent name="designPattern.create.factory.simple" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="pers.vay.designpattern.create.builder" />
-      <recent name="designPattern" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\github\Learning\program\DesignPatterns\src\main\java\pers\vay\designpattern\action\command\after" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pers.vay.designpattern.create.builder.after" />
       <recent name="pers.vay.designpattern.create.builder" />
       <recent name="pers.vay.designpattern.create.builder2" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pers.vay.designpattern.create.builder" />
+      <recent name="designPattern" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github\Learning\program\DesignPatterns\src\main\java\pers\vay\designpattern\action\composite\after\open" />
+      <recent name="E:\github\Learning\program\DesignPatterns\src\main\java\pers\vay\designpattern\action\command\after" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -317,6 +495,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="BuilderTest.fight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
@@ -326,20 +507,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="pers.vay.designpattern.create.factory" />
       <option name="MAIN_CLASS_NAME" value="pers.vay.designpattern.create.factory.BuilderTest" />
       <option name="METHOD_NAME" value="fight" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ShowTest.showLook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
@@ -349,20 +525,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="pers.vay.designpattern.create.builder" />
       <option name="MAIN_CLASS_NAME" value="pers.vay.designpattern.create.builder.ShowTest" />
       <option name="METHOD_NAME" value="showLook" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ShowTest.show_beauty_look" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
@@ -372,20 +543,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="pers.vay.designpattern.create.builder" />
       <option name="MAIN_CLASS_NAME" value="pers.vay.designpattern.create.builder.ShowTest" />
       <option name="METHOD_NAME" value="show_beauty_look" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ShowTest.show_roles_look" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="designpatterns" />
@@ -395,20 +561,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="pers.vay.designpattern.create.builder" />
       <option name="MAIN_CLASS_NAME" value="pers.vay.designpattern.create.builder.ShowTest" />
       <option name="METHOD_NAME" value="show_roles_look" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="JUnit.BuilderTest.fight" />
@@ -495,46 +656,46 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71771000" />
+    <option name="totallyTimeSpent" value="74073000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.32899022" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="right" id="Mongo Explorer" order="5" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="4" />
-      <window_info anchor="bottom" id="Statistic" order="10" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20682302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32824427" />
-      <window_info anchor="bottom" id="CheckStyle" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="13" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
-      <window_info anchor="bottom" id="SonarLint" order="8" />
       <window_info id="Learn" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32824427" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3293348" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293348" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32824427" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="SonarLint" order="8" />
+      <window_info anchor="bottom" id="CheckStyle" order="9" />
+      <window_info anchor="bottom" id="Statistic" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32824427" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Mongo Explorer" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,10 +705,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/builder/DemonBuilder.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/DemonBuilder.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/role/Demon.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/pers/vay/designpattern/create/factory/BuilderTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/create/builder/Director.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/relation/A.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -729,11 +886,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/before/Folder.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/before/ImageFile.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/before/TextFile.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/before/TextFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/command/after/Waiter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="175">
+          <caret line="8" selection-start-line="8" selection-end-line="20" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#265#266#0" expanded="true" />
@@ -744,24 +907,115 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/command/after/command/FishCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="225">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/command/after/command/AbstractCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="125">
           <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/before/TVFile.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/Folder.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/Component.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/ImageFile.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/TextFile.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/TVFile.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/before/TVFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/TVFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/safe/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/safe/Folder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/safe/ImageFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/safe/TextFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/open/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/open/Folder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/open/ImageFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" selection-start-line="2" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/vay/designpattern/action/composite/after/open/TextFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
