@@ -2,58 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="424b138f-b80c-4a1c-8a25-a8609ef10a76" name="Default" comment="1">
-      <change afterPath="$PROJECT_DIR$/../DesignPatterns/src/main/java/pers/vay/designpattern/action/composite/before/Folder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DesignPatterns/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignPatterns/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/Color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/action/template_method/after/AbstractTransportation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/action/template_method/after/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/action/template_method/before/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/builder/after/AbstractBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/builder/after/Angle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/builder/after/AngleBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/builder/after/Director.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/builder/after/DirectorWithoutWing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/builder/after/Show.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/builder/before/Angle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/builder/before/Show.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/abstractfactory/AbstractFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/abstractfactory/DicosFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/abstractfactory/KFCFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/abstractfactory/McDFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/bean/DicosHamburger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/bean/DicosHotDog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/bean/IHamburger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/bean/IHotDog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/bean/KFCHamburger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/bean/KFCHogDog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/bean/McDHamburger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/bean/McDHotDog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/factorymethod/AbstractFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/factorymethod/DicosHamburgerFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/factorymethod/KFCHamburgerFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/factorymethod/McDHamburgerFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/factory/simplefactory/SimpleFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/singleton/Singleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/singleton/hungry/StaticBlockSingleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/singleton/hungry/StaticVarSingleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/singleton/lazy/DoubleCheckSingleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/singleton/lazy/InnerClassSingleton$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/singleton/lazy/InnerClassSingleton$SingletonInstance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/singleton/lazy/InnerClassSingleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/create/singleton/lazy/SimpleSingleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/relation/A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/relation/B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/relation/C.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/relation/D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/relation/E.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/structure/flyweight/Chess.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/structure/flyweight/ChessFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns/target/classes/pers/vay/designpattern/structure/flyweight/ConcreteChess.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../summary/设计模式/设计模式——命令模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../summary/设计模式/设计模式——命令模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../summary/设计模式/设计模式——组合模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../summary/设计模式/设计模式——组合模式.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,19 +68,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/linked_list/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="226" column="38" lean-forward="true" selection-start-line="226" selection-start-column="38" selection-end-line="226" selection-end-column="38" />
+            <state relative-caret-position="694">
+              <caret line="255" column="47" selection-start-line="255" selection-start-column="47" selection-end-line="255" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="SolutionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/linked_list/SolutionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1925">
+            <state relative-caret-position="1854">
               <caret line="109" column="1" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
             </state>
           </provider>
@@ -183,7 +138,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,6 +180,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
@@ -271,13 +226,10 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -289,15 +241,20 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="linked_list" />
       <option name="MAIN_CLASS_NAME" value="linked_list.SolutionTest" />
       <option name="METHOD_NAME" value="convert" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="SolutionTest.convert_official" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
@@ -307,15 +264,20 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="linked_list" />
       <option name="MAIN_CLASS_NAME" value="linked_list.SolutionTest" />
       <option name="METHOD_NAME" value="convert_official" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="SolutionTest.findMedianSortedArrays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
@@ -325,15 +287,20 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="linked_list" />
       <option name="MAIN_CLASS_NAME" value="linked_list.SolutionTest" />
       <option name="METHOD_NAME" value="findMedianSortedArrays" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="SolutionTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
@@ -343,29 +310,62 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="linked_list" />
       <option name="MAIN_CLASS_NAME" value="linked_list.SolutionTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -414,6 +414,7 @@
       <workItem from="1565506228765" duration="2078000" />
       <workItem from="1565521618650" duration="6814000" />
       <workItem from="1565533623116" duration="384000" />
+      <workItem from="1565577346686" duration="2182000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1563857006085</created>
@@ -472,47 +473,47 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87898000" />
+    <option name="totallyTimeSpent" value="90080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27985075" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Learn" order="7" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23118865" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3140676" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="CheckStyle" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Statistic" order="11" />
-      <window_info anchor="bottom" id="SonarLint" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32606325" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32995737" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Mongo Explorer" order="10" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Statistic" order="11" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3140676" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23118865" />
+      <window_info anchor="bottom" id="CheckStyle" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27985075" />
+      <window_info anchor="bottom" id="SonarLint" order="12" />
+      <window_info id="Learn" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32606325" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32995737" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,6 +528,20 @@
     <option name="LAST_COMMIT_MESSAGE" value="两个数组找中间数" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/linked_list/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4068">
+          <caret line="226" column="38" lean-forward="true" selection-start-line="226" selection-start-column="38" selection-end-line="226" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/linked_list/SolutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1854">
+          <caret line="109" column="1" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://D:/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/misc/Unsafe.class" />
     <entry file="jar://D:/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/atomic/AtomicInteger.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/thread/FooSeq.java">
@@ -593,14 +608,14 @@
     <entry file="jar://D:/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/ThreadPoolExecutor.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/linked_list/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="226" column="38" lean-forward="true" selection-start-line="226" selection-start-column="38" selection-end-line="226" selection-end-column="38" />
+        <state relative-caret-position="694">
+          <caret line="255" column="47" selection-start-line="255" selection-start-column="47" selection-end-line="255" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/linked_list/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1925">
+        <state relative-caret-position="1854">
           <caret line="109" column="1" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
         </state>
       </provider>

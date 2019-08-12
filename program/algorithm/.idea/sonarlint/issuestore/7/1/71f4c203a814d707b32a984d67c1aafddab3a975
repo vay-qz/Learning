@@ -1,10 +1,17 @@
 
-ssquid:S00100İ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õµÈÔıÿÿÿÿ8øıÈûÇ-
-vsquid:S3776¤"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(¡€ğûÿÿÿÿ8ø¹ÅûÇ-
-:squid:S1643B"Use a StringBuilder instead.(ç¸Ñ8Ÿ÷Ò‹Æ-
-:squid:S1643O"Use a StringBuilder instead.(üêú8Ÿ÷Ò‹Æ-
-=squid:S2129>" Remove this "String" constructor(¦ú×D8Ÿ÷Ò‹Æ-
-Dsquid:S2129¾" Remove this "String" constructor(Âàğİúÿÿÿÿ8ø¹ÅûÇ-
-Dsquid:S2129Å" Remove this "String" constructor(ªøÖúúÿÿÿÿ8ø¹ÅûÇ-
-@squid:S1643À"Use a StringBuilder instead.(³Ó¬¢ÿÿÿÿÿ8ø¹ÅûÇ-
-;squid:S1643Ç"Use a StringBuilder instead.(æÙÓˆ8ø¹ÅûÇ-
+Asquid:S2129" Remove this "String" constructor(Âàğİúÿÿÿÿ8ø¹ÅûÇ-
+Asquid:S2129" Remove this "String" constructor(ªøÖúúÿÿÿÿ8ø¹ÅûÇ-
+8squid:S1643"Use a StringBuilder instead.(üêú8Ÿ÷Ò‹Æ-
+;squid:S2129" Remove this "String" constructor(¦ú×D8Ÿ÷Ò‹Æ-
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(¡€ğûÿÿÿÿ8ø¹ÅûÇ-
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õµÈÔıÿÿÿÿ8øıÈûÇ-
+8squid:S1643"Use a StringBuilder instead.(ç¸Ñ8Ÿ÷Ò‹Æ-
+=squid:S1643"Use a StringBuilder instead.(³Ó¬¢ÿÿÿÿÿ8ø¹ÅûÇ-
+8squid:S1643"Use a StringBuilder instead.(æÙÓˆ8ø¹ÅûÇ-
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Æ•Ì´üÿÿÿÿ8Å»È-
+fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(İ˜Û 8Å»È-
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Å»È-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ş¬àâşÿÿÿÿ8Å»È-
+bsquid:S1126"AReplace this if-then-else statement by a single return statement.(é»Æúùÿÿÿÿ8Å»È-
+Bsquid:S1168"&Return an empty array instead of null.(¥¹ï8Å»È-
