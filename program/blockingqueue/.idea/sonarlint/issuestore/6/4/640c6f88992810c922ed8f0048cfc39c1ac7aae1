@@ -1,8 +1,0 @@
-
-usquid:S1210"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(‡ÕÔÏ8ÎÂ«¡´-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(Şº›ğ8ÎÂ«¡´-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ğ‹¼‡8ÎÂ«¡´-
-usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(áÃíÚ8ÎÂ«¡´-
-_squid:S3358"DExtract this nested ternary operation into an independent statement.(Ë¡»8ÎÂ«¡´-

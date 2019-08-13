@@ -1,18 +1,0 @@
-
-usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(®‚²’ÿÿÿÿÿ
-N
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÐêÑt
-N
-squid:S106!"9Replace this use of System.out or System.err by a logger.(ûÃÈ
-fsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°¸“©
-fsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹¨‚‡
-]squid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-]squid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-]squid:S2142""FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-`squid:S2147"DCombine this catch with the one at line 22, which has the same body.(åþŒóùÿÿÿÿ
-`squid:S2147$"DCombine this catch with the one at line 34, which has the same body.(åþŒóùÿÿÿÿ
-?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-?squid:S1148#"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-?squid:S1148%"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ

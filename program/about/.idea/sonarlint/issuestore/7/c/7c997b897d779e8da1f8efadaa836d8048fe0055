@@ -1,11 +1,0 @@
-
-asquid:CallToDeprecatedMethod";Remove this use of "HibernateDaoSupport"; it is deprecated.(øõ£¸
-;squid:S1452"&Remove usage of generic wildcard type.(”ˆÿ
-^squid:CallToDeprecatedMethod"3Remove this use of "executeFind"; it is deprecated.(ê¯™Ğıÿÿÿÿ
-^squid:CallToDeprecatedMethod"3Remove this use of "executeFind"; it is deprecated.(Ç„´ùıÿÿÿÿ
-;squid:S1452"&Remove usage of generic wildcard type.(”ˆÿ
-dsquid:CallToDeprecatedMethod"9Remove this use of "HibernateTemplate"; it is deprecated.(µÍ”ªÿÿÿÿÿ
-bsquid:CallToDeprecatedMethod"0Remove this use of "SQLQuery"; it is deprecated.(ÀôŸƒıÿÿÿÿ8Ÿşœ Ç-
-nsquid:CallToDeprecatedMethod"<Remove this use of "setResultTransformer"; it is deprecated.(Í¾éıÿÿÿÿ8Ÿşœ Ç-
-bsquid:CallToDeprecatedMethod"0Remove this use of "SQLQuery"; it is deprecated.(ÀôŸƒıÿÿÿÿ8Ÿşœ Ç-
-isquid:CallToDeprecatedMethod"<Remove this use of "setResultTransformer"; it is deprecated.(ˆ‹¯‡8Ÿşœ Ç-

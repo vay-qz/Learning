@@ -1,9 +1,0 @@
-
-O
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÙÍÐ²
-O
-squid:S106%"9Replace this use of System.out or System.err by a logger.(ÏºÐÚ
-Msquid:S2696-"6Make the enclosing method "static" or remove this set.(½ê¹ê
-]squid:S2142'"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-ksquid:S00116"NRename this field "NUM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú¼ƒøûÿÿÿÿ
-?squid:S1148("#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ

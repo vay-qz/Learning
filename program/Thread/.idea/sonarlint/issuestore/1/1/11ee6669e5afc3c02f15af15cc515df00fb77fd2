@@ -1,15 +1,0 @@
-
-msquid:S2095"QUse try-with-resources or close this "ServerSocketChannel" in a "finally" clause.(ãöŒÎüÿÿÿÿ
-O
-squid:S1062"9Replace this use of System.out or System.err by a logger.(™¡¢û
-O
-squid:S106>"9Replace this use of System.out or System.err by a logger.(õº½
-T
-squid:S106A"9Replace this use of System.out or System.err by a logger.(úƒ£İøÿÿÿÿ
-O
-squid:S106D"9Replace this use of System.out or System.err by a logger.(•à™å
-O
-squid:S106G"9Replace this use of System.out or System.err by a logger.(¸€¢ 
-Dsquid:S1481"(Remove this unused "key" local variable.(íÇ øÿÿÿÿ
-Asquid:S00108")Either remove or fill this block of code.(ï­£Ä
-Ssquid:S1854"7Remove this useless assignment to local variable "key".(íÇ øÿÿÿÿ

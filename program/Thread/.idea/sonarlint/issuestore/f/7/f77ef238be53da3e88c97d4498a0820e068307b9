@@ -1,100 +1,0 @@
-
-^squid:S2184Ø"FCast one of the operands of this multiplication operation to a "long".(î–ƒÄ
-Vsquid:UnusedPrivateMethodC",Remove this unused private "testNIO" method.(Øõ“–ûÿÿÿÿ
-[squid:UnusedPrivateMethodf"1Remove this unused private "testSelector" method.(’àÒúÿÿÿÿ
-Vsquid:UnusedPrivateMethodu"1Remove this unused private "testUncaught" method.(ç˜«Ş
-Xsquid:UnusedPrivateMethod†"2Remove this unused private "testInterrupt" method.(ûñÇî
-_squid:UnusedPrivateMethod§"4Remove this unused private "testLockSupport" method.(ç±Ä™ıÿÿÿÿ
-Wsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(ŸØÇ^
-[squid:S2276Ø"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(î–ƒÄ
-[squid:S2276ò"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(¬Æ„°
-Ksquid:S1068V"/Remove this unused "fileChannel" private field.(ıë¢óúÿÿÿÿ
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‹«–¸
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(É”›ßøÿÿÿÿ
-bsquid:CommentedOutCodeLineD"<This block of commented-out lines of code should be removed.(¡Ø£
-bsquid:CommentedOutCodeLinez"<This block of commented-out lines of code should be removed.(Ê™…‘
-csquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(†€éˆ
-hsquid:CommentedOutCodeLine§"<This block of commented-out lines of code should be removed.(¢öÊñÿÿÿÿÿ
-hsquid:CommentedOutCodeLine©"<This block of commented-out lines of code should be removed.(áíüÈùÿÿÿÿ
-csquid:CommentedOutCodeLine²"<This block of commented-out lines of code should be removed.(‰·¾
-T
-squid:S106."9Replace this use of System.out or System.err by a logger.(Œö“öúÿÿÿÿ
-O
-squid:S106<"9Replace this use of System.out or System.err by a logger.(ÏºĞÚ
-T
-squid:S106a"9Replace this use of System.out or System.err by a logger.(ìîªãıÿÿÿÿ
-O
-squid:S106l"9Replace this use of System.out or System.err by a logger.(™¡¢û
-O
-squid:S106r"9Replace this use of System.out or System.err by a logger.(§…º
-O
-squid:S106x"9Replace this use of System.out or System.err by a logger.(æ—”¤
-T
-squid:S106{"9Replace this use of System.out or System.err by a logger.(ÖÇ·îùÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(¤¸¤ûÿÿÿÿ
-P
-squid:S106Œ"9Replace this use of System.out or System.err by a logger.(½Áªµ
-U
-squid:S106—"9Replace this use of System.out or System.err by a logger.(ÈÑ¥½ûÿÿÿÿ
-U
-squid:S106¹"9Replace this use of System.out or System.err by a logger.(«ï¹úÿÿÿÿ
-P
-squid:S106»"9Replace this use of System.out or System.err by a logger.(ò¬Ø™
-P
-squid:S106À"9Replace this use of System.out or System.err by a logger.(€”‰â
-U
-squid:S106Ñ"9Replace this use of System.out or System.err by a logger.(àÆËıÿÿÿÿ
-U
-squid:S106×"9Replace this use of System.out or System.err by a logger.(ŸßĞõùÿÿÿÿ
-P
-squid:S106Ù"9Replace this use of System.out or System.err by a logger.(’¶ÑÄ
-P
-squid:S106Û"9Replace this use of System.out or System.err by a logger.(êù¯Ï
-P
-squid:S106â"9Replace this use of System.out or System.err by a logger.(ô©òõ
-U
-squid:S106ë"9Replace this use of System.out or System.err by a logger.(àÆËıÿÿÿÿ
-P
-squid:S106ñ"9Replace this use of System.out or System.err by a logger.(â¼Æ
-P
-squid:S106ó"9Replace this use of System.out or System.err by a logger.(’¶ÑÄ
-U
-squid:S106€"9Replace this use of System.out or System.err by a logger.(“Œüäùÿÿÿÿ
-U
-squid:S106…"9Replace this use of System.out or System.err by a logger.(Æ¸Ğƒøÿÿÿÿ
-U
-squid:S106¯"9Replace this use of System.out or System.err by a logger.(ÒÑÅĞüÿÿÿÿ
-P
-squid:S106º"9Replace this use of System.out or System.err by a logger.(ÃùÔ
-P
-squid:S106Ø"9Replace this use of System.out or System.err by a logger.(šËÛà
-U
-squid:S106İ"9Replace this use of System.out or System.err by a logger.(ƒ‘„Šûÿÿÿÿ
-P
-squid:S106æ"9Replace this use of System.out or System.err by a logger.(…Ä¢
-]squid:S2142-"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-]squid:S21428"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-^squid:S2142‹"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-^squid:S2142–"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-^squid:S2142Ã"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-^squid:S2142Ú"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-^squid:S2142ô"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-^squid:S2142«"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-^squid:S2142À"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-^squid:S2142Ì"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-^squid:S2142Ü"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-`squid:S2259N"IA "NullPointerException" could be thrown; "fileChannel" is nullable here.( Õøà
-Asquid:S00108O")Either remove or fill this block of code.(ï­£Ä
-Asquid:S00108P")Either remove or fill this block of code.(ßÈ´
-Bsquid:S00108À")Either remove or fill this block of code.(ä ¹€
->squid:S1604|"(Make this anonymous inner class a lambda(ªáA
-Rsquid:S2274Š":Remove this call to "wait" or move it into a "while" loop.(ŒºÙ
-Rsquid:S2274Ù":Remove this call to "wait" or move it into a "while" loop.(ŒºÙ
-Dsquid:S1612Å",Replace this lambda with a method reference.(Ñµ¼‹
-[squid:S2147P"DCombine this catch with the one at line 79, which has the same body.(ßÈ´
-?squid:S11489"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-@squid:S1148Ä"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-@squid:S1148õ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-@squid:S1148¬"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-@squid:S1148Í"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
