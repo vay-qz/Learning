@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RunManager" selected="Application.Cook">
+    <configuration name="Cook" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.vay.designpattern.action.command.before.Cook" />
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.vay.designpattern.action.command.before.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="BuilderTest.fight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.vay.designpattern.create.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="pers.vay.designpattern.create.factory" />
+      <option name="MAIN_CLASS_NAME" value="pers.vay.designpattern.create.factory.BuilderTest" />
+      <option name="METHOD_NAME" value="fight" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ShowTest.showLook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.vay.designpattern.create.builder.after.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="pers.vay.designpattern.create.builder" />
+      <option name="MAIN_CLASS_NAME" value="pers.vay.designpattern.create.builder.ShowTest" />
+      <option name="METHOD_NAME" value="showLook" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ShowTest.show_beauty_look" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.vay.designpattern.create.builder.after.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="pers.vay.designpattern.create.builder" />
+      <option name="MAIN_CLASS_NAME" value="pers.vay.designpattern.create.builder.ShowTest" />
+      <option name="METHOD_NAME" value="show_beauty_look" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ShowTest.show_roles_look" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="designpatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.vay.designpattern.create.builder.after.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="pers.vay.designpattern.create.builder" />
+      <option name="MAIN_CLASS_NAME" value="pers.vay.designpattern.create.builder.ShowTest" />
+      <option name="METHOD_NAME" value="show_roles_look" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.BuilderTest.fight" />
+      <item itemvalue="JUnit.ShowTest.showLook" />
+      <item itemvalue="JUnit.ShowTest.show_beauty_look" />
+      <item itemvalue="JUnit.ShowTest.show_roles_look" />
+      <item itemvalue="Application.Cook" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Cook" />
+        <item itemvalue="JUnit.ShowTest.show_roles_look" />
+        <item itemvalue="JUnit.ShowTest.show_beauty_look" />
+        <item itemvalue="JUnit.ShowTest.showLook" />
+        <item itemvalue="JUnit.BuilderTest.fight" />
+      </list>
+    </recent_temporary>
+  </component>
+</project>
