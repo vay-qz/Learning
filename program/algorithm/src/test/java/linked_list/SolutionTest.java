@@ -92,19 +92,16 @@ class SolutionTest {
         Assert.assertEquals(solution.convert_official("ABCDE", 2), "ACEBD");
     }
 
-
     @Test
-    public void test() {
+    public void longestPalindrome() {
         Solution solution = new Solution();
-        int[] a = {22, 19};
-//        int[] b = {6, 0};
-//        int[] c = {7, 0};
-        List<int[]> ti = new ArrayList<>();
-        ti.add(a);
-//        ti.add(b);
-//        ti.add(c);
-        Assert.assertEquals(solution.test(ti, 100, 0, 0), a);
-
+//        Assert.assertEquals(solution.longestPalindrome("babad"), "bab");
+//        Assert.assertEquals(solution.longestPalindrome("abba"), "abba");
+//        Assert.assertEquals(solution.longestPalindrome("a"), "a");
+//        Assert.assertEquals(solution.longestPalindrome("cbbd"), "bb");
+//        Assert.assertEquals(solution.longestPalindrome("ab"), "a");
+//        Assert.assertEquals(solution.longestPalindrome("ccc"), "ccc");
+        Assert.assertEquals(solution.longestPalindrome("abcda"), "a");
     }
 
 }

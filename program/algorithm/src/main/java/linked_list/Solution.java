@@ -245,77 +245,34 @@ public class Solution {
 
     }
 
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        while(in.hasNextInt()) {
-            int n = in.nextInt();
-            List<int[]> ti = new ArrayList<>();
-            for(int i = 0; i < n; i++) {
-                int hour = in.nextInt();
-                int min = in.nextInt();
-                int[] a = new int[]{hour, min};
-                ti.add(a);
+    public String longestPalindrome(String s) {
+        if(s.length() == 0 || s.length() == 1) {
+            return s;
+        }
+        String res = null;
+        int max = -1;
+
+        char[] str = s.toCharArray();
+        for(int i = 0; i < str.length; i++) {
+            int more = 0;
+            int repeat = 0;
+            for(int t = 1; i + t < str.length && str[i] == str[i + t]; t++) {
+                repeat++;
             }
-            int cost = in.nextInt();
-            int beginHour = in.nextInt();
-            int beginMin = in.nextInt();
-            int[] ok = sub(beginHour, beginMin, cost);
-            for(int t = ti.size() - 1; t >= 0; t--) {
-                if(!campare(ti.get(t)[0], ti.get(t)[1], ok[0], ok[1])) {
-                    System.out.println(ti.get(t)[0] + " " + ti.get(t)[1]);
+            int j = 1;
+            for(; i - j >= 0 && (i + j + repeat) < str.length; j++) {
+                if(str[i + j + repeat] == str[i -j]) {
+                    more += 1;
+                }else {
                     break;
                 }
             }
-        }
-    }
-
-    public int[] test(List<int[]> ti, int cost, int beginHour, int beginMin) {
-        int[] ok = sub(beginHour, beginMin, cost);
-        for(int t = ti.size() - 1; t >= 0; t--) {
-            if(!campare(ti.get(t)[0], ti.get(t)[1], ok[0], ok[1])) {
-//                System.out.println(ti.get(t)[0] + " " + ti.get(t)[1]);
-//                break;
-                return ti.get(t);
-
+            if((more * 2 + repeat) > max) {
+                max = more * 2 + repeat;
+                res = s.substring(i - more, i + more + repeat + 1);
             }
         }
-        return null;
-    }
-
-    private static boolean campare(int hour1, int min1, int hour2, int min2) {
-        if(hour1 < hour2) {
-//            if(hour2 > 22) {
-//
-//            }
-            return false;
-        }
-        if(hour1 > hour2) {
-            return true;
-        }
-        if(min1 < min2) {
-            return false;
-        }
-        if(min1 > min2) {
-            return true;
-        }
-        return false;
-    }
-
-    private static int[] sub(int hour, int min, int cost) {
-        int t = 0;
-        int minRes;
-        while(true) {
-            if((min + 60 * t) >= cost) {
-                minRes = min + 60 * t - cost;
-                break;
-            }
-            t++;
-        }
-        hour -= t;
-        if(hour < 0) {
-            hour +=24;
-        }
-        return new int[]{hour, minRes};
+        return res;
     }
 
 }
