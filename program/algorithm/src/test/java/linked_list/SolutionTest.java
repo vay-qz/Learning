@@ -104,4 +104,10 @@ class SolutionTest {
         Assert.assertEquals(solution.longestPalindrome("abcda"), "a");
     }
 
+    @Test
+    public void beveled() {
+        Solution solution = new Solution();
+        Assert.assertEquals(solution.beveled(2, 3, 1, 2), false);
+    }
+
 }

@@ -1,9 +1,6 @@
 package linked_list;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Solution {
 
@@ -272,7 +269,167 @@ public class Solution {
                 res = s.substring(i - more, i + more + repeat + 1);
             }
         }
+
         return res;
+    }
+
+    public List<List<Integer>> permuteUnique(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        Arrays.sort(nums);
+        Stack<Integer> stack = new Stack<>();
+        boolean[] used = new boolean[nums.length];
+        gasdfa(res, 0, nums, stack, used);
+        return res;
+    }
+
+    private void gasdfa(List<List<Integer>> res, int index, int[] nums, Stack<Integer> stack, boolean[] used) {
+        if(index == nums.length) {
+            res.add(new ArrayList<>(stack));
+        }
+        for(int i = 0; i < nums.length; i++) {
+            if(!used[i]) {
+                //与前数相同切前数还没有使用过，表示与前数在同一层，会产生一个相同的分支
+                if(i > 0 && nums[i] == nums[i - 1] && !used[i - 1]) {
+                    continue;
+                }
+
+                stack.push(nums[i]);
+                used[i] = true;
+                gasdfa(res, index + 1, nums, stack, used);
+                stack.pop();
+                used[i] = false;
+            }
+        }
+    }
+
+    public static void test() {
+        Solution solution = new Solution();
+        int[] a= {1, 1,2,3};
+        List<List<Integer>> b = solution.permuteUnique(a);
+        System.out.println(b);
+
+    }
+
+    public void rotate(int[][] matrix) {
+        int copy[][] = new int[matrix.length][];
+        for(int i = 0;i < matrix.length; i++) {
+            int[] tmp = new int[matrix.length];
+            for(int j = 0;j < matrix.length; j++) {
+                tmp[j] = matrix[i][j];
+            }
+            copy[i] = tmp;
+        }
+//        print2wsz(copy);
+        for(int i = 0; i < matrix.length; i++) {
+            int[] row = copy[i];
+            for(int j = 0; j < row.length; j++) {
+                matrix[j][matrix.length - i - 1] = row[j];
+            }
+        }
+    }
+
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+//        test();
+
+//        int[][] matrix = {
+//                {1,2,3},
+//                {4,5,6},
+//                {7,8,9}
+//        };
+//        solution.rotate(matrix);
+//        print2wsz(matrix);
+
+        List<List<String>> res = solution.solveNQueens(4);
+        for(int i = 0; i < res.size(); i++) {
+            List<String> t = res.get(i);
+            for(String p : t) {
+                System.out.println(p);
+            }
+            System.out.println();
+        }
+//        System.out.println(solution.solveNQueens(8));
+    }
+
+    private static void print2wsz(int[][] matrix) {
+        for(int i = 0; i < matrix.length; i++) {
+            for(int j = 0;j < matrix.length; j++) {
+                System.out.print(matrix[i][j] + ",");
+            }
+            System.out.println();
+        }
+    }
+
+    public List<List<String>> solveNQueens(int n) {
+        List<List<Integer>> ress = new ArrayList<>();
+        Stack<Integer> tmp = new Stack<>();
+        solve(ress, tmp, n, 0);
+        System.out.println(ress.size());
+        List<List<String>> res = format(ress, n);
+        return res;
+    }
+
+    private List<List<String>> format(List<List<Integer>> ress, int n) {
+        List<List<String>> res = new ArrayList<>();
+        for(List<Integer> tmp : ress){
+            List<String> p = new ArrayList<>();
+            for(Integer i : tmp) {
+                StringBuilder stringBuilder = new StringBuilder();
+                for(int j = 0;j < n;j++) {
+                    if(j == i) {
+                        stringBuilder.append("Q");
+                    }else {
+                        stringBuilder.append(".");
+                    }
+                }
+                p.add(stringBuilder.toString());
+            }
+            res.add(p);
+        }
+        return res;
+    }
+
+
+    private void solve(List<List<Integer>> ress, Stack<Integer> tmp, int n, int row) {
+        if(row == n) {
+            ress.add(new ArrayList<>(tmp));
+            return;
+        }
+
+        for(int col = 0; col < n; col++) {
+            if(isOk(row, col, tmp)) {
+                tmp.push(col);
+                solve(ress, tmp, n, row + 1);
+                tmp.pop();
+            }
+        }
+        return;
+    }
+
+    private boolean isOk(int row, int col, List<Integer> tmp) {
+        for(int i = 0; i < tmp.size(); i++) {
+            if(sameRow(row, i) || sameCol(col, tmp.get(i)) || beveled(row, col, i, tmp.get(i))) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean beveled(int row, int col, int i, Integer integer) {
+        return same(row + col - i - integer, 0) || same(row - i, col - integer);
+    }
+
+    private boolean sameCol(int col, Integer integer) {
+        return same(col, integer);
+    }
+
+    private boolean same(int col, Integer integer) {
+        return col == integer;
+    }
+
+    private boolean sameRow(int row, int i) {
+        return same(row, i);
     }
 
 }
