@@ -152,7 +152,7 @@ public class Solution {
             res.add(new ArrayList<>(nums));
             return;
         }
-        for(int i = index + 1; i < nums.size(); i++) {
+        for(int i = index; i < nums.size(); i++) {
             Collections.swap(nums, index, i);
             backtrack(res, nums, index + 1);
             Collections.swap(nums, index, i);
