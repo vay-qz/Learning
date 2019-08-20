@@ -365,7 +365,7 @@ public class Solution {
         List<List<Integer>> ress = new ArrayList<>();
         Stack<Integer> tmp = new Stack<>();
         solve(ress, tmp, n, 0);
-        System.out.println(ress.size());
+//        System.out.println(ress.size());
         List<List<String>> res = format(ress, n);
         return res;
     }
@@ -430,6 +430,39 @@ public class Solution {
 
     private boolean sameRow(int row, int i) {
         return same(row, i);
+    }
+
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        Stack<TreeNode> tmp = new Stack<>();
+        while(true) {
+            if(root.left != null) {
+                tmp.push(root);
+                root = root.left;
+                continue;
+            }else {
+                res.add(root.val);
+            }
+            if(root.left == null && root.right == null && tmp.empty()) {
+                break;
+            }
+        }
+//        getzx(res, root);
+        return res;
+    }
+
+    private void getzx(List<Integer> res, TreeNode root) {
+        if(root.left == null && root.right == null) {
+            res.add(root.val);
+            return ;
+        }
+        if(root.left != null) {
+            getzx(res, root.left);
+        }
+        res.add(root.val);
+        if(root.right != null) {
+            getzx(res, root.right);
+        }
     }
 
 }

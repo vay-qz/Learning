@@ -2,8 +2,11 @@ package linked_list;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+import sun.reflect.generics.tree.Tree;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -108,6 +111,19 @@ class SolutionTest {
     public void beveled() {
         Solution solution = new Solution();
         Assert.assertEquals(solution.beveled(2, 3, 1, 2), false);
+    }
+
+    @Test
+    public void inorderTraversal() {
+        Solution solution = new Solution();
+        TreeNode root = new TreeNode(1);
+        root.right = new TreeNode(2);
+        root.right.left = new TreeNode(3);
+        List<Integer> res = new ArrayList<>();
+        res.add(1);
+        res.add(3);
+        res.add(2);
+        Assert.assertEquals(res, solution.inorderTraversal(root));
     }
 
 }
