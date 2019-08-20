@@ -432,22 +432,25 @@ public class Solution {
         return same(row, i);
     }
 
-    public List<Integer> inorderTraversal(TreeNode root) {
+    public List<Integer> inorderTraversalRecursive(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        getzx(res, root);
+        return res;
+    }
+
+    public List<Integer> inorderTraversalNonRecursive(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         Stack<TreeNode> tmp = new Stack<>();
-        while(true) {
-            if(root.left != null) {
-                tmp.push(root);
-                root = root.left;
-                continue;
-            }else {
-                res.add(root.val);
+        TreeNode cur = root;
+        while(cur != null || !tmp.empty()) {
+            while(cur != null) {
+                tmp.push(cur);
+                cur = cur.left;
             }
-            if(root.left == null && root.right == null && tmp.empty()) {
-                break;
-            }
+            cur = tmp.pop();
+            res.add(cur.val);
+            cur = cur.right;
         }
-//        getzx(res, root);
         return res;
     }
 

@@ -116,14 +116,32 @@ class SolutionTest {
     @Test
     public void inorderTraversal() {
         Solution solution = new Solution();
-        TreeNode root = new TreeNode(1);
-        root.right = new TreeNode(2);
-        root.right.left = new TreeNode(3);
+        TreeNode root = getRoot();
+        List<Integer> res = getRes();
+        Assert.assertEquals(res, solution.inorderTraversalRecursive(root));
+    }
+
+    @Test
+    public void inorderTraversalNonRecursive() {
+        Solution solution = new Solution();
+        TreeNode root = getRoot();
+        List<Integer> res = getRes();
+        Assert.assertEquals(res, solution.inorderTraversalNonRecursive(root));
+    }
+
+    private List<Integer> getRes() {
         List<Integer> res = new ArrayList<>();
         res.add(1);
         res.add(3);
         res.add(2);
-        Assert.assertEquals(res, solution.inorderTraversal(root));
+        return res;
+    }
+
+    TreeNode getRoot() {
+        TreeNode root = new TreeNode(1);
+        root.right = new TreeNode(2);
+        root.right.left = new TreeNode(3);
+        return root;
     }
 
 }
