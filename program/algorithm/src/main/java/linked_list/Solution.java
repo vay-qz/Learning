@@ -1,5 +1,7 @@
 package linked_list;
 
+import linked_list.tree.TreeNode;
+
 import java.util.*;
 
 public class Solution {
@@ -430,68 +432,6 @@ public class Solution {
 
     private boolean sameRow(int row, int i) {
         return same(row, i);
-    }
-
-    public List<Integer> inorderTraversalRecursive(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        getzx(res, root);
-        return res;
-    }
-
-    public List<Integer> inorderTraversalNonRecursive(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        Stack<TreeNode> tmp = new Stack<>();
-        TreeNode cur = root;
-        while(cur != null || !tmp.empty()) {
-            while(cur != null) {
-                tmp.push(cur);
-                cur = cur.left;
-            }
-            cur = tmp.pop();
-            res.add(cur.val);
-            cur = cur.right;
-        }
-        return res;
-    }
-
-    private void getzx(List<Integer> res, TreeNode root) {
-        if(root.left == null && root.right == null) {
-            res.add(root.val);
-            return ;
-        }
-        if(root.left != null) {
-            getzx(res, root.left);
-        }
-        res.add(root.val);
-        if(root.right != null) {
-            getzx(res, root.right);
-        }
-    }
-
-    public boolean isSameTree(TreeNode p, TreeNode q) {
-        List<Integer> res = getzxnonrecursive(p);
-        List<Integer> res2 = getzxnonrecursive(q);
-        if(res.equals(res2)) {
-            return true;
-        }
-        return false;
-
-    }
-
-    List<Integer> getzxnonrecursive(TreeNode p) {
-        List<Integer> res = new ArrayList<>();
-        TreeNode root = p;
-        Stack<TreeNode> stack = new Stack<>();
-        while(root != null || !stack.empty()) {
-            while(root != null) {
-                stack.push(root);
-                root = root.left;
-            }
-            root = stack.pop();
-            res.add(root.val);
-            root = root.right;
-        }
-        return res;
     }
 
 }

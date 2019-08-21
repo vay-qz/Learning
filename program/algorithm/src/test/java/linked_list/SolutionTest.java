@@ -1,15 +1,11 @@
 package linked_list;
 
+import linked_list.tree.TreeNode;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
-import sun.reflect.generics.tree.Tree;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class SolutionTest {
 
@@ -113,53 +109,6 @@ class SolutionTest {
         Assert.assertEquals(solution.beveled(2, 3, 1, 2), false);
     }
 
-    @Test
-    public void inorderTraversal() {
-        Solution solution = new Solution();
-        TreeNode root = getRoot();
-        List<Integer> res = getRes();
-        Assert.assertEquals(res, solution.inorderTraversalRecursive(root));
-    }
 
-    @Test
-    public void inorderTraversalNonRecursive() {
-        Solution solution = new Solution();
-        TreeNode root = getRoot();
-        List<Integer> res = getRes();
-        Assert.assertEquals(res, solution.inorderTraversalNonRecursive(root));
-    }
-
-    private List<Integer> getRes() {
-        List<Integer> res = new ArrayList<>();
-        res.add(1);
-        res.add(3);
-        res.add(2);
-        return res;
-    }
-
-    TreeNode getRoot() {
-        TreeNode root = new TreeNode(1);
-        root.right = new TreeNode(2);
-        root.right.left = new TreeNode(3);
-        return root;
-    }
-
-    @Test
-    public void isSameTree() {
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(1);
-
-
-        TreeNode root2 = new TreeNode(1);
-        root2.right = new TreeNode(1);
-
-        TreeNode root3 = new TreeNode(1);
-        root3.left = new TreeNode(3);
-        root3.right = new TreeNode(2);
-
-        Solution solution = new Solution();
-        Assert.assertEquals(solution.isSameTree(root, root2), true);
-        Assert.assertEquals(solution.isSameTree(root, root3), false);
-    }
 
 }
