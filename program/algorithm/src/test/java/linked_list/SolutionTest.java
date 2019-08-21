@@ -144,4 +144,22 @@ class SolutionTest {
         return root;
     }
 
+    @Test
+    public void isSameTree() {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(1);
+
+
+        TreeNode root2 = new TreeNode(1);
+        root2.right = new TreeNode(1);
+
+        TreeNode root3 = new TreeNode(1);
+        root3.left = new TreeNode(3);
+        root3.right = new TreeNode(2);
+
+        Solution solution = new Solution();
+        Assert.assertEquals(solution.isSameTree(root, root2), true);
+        Assert.assertEquals(solution.isSameTree(root, root3), false);
+    }
+
 }

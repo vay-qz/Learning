@@ -468,4 +468,30 @@ public class Solution {
         }
     }
 
+    public boolean isSameTree(TreeNode p, TreeNode q) {
+        List<Integer> res = getzxnonrecursive(p);
+        List<Integer> res2 = getzxnonrecursive(q);
+        if(res.equals(res2)) {
+            return true;
+        }
+        return false;
+
+    }
+
+    List<Integer> getzxnonrecursive(TreeNode p) {
+        List<Integer> res = new ArrayList<>();
+        TreeNode root = p;
+        Stack<TreeNode> stack = new Stack<>();
+        while(root != null || !stack.empty()) {
+            while(root != null) {
+                stack.push(root);
+                root = root.left;
+            }
+            root = stack.pop();
+            res.add(root.val);
+            root = root.right;
+        }
+        return res;
+    }
+
 }
