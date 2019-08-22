@@ -1,121 +1,118 @@
 package linked_list.tree;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
 
 public class TreeSolution {
 
-    public List<Integer> inorderTraversalRecursive(TreeNode root) {
+    public List<Integer> preDg(TreeNode root) {
         List<Integer> res = new ArrayList<>();
-        getzx(res, root);
+        preRes(res, root);
         return res;
     }
 
-    public List<Integer> inorderTraversalNonRecursive(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        Stack<TreeNode> tmp = new Stack<>();
-        TreeNode cur = root;
-        while(cur != null || !tmp.empty()) {
-            while(cur != null) {
-                tmp.push(cur);
-                cur = cur.left;
-            }
-            cur = tmp.pop();
-            res.add(cur.val);
-            cur = cur.right;
-        }
-        return res;
-    }
-
-    private void getzx(List<Integer> res, TreeNode root) {
-        if(root.left == null && root.right == null) {
-            res.add(root.val);
-            return ;
-        }
-        if(root.left != null) {
-            getzx(res, root.left);
-        }
-        res.add(root.val);
-        if(root.right != null) {
-            getzx(res, root.right);
-        }
-    }
-
-    public List<Integer> preorderTraversalRecursive(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        getqx(res, root);
-        return res;
-    }
-
-    private void getqx(List<Integer> res, TreeNode root) {
+    private void preRes(List<Integer> res, TreeNode root) {
         if(root.left == null && root.right == null) {
             res.add(root.val);
             return;
         }
         res.add(root.val);
-        if(root.left!=null) {
-            getqx(res, root.left);
+        if (root.left != null) {
+            preRes(res, root.left);
         }
-        if(root.right != null) {
-            getqx(res, root.right);
+        if (root.right != null) {
+            preRes(res, root.right);
         }
     }
 
-    public List<Integer> preorderTraversalNonRecursive(TreeNode root) {
-        if (root == null) {
-            return new ArrayList<>();
-        }
+    public List<Integer> inDg(TreeNode root) {
         List<Integer> res = new ArrayList<>();
-        Stack<TreeNode> stack = new Stack<>();
-        stack.push(root);
-        while (!stack.empty()) {
-            TreeNode tmp = stack.pop();
-            res.add(tmp.val);
-            if(tmp.right != null) {
-                stack.push(tmp.right);
-            }
-            if(tmp.left != null) {
-                stack.push(tmp.left);
-            }
-        }
+        inRes(res, root);
         return res;
     }
 
-    public List<Integer> postorderTraversalRecursive(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        gethx(res, root);
-        return res;
-    }
-
-    private void gethx(List<Integer> res, TreeNode root) {
-        if(root.left == null && root.right == null) {
+    private void inRes(List<Integer> res, TreeNode root) {
+        if (root.left == null && root.right == null) {
             res.add(root.val);
             return;
         }
         if(root.left != null) {
-            gethx(res, root.left);
+            inRes(res, root.left);
         }
-        if(root.right != null) {
-            gethx(res, root.right);
+        res.add(root.val);
+        if (root.right != null) {
+            inRes(res, root.right);
+        }
+    }
+
+    public List<Integer> postDg (TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        postRes(res, root);
+        return res;
+    }
+
+    private void postRes(List<Integer> res, TreeNode root) {
+        if (root.left == null && root.right == null) {
+            res.add(root.val);
+            return;
+        }
+        if (root.left != null) {
+            postRes(res, root.left);
+        }
+        if (root.right != null) {
+            postRes(res, root.right);
         }
         res.add(root.val);
     }
 
-    public List<Integer> postorderTraversalNonRecursive(TreeNode root) {
+    public List<Integer> preXh(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
         stack.push(root);
         while (!stack.empty()) {
-            TreeNode node = stack.pop();
-            res.add(node.val);
-            if (node.left != null) {
-                stack.push(node.left);
+            root = stack.pop();
+            res.add(root.val);
+            if (root.right != null) {
+                stack.push(root.right);
             }
-            if (node.right  != null) {
-               stack.push(node.right);
+            if(root.left != null) {
+                stack.push(root.left);
             }
+        }
+        return res;
+    }
 
+    public List<Integer> inXh(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        while(root!=null || !stack.empty()) {
+            while (root!=null) {
+                stack.push(root);
+                root = root.left;
+            }
+            root = stack.pop();
+            res.add(root.val);
+            root = root.right;
+        }
+        return res;
+    }
+
+    public List<Integer> postXh(TreeNode root) {
+        LinkedList<Integer> res = new LinkedList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while(!stack.isEmpty()) {
+            //每次找出后序遍历的最后一个
+            root = stack.pop();
+            res.addFirst(root.val);
+            if(root.right != null) {
+                stack.push(root.right);
+            }
+            if(root.left != null) {
+                stack.push(root.left);
+            }
         }
         return res;
     }

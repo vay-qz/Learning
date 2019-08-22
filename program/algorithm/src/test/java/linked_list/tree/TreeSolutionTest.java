@@ -14,34 +14,19 @@ class TreeSolutionTest {
     public void inorderTraversal() {
         TreeNode root = getRoot();
         List<Integer> res = getRes();
-        Assert.assertEquals(res, solution.inorderTraversalRecursive(root));
+        Assert.assertEquals(res, solution.inDg(root));
+        Assert.assertEquals(res, solution.inXh(root));
     }
 
     @Test
-    public void inorderTraversalNonRecursive() {
-        TreeNode root = getRoot();
-        List<Integer> res = getRes();
-        Assert.assertEquals(res, solution.inorderTraversalNonRecursive(root));
-    }
-
-    @Test
-    public void preorderTraversalRecursive() {
+    public void preorderTraversal() {
         TreeNode root = getRoot();
         List<Integer> res = new ArrayList<>();
         res.add(1);
         res.add(2);
         res.add(3);
-        Assert.assertEquals(res, solution.preorderTraversalRecursive(root));
-    }
-
-    @Test
-    public void preorderTraversalNonRecursive() {
-        TreeNode root = getRoot();
-        List<Integer> res = new ArrayList<>();
-        res.add(1);
-        res.add(2);
-        res.add(3);
-        Assert.assertEquals(res, solution.preorderTraversalNonRecursive(root));
+        Assert.assertEquals(res, solution.preDg(root));
+        Assert.assertEquals(res, solution.preXh(root));
     }
 
     private List<Integer> getRes() {
@@ -66,7 +51,8 @@ class TreeSolutionTest {
         res.add(3);
         res.add(2);
         res.add(1);
-        Assert.assertEquals(res, solution.postorderTraversalRecursive(root));
+        Assert.assertEquals(res, solution.postDg(root));
+        Assert.assertEquals(res, solution.postXh(root));
     }
 
 }
