@@ -47,12 +47,15 @@ class TreeSolutionTest {
     @Test
     public void postorderTraversal() {
         TreeNode root = getRoot();
+        TreeNode root2 = new TreeNode(3);
+        root2.left = new TreeNode(1);
+        root2.right = new TreeNode(2);
         List<Integer> res = new ArrayList<>();
-        res.add(3);
-        res.add(2);
         res.add(1);
-        Assert.assertEquals(res, solution.postDg(root));
-        Assert.assertEquals(res, solution.postXh(root));
+        res.add(2);
+        res.add(3);
+//        Assert.assertEquals(res, solution.postDg(root));
+        Assert.assertEquals(res, solution.postXh(root2));
     }
 
 }

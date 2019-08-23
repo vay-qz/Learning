@@ -107,14 +107,56 @@ public class TreeSolution {
             //每次找出后序遍历的最后一个
             root = stack.pop();
             res.addFirst(root.val);
-            if(root.right != null) {
-                stack.push(root.right);
-            }
             if(root.left != null) {
                 stack.push(root.left);
             }
+            if(root.right != null) {
+                stack.push(root.right);
+            }
         }
         return res;
+    }
+
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        if (root == null) {
+            return new ArrayList<>();
+        }
+        List<List<Integer>> res = new ArrayList<>();
+        List<TreeNode> source = new ArrayList<>();
+        source.add(root);
+        while (source.size() > 0) {
+            res.add(getValues(source));
+            List<TreeNode> newSource = new ArrayList<>();
+            for (TreeNode node : source) {
+                if (node.left != null) {
+                    newSource.add(node.left);
+                }
+                if (node.right != null) {
+                    newSource.add(node.right);
+                }
+            }
+            source = newSource;
+        }
+        return res;
+    }
+
+    private List<Integer> getValues(List<TreeNode> source) {
+        List<Integer> res = new ArrayList<>();
+        for (TreeNode node : source) {
+            res.add(node.val);
+        }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        TreeSolution solution = new TreeSolution();
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
+        List<List<Integer>> res = solution.levelOrder(root);
+        System.out.println(res);
     }
 
 }
