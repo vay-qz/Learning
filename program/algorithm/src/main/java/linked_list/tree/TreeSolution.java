@@ -159,4 +159,119 @@ public class TreeSolution {
         System.out.println(res);
     }
 
+    public boolean isSameTree(TreeNode p, TreeNode q) {
+        if (p==q && q ==null) {
+            return true;
+        }
+        if ((p == null && q != null) || (q == null && p != null)) {
+            return false;
+        }
+        List<TreeNode> tmp1 = new ArrayList<>();
+        List<TreeNode> tmp2 = new ArrayList<>();
+        if (p.val == q.val) {
+            tmp1.add(p);
+            tmp2.add(q);
+        }else {
+            return false;
+        }
+        while (tmp1.size() > 0) {
+            List<TreeNode> t1 = new ArrayList<>();
+            List<TreeNode> t2 = new ArrayList<>();
+            for (int i = 0; i < tmp1.size(); i++) {
+                TreeNode node1left = tmp1.get(i).left;
+                TreeNode node2left = tmp2.get(i).left;
+                TreeNode node1right = tmp1.get(i).right;
+                TreeNode node2right = tmp2.get(i).right;
+                if (!isSame(node1left, node2left, t1, t2)) {
+                    return false;
+                }
+                if (!isSame(node1right, node2right, t1, t2)) {
+                    return false;
+                }
+            }
+            tmp1 = t1;
+            tmp2 = t2;
+        }
+        return true;
+    }
+
+    private boolean isSame(TreeNode node1, TreeNode node2, List<TreeNode> res1, List<TreeNode> res2) {
+        if (node1 != null && node2 != null) {
+            if (node1.val == node2.val) {
+                res1.add(node1);
+                res2.add(node2);
+                return true;
+            }else {
+                return false;
+            }
+        }else if (node1 == null && node2 == null){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    public int maxDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        return maxChildDepth(root.left, root.right) + 1;
+    }
+
+    private int maxChildDepth(TreeNode left, TreeNode right) {
+        if (left == null && right == null) {
+            return 0;
+        }else {
+            int leftMax;
+            if (left != null) {
+                 leftMax = maxChildDepth(left.left, left.right) + 1;
+            } else {
+                leftMax = 0;
+            }
+            int rightMax;
+            if (right != null) {
+                rightMax = maxChildDepth(right.left, right.right) + 1;
+            } else {
+                rightMax = 0;
+            }
+            return leftMax > rightMax ? leftMax : rightMax;
+        }
+    }
+
+    public boolean isBalanced(TreeNode root) {
+        if (root == null) {
+            return true;
+        }
+        FlagHolder flagHolder = new FlagHolder();
+        sameDepth(root.left, root.right, flagHolder);
+        return flagHolder.flag;
+    }
+
+    private int sameDepth(TreeNode left, TreeNode right, FlagHolder flag) {
+        if (left == null && right == null) {
+            return 0;
+        }else {
+            int leftMax;
+            if (left != null) {
+                leftMax = sameDepth(left.left, left.right, flag) + 1;
+            } else {
+                leftMax = 0;
+            }
+            int rightMax;
+            if (right != null) {
+                rightMax = sameDepth(right.left, right.right, flag) + 1;
+            } else {
+                rightMax = 0;
+            }
+            if (leftMax - rightMax > 1 || leftMax - rightMax < -1) {
+                flag.flag = false;
+            }
+            return leftMax > rightMax ? leftMax : rightMax;
+        }
+    }
+
+    class FlagHolder {
+        boolean flag = true;
+    }
+
 }

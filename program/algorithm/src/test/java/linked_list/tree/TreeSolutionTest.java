@@ -58,4 +58,20 @@ class TreeSolutionTest {
         Assert.assertEquals(res, solution.postXh(root2));
     }
 
+    @Test
+    public void maxDepth() {
+        TreeNode root = new TreeNode(1);
+        root.right = new TreeNode(2);
+        root.right.right = new TreeNode(3);
+        Assert.assertEquals(solution.maxDepth(root), 3);
+    }
+
+    @Test
+    public void isBalanced() {
+        TreeNode root = new TreeNode(1);
+        root.right = new TreeNode(2);
+        root.right.right = new TreeNode(3);
+        Assert.assertEquals(solution.isBalanced(root), false);
+    }
+
 }
