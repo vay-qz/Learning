@@ -274,4 +274,63 @@ public class TreeSolution {
         boolean flag = true;
     }
 
+    public boolean isValidBST(TreeNode root) {
+        if (root == null) {
+            return true;
+        }
+        return judgeNode(root, Long.MIN_VALUE, Long.MAX_VALUE);
+    }
+
+    private boolean judgeNode(TreeNode root, long min, long max) {
+        if (root.left == null && root.right == null) {
+            return true;
+        }
+        boolean flag = true;
+        if (root.left != null) {
+            if (root.left.val < root.val && root.left.val > min) {
+                flag = judgeNode(root.left, min, root.val);
+            }else {
+                return false;
+            }
+        }
+        if (root.right != null) {
+            if (root.right.val > root.val && root.right.val < max) {
+                flag &= judgeNode(root.right, root.val, max);
+            }else {
+                return false;
+            }
+        }
+        return flag;
+    }
+
+    public int minDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int min = 1;
+        List<TreeNode> res = new ArrayList<>();
+        res.add(root);
+        while (res.size() > 0) {
+            List<TreeNode> tmp = new ArrayList<>();
+            for (TreeNode node : res) {
+                if (node.left == null && node.right == null) {
+                    return min;
+                }
+                if (node.left != null) {
+                    tmp.add(node.left);
+                }
+                if (node.right != null) {
+                    tmp.add(node.right);
+                }
+            }
+            min++;
+            res = tmp;
+        }
+        return min;
+    }
+
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+
+    }
+
 }

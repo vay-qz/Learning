@@ -74,4 +74,22 @@ class TreeSolutionTest {
         Assert.assertEquals(solution.isBalanced(root), false);
     }
 
+    @Test
+    public void isValidBST() {
+        TreeNode root = new TreeNode(10);
+        root.left = new TreeNode(5);
+        root.right = new TreeNode(15);
+        root.right.left = new TreeNode(6);
+        root.right.right = new TreeNode(20);
+        Assert.assertEquals(solution.isValidBST(root), false);
+        TreeNode root2 = new TreeNode(2);
+        root2.left = new TreeNode(1);
+        root2.right = new TreeNode(3);
+        Assert.assertEquals(solution.isValidBST(root2), true);
+        TreeNode root3 = new TreeNode(5);
+        root3.left = new TreeNode(1);
+        root3.right = new TreeNode(4);
+        Assert.assertEquals(solution.isValidBST(root3), false);
+    }
+
 }
