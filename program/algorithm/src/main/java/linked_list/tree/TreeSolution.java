@@ -1,9 +1,8 @@
 package linked_list.tree;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
+import linked_list.ListNode;
+
+import java.util.*;
 
 public class TreeSolution {
 
@@ -146,17 +145,6 @@ public class TreeSolution {
             res.add(node.val);
         }
         return res;
-    }
-
-    public static void main(String[] args) {
-        TreeSolution solution = new TreeSolution();
-        TreeNode root = new TreeNode(3);
-        root.left = new TreeNode(9);
-        root.right = new TreeNode(20);
-        root.right.left = new TreeNode(15);
-        root.right.right = new TreeNode(7);
-        List<List<Integer>> res = solution.levelOrder(root);
-        System.out.println(res);
     }
 
     public boolean isSameTree(TreeNode p, TreeNode q) {
@@ -330,7 +318,234 @@ public class TreeSolution {
     }
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0;i < inorder.length; i++) {
+            map.put(inorder[i], i);
+        }
+        IntegerHolder holder = new IntegerHolder();
+        holder.k = 0;
+        return getRoot(holder, preorder, 0, inorder.length, map);
+    }
 
+    private TreeNode getRoot(IntegerHolder preIndex, int[] preorder, int inHead, int inTail, Map<Integer, Integer> map) {
+        if (inHead == inTail) {
+            return null;
+        }
+        TreeNode root = new TreeNode(preorder[preIndex.k]);
+        int index = map.get(preorder[preIndex.k]);
+        preIndex.k++;
+        root.left = getRoot(preIndex, preorder, inHead, index, map);
+        root.right = getRoot(preIndex, preorder, index + 1, inTail, map);
+        return root;
+    }
+
+    class IntegerHolder{
+        int k;
+    }
+
+    public TreeNode buildTree2(int[] inorder, int[] postorder) {
+        Map<Integer, Integer> in = new HashMap<>();
+        for (int i = 0; i < inorder.length; i++) {
+            in.put(inorder[i], i);
+        }
+        IntegerHolder holder = new IntegerHolder();
+        holder.k = postorder.length-1;
+        return helper(holder, postorder, 0, inorder.length, in);
+    }
+
+    private TreeNode helper(IntegerHolder holder, int[] postorder, int inHead, int inTail, Map<Integer,Integer> in) {
+        if (inHead == inTail) {
+            return null;
+        }
+        TreeNode root = new TreeNode(postorder[holder.k]);
+        int index = in.get(postorder[holder.k]);
+        holder.k--;
+        root.right = helper(holder, postorder, index + 1, inTail, in);
+        root.left = helper(holder, postorder, inHead, index, in);
+        return root;
+    }
+
+    public TreeNode sortedArrayToBST(int[] nums) {
+        return sortedArrayToBST(nums, 0, nums.length);
+    }
+
+    private TreeNode sortedArrayToBST(int[] nums, int head, int tail) {
+        if (head == tail) {
+            return null;
+        }
+        int mid = (head + tail) / 2;
+        TreeNode root = new TreeNode(nums[mid]);
+        root.left = sortedArrayToBST(nums, head, mid);
+        root.right = sortedArrayToBST(nums, mid + 1, tail);
+        return root;
+    }
+
+    public TreeNode sortedListToBST(ListNode head) {
+        List<Integer> list = new ArrayList<>();
+        while (true) {
+            list.add(head.val);
+            if (head.next == null) {
+                break;
+            }
+            head = head.next;
+        }
+        int[] nums = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            nums[i] = list.get(i);
+        }
+        return sortedArrayToBST(nums, 0, list.size());
+    }
+
+    public boolean isSymmetric(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            TreeNode left = queue.poll();
+            TreeNode right = queue.poll();
+            if (left == right && left == null) continue;
+            if (left == null || right == null) return false;
+            if (left.val != right.val) return false;
+            queue.add(left.left);
+            queue.add(right.right);
+            queue.add(left.right);
+            queue.add(right.left);
+        }
+        return true;
+    }
+
+    public boolean isSymmetric2(TreeNode root) {
+        return isMirror(root, root);
+    }
+
+    private boolean isMirror(TreeNode left, TreeNode right) {
+        if (left == null && right == null) {
+            return true;
+        }
+        if (left == null || right == null) {
+            return false;
+        }
+        return left.val == right.val && isMirror(left.left, right.right) && isMirror(left.right, right.left);
+    }
+
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        if (root == null) {
+            return new ArrayList<>();
+        }
+        List<List<Integer>> res = new ArrayList<>();
+        List<TreeNode> list = new ArrayList<>();
+        list.add(root);
+        List<Integer> resroot = new ArrayList<>();
+        resroot.add(root.val);
+        res.add(resroot);
+        int flag = 1;
+        while (!list.isEmpty()) {
+            List<TreeNode> tmp = new ArrayList<>();
+            LinkedList<Integer> partRes = new LinkedList<>();
+            for (int i = 0; i < list.size(); i++) {
+                if (list.get(i).left != null) {
+                    tmp.add(list.get(i).left);
+                    if (flag == -1) {
+                        partRes.add(list.get(i).left.val);
+                    }else {
+                        partRes.addFirst(list.get(i).left.val);
+                    }
+                }
+                if (list.get(i).right != null) {
+                    tmp.add(list.get(i).right);
+                    if (flag == -1) {
+                        partRes.add(list.get(i).right.val);
+                    }else {
+                        partRes.addFirst(list.get(i).right.val);
+                    }
+                }
+            }
+            flag *= -1;
+            list = tmp;
+            if (partRes.size() > 0) {
+                res.add(partRes);
+            }
+        }
+        return res;
+    }
+
+    public void recoverTree(TreeNode root) {
+        TreeNode firstNode = null;
+        TreeNode secondNode = null;
+
+        TreeNode pre = null;
+        Stack<TreeNode> stack = new Stack<>();
+        while (root != null || !stack.empty()) {
+            while (root != null) {
+                stack.push(root);
+                root = root.left;
+            }
+            root = stack.pop();
+            if (pre != null && root.val < pre.val) {
+                if (firstNode == null) {
+                    firstNode = pre;
+                    secondNode = root;
+                } else {
+                    secondNode = root;
+                }
+            }else {
+                pre = root;
+            }
+            root = root.right;
+        }
+        int tmp = firstNode.val;
+        firstNode.val = secondNode.val;
+        secondNode.val = tmp;
+    }
+
+    public void flatten(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        while (root.left != null || root.right != null) {
+            if (root.left != null) {
+                TreeNode lastRight = root.right;
+                root.right = root.left;
+                root.left = null;
+                TreeNode ri = root.right;
+                while (ri.right != null) {
+                    ri = ri.right;
+                }
+                ri.right = lastRight;
+            }
+            root = root.right;
+        }
+    }
+
+    public static void main(String[] args) {
+        TreeSolution solution = new TreeSolution();
+//        int[] pre = {3,9,20,15,7};
+//        int[] in = {9,3,15,20,7};
+//        solution.buildTree(pre, in);
+//        ListNode head = new ListNode(-10);
+//        head.next = new ListNode(-3);
+//        head.next.next = new ListNode(0);
+//        head.next.next.next = new ListNode(5);
+//        head.next.next.next.next = new ListNode(9);
+//        solution.sortedListToBST(head);
+//        TreeNode wrong = new TreeNode(1);
+//        wrong.right = new TreeNode(3);
+//        wrong.right.right = new TreeNode(2);
+//        wrong.right.right.right = new TreeNode(4);
+//        System.out.println(solution.preDg(wrong));
+//        solution.recoverTree(wrong);
+//        System.out.println(solution.preDg(wrong));
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.left.left = new TreeNode(3);
+        root.left.right = new TreeNode(4);
+        root.right = new TreeNode(5);
+        root.right.right = new TreeNode(6);
+        solution.flatten(root);
+        while (root!=null) {
+            System.out.print(root.val + " ");
+            root = root.right;
+        }
     }
 
 }

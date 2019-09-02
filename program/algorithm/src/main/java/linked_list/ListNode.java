@@ -1,9 +1,9 @@
 package linked_list;
 
 public class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int i) {
+    public int val;
+    public ListNode next;
+    public ListNode(int i) {
         this.val = i;
     }
 
