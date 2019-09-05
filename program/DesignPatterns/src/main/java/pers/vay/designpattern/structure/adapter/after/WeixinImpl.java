@@ -1,4 +1,4 @@
-package pers.vay.designpattern.structure.adapter;
+package pers.vay.designpattern.structure.adapter.after;
 
 public class WeixinImpl implements Weixin {
     @Override
