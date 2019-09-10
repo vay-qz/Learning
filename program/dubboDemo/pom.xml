@@ -17,9 +17,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>consumer</module>
+        <module>dubboconsumer</module>
         <module>dubboInterface</module>
-        <module>provider</module>
+        <module>dubboprovider</module>
     </modules>
 
     <properties>

@@ -18,6 +18,7 @@
         <module>blockingqueue</module>
         <module>arthasDemo</module>
         <module>SpringMVCMaven</module>
+        <module>dubboDemo</module>
     </modules>
 
     <properties>
@@ -25,8 +26,13 @@
         <skipTests>true</skipTests>
         <junit.version>5.3.2</junit.version>
         <lombok.version>1.18.8</lombok.version>
+        <cglib.version>3.2.10</cglib.version>
+        <spring.version>4.3.3.RELEASE</spring.version>
+        <jackson.version>2.9.8</jackson.version>
+        <fastjson.version>1.2.57</fastjson.version>
     </properties>
 
+    <!-- 公用依赖，父pom统一管理 -->
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -42,8 +48,14 @@
         </dependency>
     </dependencies>
 
+    <!-- 非公用依赖，父pom统一管理版本 -->
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib</artifactId>
+                <version>${cglib.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

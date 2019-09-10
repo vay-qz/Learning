@@ -12,14 +12,11 @@
     </parent>
 
     <artifactId>proxy</artifactId>
-    <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/cglib/cglib -->
         <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>
-            <version>3.2.10</version>
         </dependency>
     </dependencies>
 </project>
