@@ -6,22 +6,12 @@
 
     <parent>
         <groupId>pers.vay</groupId>
-        <artifactId>dubbo</artifactId>
+        <artifactId>parent</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>provider</artifactId>
+
+    <artifactId>arthas</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <properties>
-        <spring.version>5.1.6.RELEASE</spring.version>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.vay</groupId>
-            <artifactId>dubboInterface</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
 </project>
