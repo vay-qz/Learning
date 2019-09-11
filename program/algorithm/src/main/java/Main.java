@@ -1,4 +1,6 @@
-import com.sun.deploy.util.StringUtils;
+
+
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
 
@@ -44,8 +46,9 @@ public class Main {
         int max=0;
         for(int k=0;k<m-count;k++)
         {
-            if(a[k]+a[m-count-1-k]>max)
+            if (a[k]+a[m-count-1-k]>max) {
                 max = a[k]+a[m-count-k];
+            }
         }
         System.out.println(max);
     }
@@ -175,7 +178,7 @@ public class Main {
      */
     public int count(String s) {
         int sum = 0;
-        String[] jz = StringUtils.splitString(s, ".");
+        String[] jz = StringUtils.split(s, ".");
         for(String j : jz){
             sum += pdjz(j);
         }
@@ -205,7 +208,7 @@ public class Main {
                 break;
             }
         }
-        String[] dcs = StringUtils.splitString(j, " ");
+        String[] dcs = StringUtils.split(j, " ");
         for(String dc : dcs){
             sum += pddc(dc);
         }

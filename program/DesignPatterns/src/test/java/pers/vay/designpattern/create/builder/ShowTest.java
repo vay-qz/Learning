@@ -1,6 +1,7 @@
 package pers.vay.designpattern.create.builder;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 import pers.vay.designpattern.create.builder.after.Show;
 
 public class ShowTest {

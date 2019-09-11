@@ -1,10 +1,11 @@
 package linked_list.tree;
 
-import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class TreeSolutionTest {
 
@@ -14,8 +15,8 @@ class TreeSolutionTest {
     public void inorderTraversal() {
         TreeNode root = getRoot();
         List<Integer> res = getRes();
-        Assert.assertEquals(res, solution.inDg(root));
-        Assert.assertEquals(res, solution.inXh(root));
+        assertEquals(res, solution.inDg(root));
+        assertEquals(res, solution.inXh(root));
     }
 
     @Test
@@ -25,8 +26,8 @@ class TreeSolutionTest {
         res.add(1);
         res.add(2);
         res.add(3);
-        Assert.assertEquals(res, solution.preDg(root));
-        Assert.assertEquals(res, solution.preXh(root));
+        assertEquals(res, solution.preDg(root));
+        assertEquals(res, solution.preXh(root));
     }
 
     private List<Integer> getRes() {
@@ -54,8 +55,8 @@ class TreeSolutionTest {
         res.add(1);
         res.add(2);
         res.add(3);
-//        Assert.assertEquals(res, solution.postDg(root));
-        Assert.assertEquals(res, solution.postXh(root2));
+//        assertEquals(res, solution.postDg(root));
+        assertEquals(res, solution.postXh(root2));
     }
 
     @Test
@@ -63,7 +64,7 @@ class TreeSolutionTest {
         TreeNode root = new TreeNode(1);
         root.right = new TreeNode(2);
         root.right.right = new TreeNode(3);
-        Assert.assertEquals(solution.maxDepth(root), 3);
+        assertEquals(solution.maxDepth(root), 3);
     }
 
     @Test
@@ -71,7 +72,7 @@ class TreeSolutionTest {
         TreeNode root = new TreeNode(1);
         root.right = new TreeNode(2);
         root.right.right = new TreeNode(3);
-        Assert.assertEquals(solution.isBalanced(root), false);
+        assertEquals(solution.isBalanced(root), false);
     }
 
     @Test
@@ -81,15 +82,15 @@ class TreeSolutionTest {
         root.right = new TreeNode(15);
         root.right.left = new TreeNode(6);
         root.right.right = new TreeNode(20);
-        Assert.assertEquals(solution.isValidBST(root), false);
+        assertEquals(solution.isValidBST(root), false);
         TreeNode root2 = new TreeNode(2);
         root2.left = new TreeNode(1);
         root2.right = new TreeNode(3);
-        Assert.assertEquals(solution.isValidBST(root2), true);
+        assertEquals(solution.isValidBST(root2), true);
         TreeNode root3 = new TreeNode(5);
         root3.left = new TreeNode(1);
         root3.right = new TreeNode(4);
-        Assert.assertEquals(solution.isValidBST(root3), false);
+        assertEquals(solution.isValidBST(root3), false);
     }
 
     @Test

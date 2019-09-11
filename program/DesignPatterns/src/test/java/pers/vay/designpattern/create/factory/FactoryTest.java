@@ -1,7 +1,8 @@
 package pers.vay.designpattern.create.factory;
 
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 import pers.vay.designpattern.create.factory.abstractfactory.KFCFactory;
 import pers.vay.designpattern.create.factory.factorymethod.AbstractFactory;
 import pers.vay.designpattern.create.factory.factorymethod.KFCHamburgerFactory;

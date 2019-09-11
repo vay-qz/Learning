@@ -1,11 +1,11 @@
 package pers.vay.Lock;
 
-
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ReentrantLockTest {
 
@@ -18,7 +18,7 @@ public class ReentrantLockTest {
         Thread thread = new ReentrantLockThread(lock, blockingQueue);
         thread.start();
         try {
-            Assert.assertEquals(blockingQueue.poll(3, TimeUnit.SECONDS), TARGET_STRING);
+            assertEquals(blockingQueue.poll(3, TimeUnit.SECONDS), TARGET_STRING);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -32,7 +32,7 @@ public class ReentrantLockTest {
         Thread thread = new ReentrantLockThread(lock, blockingQueue);
         thread.start();
         try {
-            Assert.assertNotEquals(blockingQueue.poll(3, TimeUnit.SECONDS), TARGET_STRING);
+            assertNotEquals(blockingQueue.poll(3, TimeUnit.SECONDS), TARGET_STRING);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -50,7 +50,7 @@ public class ReentrantLockTest {
             }
             Thread.sleep(1000);
         }
-        Assert.assertEquals(result.size(), 2);
+        assertEquals(result.size(), 2);
 
     }
 
@@ -78,7 +78,7 @@ public class ReentrantLockTest {
         thread2.start();
         thread1.join();
         thread2.join();
-        Assert.assertEquals(blockingQueue.size(), 2);
+        assertEquals(blockingQueue.size(), 2);
     }
 
     @Test
@@ -93,7 +93,7 @@ public class ReentrantLockTest {
         });
         thread.start();
         Thread.sleep(1000);
-        Assert.assertEquals(blockingQueue.size(), 0);
+        assertEquals(blockingQueue.size(), 0);
     }
 
     class ReentrantReadLockThread extends Thread {

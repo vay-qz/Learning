@@ -13,13 +13,9 @@
     <artifactId>provider</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <properties>
-        <spring.version>5.1.6.RELEASE</spring.version>
-    </properties>
-
     <dependencies>
         <dependency>
-            <groupId>com.vay</groupId>
+            <groupId>pers.vay</groupId>
             <artifactId>dubboInterface</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
