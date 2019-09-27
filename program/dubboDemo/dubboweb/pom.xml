@@ -4,23 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-
-    <parent>
-        <groupId>pers.vay</groupId>
-        <artifactId>parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
-    </parent>
-
-    <artifactId>dubbodemo</artifactId>
+    <groupId>pers.vay</groupId>
+    <artifactId>dubbo-web</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-
-    <description>dubbo的几种demo，每个子模块对应一种dubbo的配置方法</description>
+    <description>使用springboot-starter来配置dubbo的小demo，本质是使用注解配置</description>
 
     <modules>
-        <module>dubboxml</module>
-        <module>dubboweb</module>
+        <module>consumer</module>
+        <module>provider</module>
+        <module>inf</module>
     </modules>
+
 
 </project>
