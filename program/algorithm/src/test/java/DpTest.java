@@ -21,8 +21,17 @@ class DpTest {
     }
 
     @Test
-    void rob(int[] nums) {
+    void rob() {
+        int[] nums1 = {1,2,3,1};
+        int[] nums2 = {2,7,9,3,1};
+        assertEquals(dp.rob(nums1), 4);
+        assertEquals(dp.rob(nums2), 12);
+    }
 
+    @Test
+    void climbStairs() {
+        assertEquals(dp.climbStairs(2), 2);
+        assertEquals(dp.climbStairs(3), 3);
     }
 
 }

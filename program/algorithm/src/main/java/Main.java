@@ -6,25 +6,25 @@ import java.util.*;
 
 public class Main {
 
-    public static void main(String[] args) {
-        Main main = new Main();
-//        System.out.println(main.method(4));
-//        main.rotateString("abcdefg".toCharArray(), 3);
-//        System.out.println(main.strStr("", ""));
-//        System.out.println(main.firstUniqChar("zsoumdtkhbnbkvfvgbrfktpwwkvqflwfbrojayjvauyeudqdmirkjleatyjegvroswhhlakvmibsyivhonlmuicibrlixxcbxlxgrjnulhsnolwicneyartgaokksjwpdfdotsearcotmyqbudpswikxnujgbnrpxhnskugmfurkfwvtvobunbqxukouvfiglucxjkrukbrwkeqtxyqkkjlaasehjsmviodvwdpymqryifnqogyojiwigpsurbsgjgnclvobbexnjmbcotnvteoysvvyvasfvfcvgyghecojbusnmdbqnctvstyiulqfrvnmxftwljhqubjbfuobuxlvhecieueqyjjjlxxxtwglqpuyqrpthepraqhsvjcteqwinextvhxohharfixrtdopqlrjikkmlvrjvguwestsoiwfvyplypmssmxrkywvngwqnuwdswnwqirurdeihvwjwfinnktacajvrpgamqaonjnqpttrgvqftnpgwbgqdthofqvkqktcxnrvcurrlnuhmtypdktdrhcofdmddjxtjrhojijkcghytyeqhfhighmyidmgbfnijludryjaxgbnssamphgueoahpqfdvysyqfqhbfhwnwqjkdopshjkfwlpcughsbfgywiaxvukxgfgtenmxtljisvpljswuexryltpgqlixsnkwtiapuovcmttsahbwudaagwjoejurykqgwarilnckwomcfrhywmrfyrdfxjvvgjhfrmxnadaatubobxtqgdwoekmskateidgndgsbgmqagymfethmjvwlfkdgcqgsodfmljsqoicfagdflvamntxedqlrxhtbnkprwkavvtinkbjikxipcwbikxhaoudkdhrxlahsndqmfpcrxyushyfhrhkggiopvoaqgnwffpqwujjkhytsucslrvaqsqsrpvtguxfqrjqkrlgddkxxbcoauamhryrvoroqwwcnwyxwwkwrafdupwkgamdfotytclgyhsxfsut"));
-//        System.out.println(main.isUnique(""));
-//        System.out.println(main.count("hahaah. hahaHa. hahaha."));
-//        System.out.println(main.isLegalIdentifier("123_abc"));
-//        int[] a = new int[4];
-//        a[0] = 1;
-//        a[1] = 3;
-//        a[2] = 5;
-//        a[3] = 7;
-////        System.out.println(main.searchInsert(a,5));
-//        System.out.println(main.binarySearch(a, 6));
-        int[] t = new int[]{4,1,8,2,6};
-        main.sxx(5,3,t);
-    }
+//    public static void main(String[] args) {
+//        Main main = new Main();
+////        System.out.println(main.method(4));
+////        main.rotateString("abcdefg".toCharArray(), 3);
+////        System.out.println(main.strStr("", ""));
+////        System.out.println(main.firstUniqChar("zsoumdtkhbnbkvfvgbrfktpwwkvqflwfbrojayjvauyeudqdmirkjleatyjegvroswhhlakvmibsyivhonlmuicibrlixxcbxlxgrjnulhsnolwicneyartgaokksjwpdfdotsearcotmyqbudpswikxnujgbnrpxhnskugmfurkfwvtvobunbqxukouvfiglucxjkrukbrwkeqtxyqkkjlaasehjsmviodvwdpymqryifnqogyojiwigpsurbsgjgnclvobbexnjmbcotnvteoysvvyvasfvfcvgyghecojbusnmdbqnctvstyiulqfrvnmxftwljhqubjbfuobuxlvhecieueqyjjjlxxxtwglqpuyqrpthepraqhsvjcteqwinextvhxohharfixrtdopqlrjikkmlvrjvguwestsoiwfvyplypmssmxrkywvngwqnuwdswnwqirurdeihvwjwfinnktacajvrpgamqaonjnqpttrgvqftnpgwbgqdthofqvkqktcxnrvcurrlnuhmtypdktdrhcofdmddjxtjrhojijkcghytyeqhfhighmyidmgbfnijludryjaxgbnssamphgueoahpqfdvysyqfqhbfhwnwqjkdopshjkfwlpcughsbfgywiaxvukxgfgtenmxtljisvpljswuexryltpgqlixsnkwtiapuovcmttsahbwudaagwjoejurykqgwarilnckwomcfrhywmrfyrdfxjvvgjhfrmxnadaatubobxtqgdwoekmskateidgndgsbgmqagymfethmjvwlfkdgcqgsodfmljsqoicfagdflvamntxedqlrxhtbnkprwkavvtinkbjikxipcwbikxhaoudkdhrxlahsndqmfpcrxyushyfhrhkggiopvoaqgnwffpqwujjkhytsucslrvaqsqsrpvtguxfqrjqkrlgddkxxbcoauamhryrvoroqwwcnwyxwwkwrafdupwkgamdfotytclgyhsxfsut"));
+////        System.out.println(main.isUnique(""));
+////        System.out.println(main.count("hahaah. hahaHa. hahaha."));
+////        System.out.println(main.isLegalIdentifier("123_abc"));
+////        int[] a = new int[4];
+////        a[0] = 1;
+////        a[1] = 3;
+////        a[2] = 5;
+////        a[3] = 7;
+//////        System.out.println(main.searchInsert(a,5));
+////        System.out.println(main.binarySearch(a, 6));
+//        int[] t = new int[]{4,1,8,2,6};
+//        main.sxx(5,3,t);
+//    }
 
     public void sxx(int m, int n , int a[]){
         int jj;
