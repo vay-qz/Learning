@@ -137,7 +137,7 @@ public class Main {
                     try {
                         lock.wait();
                     } catch (InterruptedException e) {
-                        System.out.println("testWait thread be interrupted");
+                        System.out.println("testWait pers.vay.thread be interrupted");
                     }
                 }
         });
@@ -148,7 +148,7 @@ public class Main {
                 try {
                     Thread.sleep(5000);
                 } catch (InterruptedException e) {
-                    System.out.println("testSleep thread be interrupted");
+                    System.out.println("testSleep pers.vay.thread be interrupted");
                 }
         });
         testSleep.start();
@@ -170,7 +170,7 @@ public class Main {
 //                try {
 //                    a.take();
 //                } catch (InterruptedException e) {
-//                    System.out.println("testSleep thread be interrupted");
+//                    System.out.println("testSleep pers.vay.thread be interrupted");
 //                }
 //            }
 //        });

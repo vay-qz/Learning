@@ -2,7 +2,7 @@ package pers.vay;
 
 /**
  * 测试死锁类
- * cmd: thread -b
+ * cmd: pers.vay.thread -b
  * @author qiaozhe
  */
 public class ArthasDeadLock {

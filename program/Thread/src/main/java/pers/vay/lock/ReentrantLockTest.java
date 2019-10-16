@@ -23,7 +23,7 @@ public class ReentrantLockTest {
         List<Thread> threads = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
             Thread thread = new FairReentrantLockThread(lock);
-            thread.setName("thread" + i);
+            thread.setName("pers.vay.thread" + i);
             threads.add(thread);
         }
         for (int i = 0; i < 50; i++) {
@@ -51,7 +51,7 @@ public class ReentrantLockTest {
         List<Thread> threads = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
             Thread thread = new FairReentrantLockThread(lock);
-            thread.setName("thread" + i);
+            thread.setName("pers.vay.thread" + i);
             threads.add(thread);
         }
         for (int i = 0; i < 50; i++) {
@@ -71,7 +71,7 @@ public class ReentrantLockTest {
     public void spin_test() {
         ReentrantLock lock = new ReentrantLock();
         lock.lock();
-        new Thread(()->lock.lock(), "thread 1").start();
+        new Thread(()->lock.lock(), "pers.vay.thread 1").start();
         lock.unlock();
         new Thread(()->{
             lock.lock();
@@ -80,7 +80,7 @@ public class ReentrantLockTest {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }, "thread 2").start();
+        }, "pers.vay.thread 2").start();
     }
 
     public void readlocktest() {

@@ -70,7 +70,7 @@ public class OOMTest {
     }
 
     public void stringPoolPlaceTest() {
-        String a = new StringBuilder("vay").append("mh").toString();
+        String a = new StringBuilder("vay").append("pers.vay.mh").toString();
         System.out.println(a == a.intern());
     }
 

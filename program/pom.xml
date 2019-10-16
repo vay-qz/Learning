@@ -10,7 +10,7 @@
 
     <modules>
         <module>algorithm</module>
-        <module>thread</module>
+        <module>pers.vay.thread</module>
         <module>proxy</module>
         <module>nio</module>
         <module>jvm</module>

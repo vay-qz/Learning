@@ -11,6 +11,6 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>thread</artifactId>
+    <artifactId>pers.vay.thread</artifactId>
     <version>1.0-SNAPSHOT</version>
 </project>

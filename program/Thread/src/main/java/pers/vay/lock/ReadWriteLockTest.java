@@ -9,20 +9,20 @@ public class ReadWriteLockTest {
         lock.writeLock().lock();
         new Thread(()->{
             lock.readLock().lock();
-            System.out.println("thread 1");
-        }, "thread 1").start();
+            System.out.println("pers.vay.thread 1");
+        }, "pers.vay.thread 1").start();
         new Thread(()->{
             lock.readLock().lock();
-            System.out.println("thread 2");
-        },"thread 2").start();
+            System.out.println("pers.vay.thread 2");
+        },"pers.vay.thread 2").start();
         new Thread(()->{
             lock.writeLock().lock();
-            System.out.println("thread 3");
-        }, "thread 3").start();
+            System.out.println("pers.vay.thread 3");
+        }, "pers.vay.thread 3").start();
         new Thread(()->{
             lock.readLock().lock();
-            System.out.println("thread 4");
-        },"thread 4").start();
+            System.out.println("pers.vay.thread 4");
+        },"pers.vay.thread 4").start();
         try {
             Thread.sleep(100);
         } catch (InterruptedException e) {
