@@ -212,4 +212,134 @@ public class Dp {
         }
         return dp[n];
     }
+
+    /**
+     * 给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。
+     *
+     * 如果你最多只允许完成一笔交易（即买入和卖出一支股票），设计一个算法来计算你所能获取的最大利润。
+     *
+     * 注意你不能在买入股票前卖出股票。
+     *
+     * @param prices
+     * @return
+     */
+    public int maxProfit(int[] prices) {
+        int len = prices.length;
+        int[] dp = new int[len];
+        int mmax = 0;
+        for (int i = 0; i < len - 1; i++) {
+            for (int j = i + 1; j < len; j++) {
+                int max = dp[j - 1] > prices[j] ? dp[j - 1] : prices[j];
+                dp[j] = max;
+            }
+            if (dp[len - 1] - prices[i] > mmax) {
+                mmax = dp[len - 1] - prices[i];
+            }
+            for (int j = 0; j < len; j++) {
+                dp[j] = 0;
+            }
+        }
+        return mmax;
+    }
+
+    /**
+     * 区间和都可以转化为求差值的问题，求差值的问题都可以转化为区间和的问题
+     * @param prices
+     * @return
+     */
+    public int maxProfit2(int[] prices) {
+        int len = prices.length;
+        int[] diff = new int[len];
+        for (int i = 0; i < len - 1; i++) {
+            diff[i] = prices[i + 1] - prices[i];
+        }
+        int max = 0;
+        int sum = diff[0] > 0 ? diff[0] : 0;
+        for (int i = 1; i < len; i++) {
+            if (diff[i] + sum > 0) {
+                sum = diff[i] + sum;
+                if (sum > max) {
+                    max = sum;
+                }
+            } else {
+                sum = 0;
+            }
+        }
+        return max;
+    }
+
+    /**
+     * 爱丽丝和鲍勃一起玩游戏，他们轮流行动。爱丽丝先手开局。
+     *
+     * 最初，黑板上有一个数字 N 。在每个玩家的回合，玩家需要执行以下操作：
+     *
+     * 选出任一 x，满足 0 < x < N 且 N % x == 0 。
+     * 用 N - x 替换黑板上的数字 N 。
+     * 如果玩家无法执行这些操作，就会输掉游戏。
+     *
+     * 只有在爱丽丝在游戏中取得胜利时才返回 True，否则返回 false。假设两个玩家都以最佳状态参与游戏。
+     *
+     * @param N
+     * @return
+     */
+    public boolean divisorGame(int N) {
+        if (N % 2 == 0) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 数组的每个索引做为一个阶梯，第 i个阶梯对应着一个非负数的体力花费值 cost[i](索引从0开始)。
+     *
+     * 每当你爬上一个阶梯你都要花费对应的体力花费值，然后你可以选择继续爬一个阶梯或者爬两个阶梯。
+     *
+     * 您需要找到达到楼层顶部的最低花费。在开始时，你可以选择从索引为 0 或 1 的元素作为初始阶梯。
+     *
+     * @param cost
+     * @return
+     */
+    public int minCostClimbingStairs(int[] cost) {
+        int len = cost.length;
+        if (len == 1) {
+            return cost[0];
+        }
+        int[] dp = new int[len];
+        dp[0] = cost[0];
+        dp[1] = cost[1];
+        for (int i = 2; i < len; i++) {
+            dp[i] = (dp[i - 1] < dp[i - 2] ? dp[i - 1] : dp[i - 2]) + cost[i];
+        }
+        return dp[len - 1] < dp[len - 2] ? dp[len - 1] : dp[len - 2];
+    }
+
+    /**
+     * 给定一个整数数组  nums，求出数组从索引 i 到 j  (i ≤ j) 范围内元素的总和，包含 i,  j 两点。
+     */
+    public static class NumArray {
+
+        int[] dp;
+
+        public NumArray(int[] nums) {
+            if (nums.length == 0) {
+                dp = new int[0];
+                return;
+            }
+            int len = nums.length;
+            dp = new int[len];
+            dp[0] = nums[0];
+            for (int i = 1; i < len; i++) {
+                dp[i] = dp[i - 1] + nums[i];
+            }
+        }
+
+        public int sumRange(int i, int j) {
+            if (i == 0) {
+                return dp[j];
+            } else {
+                return dp[j] - dp[i - 1];
+            }
+        }
+    }
+
 }
