@@ -1,5 +1,8 @@
 package pers.vay;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 动态规划算法
  */
@@ -369,6 +372,39 @@ public class Dp {
             dp[i] = dp[i & (i - 1)] + 1;
         }
         return dp;
+    }
+
+    /**
+     * 给定一个三角形，找出自顶向下的最小路径和。每一步只能移动到下一行中相邻的结点上。
+     * @param triangle 三角形
+     * @return
+     */
+    public int minimumTotal(List<List<Integer>> triangle) {
+        int[] dp = new int[triangle.get(triangle.size() - 1).size()];
+        int[] dp2 = new int[triangle.get(triangle.size() - 1).size()];
+        dp[0] = triangle.get(0).get(0);
+        for (int i = 1; i < triangle.size(); i++) {
+            List<Integer> tri = triangle.get(i);
+            for (int j = 0; j < tri.size(); j++) {
+                if (j == 0) {
+                    dp2[j] = dp[j] + tri.get(j);
+                } else if (j == tri.size() - 1) {
+                    dp2[j] = dp[j - 1] + tri.get(j);
+                } else {
+                    dp2[j] = tri.get(j) + (dp[j - 1] < dp[j] ? dp[j - 1] : dp[j]);
+                }
+            }
+            for (int j = 0; j < triangle.get(triangle.size() - 1).size(); j++) {
+                dp[j] = dp2[j];
+            }
+        }
+        int lj = Integer.MAX_VALUE;
+        for (Integer i : dp) {
+            if (i < lj) {
+                lj = i;
+            }
+        }
+        return lj;
     }
 
 }

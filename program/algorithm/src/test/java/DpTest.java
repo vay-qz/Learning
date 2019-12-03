@@ -1,6 +1,10 @@
 import org.junit.jupiter.api.Test;
 import pers.vay.Dp;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class DpTest {
@@ -118,6 +122,30 @@ class DpTest {
         assertArrayEquals(dp.countBits_3(2), ans1);
         assertArrayEquals(dp.countBits_3(5), ans2);
         assertArrayEquals(dp.countBits_3(8), ans4);
+    }
+
+    @Test
+    void minimumTotal() {
+        List<Integer> list1 = new ArrayList<>();
+        list1.add(2);
+        List<Integer> list2 = new ArrayList<>();
+        list2.add(3);
+        list2.add(4);
+        List<Integer> list3 = new ArrayList<>();
+        list3.add(6);
+        list3.add(5);
+        list3.add(7);
+        List<Integer> list4 = new ArrayList<>();
+        list4.add(4);
+        list4.add(1);
+        list4.add(8);
+        list4.add(3);
+        List<List<Integer>> triangle = new ArrayList<>();
+        triangle.add(list1);
+        triangle.add(list2);
+        triangle.add(list3);
+        triangle.add(list4);
+        assertEquals(11, dp.minimumTotal(triangle));
     }
 
 }
