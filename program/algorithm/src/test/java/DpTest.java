@@ -78,4 +78,46 @@ class DpTest {
         assertEquals(n.sumRange(0, 5), -3);
     }
 
+    @Test
+    void countBits1() {
+        int ans0[] = {0};
+        int ans3[] = {0,1};
+        int ans1[] = {0,1,1};
+        int ans2[] = {0,1,1,2,1,2};
+        int ans4[] = {0,1,1,2,1,2,2,3,1};
+        assertArrayEquals(dp.countBits_1(0), ans0);
+        assertArrayEquals(dp.countBits_1(1), ans3);
+        assertArrayEquals(dp.countBits_1(2), ans1);
+        assertArrayEquals(dp.countBits_1(5), ans2);
+        assertArrayEquals(dp.countBits_1(8), ans4);
+    }
+
+    @Test
+    void countBits2() {
+        int ans0[] = {0};
+        int ans3[] = {0,1};
+        int ans1[] = {0,1,1};
+        int ans2[] = {0,1,1,2,1,2};
+        int ans4[] = {0,1,1,2,1,2,2,3,1};
+        assertArrayEquals(dp.countBits_2(0), ans0);
+        assertArrayEquals(dp.countBits_2(1), ans3);
+        assertArrayEquals(dp.countBits_2(2), ans1);
+        assertArrayEquals(dp.countBits_2(5), ans2);
+        assertArrayEquals(dp.countBits_2(8), ans4);
+    }
+
+    @Test
+    void countBits3() {
+        int ans0[] = {0};
+        int ans3[] = {0,1};
+        int ans1[] = {0,1,1};
+        int ans2[] = {0,1,1,2,1,2};
+        int ans4[] = {0,1,1,2,1,2,2,3,1};
+        assertArrayEquals(dp.countBits_3(0), ans0);
+        assertArrayEquals(dp.countBits_3(1), ans3);
+        assertArrayEquals(dp.countBits_3(2), ans1);
+        assertArrayEquals(dp.countBits_3(5), ans2);
+        assertArrayEquals(dp.countBits_3(8), ans4);
+    }
+
 }

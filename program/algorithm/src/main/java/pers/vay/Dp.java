@@ -342,4 +342,33 @@ public class Dp {
         }
     }
 
+    public int[] countBits_1(int num) {
+        int[] dp = new int[num + 1];
+        //乘数
+        int cs = 1;
+        for (int i = 1; i <= num;) {
+            for (int j = 0; j < cs && i <= num; j++, i++) {
+                dp[i] = dp[j] + 1;
+            }
+            cs = cs << 1;
+        }
+        return dp;
+    }
+
+    public int[] countBits_2(int num) {
+        int[] dp = new int[num + 1];
+        for (int i = 1; i <= num; i++) {
+            dp[i] = dp[i >> 1] + (i & 1);
+        }
+        return dp;
+    }
+
+    public int[] countBits_3(int num) {
+        int[] dp = new int[num + 1];
+        for (int i = 1; i <= num; i++) {
+            dp[i] = dp[i & (i - 1)] + 1;
+        }
+        return dp;
+    }
+
 }
