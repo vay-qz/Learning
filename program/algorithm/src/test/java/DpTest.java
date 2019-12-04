@@ -148,4 +148,17 @@ class DpTest {
         assertEquals(11, dp.minimumTotal(triangle));
     }
 
+    @Test
+    void numDecodings() {
+        assertEquals(2, dp.numDecodings("12"));
+        assertEquals(3, dp.numDecodings("226"));
+        assertEquals(3, dp.numDecodings("2261"));
+        assertEquals(0, dp.numDecodings("0"));
+        assertEquals(1, dp.numDecodings("10"));
+        assertEquals(0, dp.numDecodings("00"));
+        assertEquals(0, dp.numDecodings("01"));
+        assertEquals(0, dp.numDecodings("100"));
+        assertEquals(1, dp.numDecodings("101"));
+    }
+
 }
