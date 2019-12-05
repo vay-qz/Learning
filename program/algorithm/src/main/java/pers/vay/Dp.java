@@ -443,4 +443,28 @@ public class Dp {
         return dp[s.length() - 1];
     }
 
+    public int rob2(int[] nums) {
+        if (nums.length == 0) {
+            return 0;
+        }
+        if (nums.length == 1) {
+            return nums[0];
+        }
+        int[] dpWithoutFirst = new int[nums.length];
+        dpWithoutFirst[0] = 0;
+        dpWithoutFirst[1] = nums[1];
+        for (int i = 2; i < nums.length; i++) {
+            int temp = dpWithoutFirst[i - 2] + nums[i];
+            dpWithoutFirst[i] = dpWithoutFirst[i - 1] > temp ? dpWithoutFirst[i - 1] : temp;
+        }
+        int[] dp = new int[nums.length];
+        dp[0] = nums[0];
+        dp[1] = nums[0] > nums[1] ? nums[0] : nums[1];
+        for (int i = 2; i < nums.length - 1; i++) {
+            int temp = dp[i - 2] + nums[i];
+            dp[i] = dp[i - 1] > temp ? dp[i - 1] : temp;
+        }
+        return dp[nums.length - 2] > dpWithoutFirst[nums.length - 1] ? dp[nums.length - 2] : dpWithoutFirst[nums.length - 1];
+    }
+
 }

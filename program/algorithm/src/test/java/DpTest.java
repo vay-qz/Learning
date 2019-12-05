@@ -161,4 +161,16 @@ class DpTest {
         assertEquals(1, dp.numDecodings("101"));
     }
 
+    @Test
+    void rob2() {
+        int[] t1 = {2,3,2};
+        int[] t2 = {1,2,3,1};
+        int[] t3 = {1,2,3,1,6};
+        int[] t4 = {1,1};
+        assertEquals(3, dp.rob2(t1));
+        assertEquals(4, dp.rob2(t2));
+        assertEquals(9, dp.rob2(t3));
+        assertEquals(1, dp.rob2(t4));
+    }
+
 }
