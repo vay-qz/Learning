@@ -173,4 +173,10 @@ class DpTest {
         assertEquals(1, dp.rob2(t4));
     }
 
+    @Test
+    void numSquares() {
+        assertEquals(dp.numSquares(12), 3);
+        assertEquals(dp.numSquares(13), 2);
+    }
+
 }

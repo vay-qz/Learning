@@ -467,4 +467,19 @@ public class Dp {
         return dp[nums.length - 2] > dpWithoutFirst[nums.length - 1] ? dp[nums.length - 2] : dpWithoutFirst[nums.length - 1];
     }
 
+    public int numSquares(int n) {
+        int[] dp = new int[n + 1];
+        dp[1] = 1;
+        for (int i = 2; i <= n; i++) {
+            int t = n;
+            for (int j = 1; j*j <= i; j++ ) {
+                if (dp[i - j*j] < t) {
+                    t = dp[i - j*j];
+                }
+            }
+            dp[i] = t + 1;
+        }
+        return dp[n];
+    }
+
 }
