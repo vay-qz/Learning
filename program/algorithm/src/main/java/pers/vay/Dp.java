@@ -1,7 +1,7 @@
 package pers.vay;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * 动态规划算法
@@ -480,6 +480,80 @@ public class Dp {
             dp[i] = t + 1;
         }
         return dp[n];
+    }
+
+    public boolean isMatchRecursive(String s, String p) {
+        char[] ss = s.toCharArray();
+        char[] pp = p.toCharArray();
+        return match(0, 0, ss, pp);
+    }
+
+    private boolean match(int si, int pi, char[] s, char[] p) {
+        if (pi >= p.length) {
+            return si >=s.length;
+        }
+        boolean flag = si < s.length && pi < p.length && (s[si] == p[pi] || p[pi] == '.');
+        if (pi < p.length - 1 && p[pi + 1] == '*') {
+            return match(si, pi + 2, s, p) || flag && match(si + 1, pi, s, p);
+        } else {
+            return flag && match(si + 1, pi + 1, s, p);
+        }
+    }
+
+    public int longestValidParentheses_dp(String s) {
+       if (s.length() < 2) {
+           return 0;
+       }
+       int[] dp = new int[s.length()];
+       if (s.startsWith("()")) {
+           dp[1] = 2;
+       }
+       for (int i = 2; i < s.length(); i++) {
+           if (s.charAt(i) == '(') {
+               dp[i] = 0;
+           } else {
+               if (s.charAt(i - 1) == '(') {
+                   if (i > 1) {
+                       dp[i] = dp[i - 2] + 2;
+                   } else {
+                       dp[i] = 2;
+                   }
+               } else {
+                   if (i - dp[i - 1] - 1 >= 0 && s.charAt(i - dp[i - 1] -1) == '(') {
+                       if (i - dp[i - 1] - 2 > 0) {
+                           dp[i] = dp[i - 1] + 2 + dp[i - dp[i - 1] - 2];
+                       } else {
+                           dp[i] = dp[i - 1] + 2;
+                       }
+                   }
+               }
+           }
+       }
+       int max = 0;
+       for (int i = 0; i < dp.length; i++) {
+           if (max < dp[i]) {
+               max = dp[i];
+           }
+       }
+       return max;
+    }
+
+    public int longestValidParentheses_stack(String s) {
+        int max = 0;
+        Stack<Integer> stack = new Stack();
+        stack.push(-1);
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(') {
+                stack.push(i);
+            } else {
+                stack.pop();
+                if (stack.isEmpty()) {
+                    stack.push(i);
+                }
+                max = max > i - stack.peek() ? max : i - stack.peek();
+            }
+        }
+        return max;
     }
 
 }

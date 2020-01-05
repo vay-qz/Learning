@@ -2,10 +2,10 @@ import org.junit.jupiter.api.Test;
 import pers.vay.Dp;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DpTest {
 
@@ -177,6 +177,45 @@ class DpTest {
     void numSquares() {
         assertEquals(dp.numSquares(12), 3);
         assertEquals(dp.numSquares(13), 2);
+    }
+
+    @Test
+    void isMatchRecursive() {
+        assertEquals(dp.isMatchRecursive("aa", "a"), false);
+        assertEquals(dp.isMatchRecursive("aa", "a*"), true);
+        assertEquals(dp.isMatchRecursive("ab", ".*"), true);
+        assertEquals(dp.isMatchRecursive("aab", "c*a*b"), true);
+        assertEquals(dp.isMatchRecursive("mississippi", "mis*is*p*."), false);
+        assertEquals(dp.isMatchRecursive("abcd", "d*"), false);
+        assertEquals(dp.isMatchRecursive("ab", ".*c"), false);
+        assertEquals(dp.isMatchRecursive("aaa", "aaaa"), false);
+        assertEquals(dp.isMatchRecursive("aaa", "a*a"), true);
+        assertEquals(dp.isMatchRecursive("", "a*a*"), true);
+    }
+
+    @Test
+    void longestValidParentheses() {
+        assertEquals(dp.longestValidParentheses_dp("(()())"), 6);
+        assertEquals(dp.longestValidParentheses_dp("())"), 2);
+        assertEquals(dp.longestValidParentheses_dp("(()"), 2);
+        assertEquals(dp.longestValidParentheses_dp(")()())"), 4);
+        assertEquals(dp.longestValidParentheses_dp(""), 0);
+        assertEquals(dp.longestValidParentheses_dp(")"), 0);
+        assertEquals(dp.longestValidParentheses_dp("()"), 2);
+        assertEquals(dp.longestValidParentheses_dp("()(()"), 2);
+    }
+
+    @Test
+    void longestValidParentheses_stack() {
+        assertEquals(dp.longestValidParentheses_stack(")()())()()("), 4);
+        assertEquals(dp.longestValidParentheses_stack("(()())"), 6);
+        assertEquals(dp.longestValidParentheses_stack("())"), 2);
+        assertEquals(dp.longestValidParentheses_stack("(()"), 2);
+        assertEquals(dp.longestValidParentheses_stack(")()())"), 4);
+        assertEquals(dp.longestValidParentheses_stack(""), 0);
+        assertEquals(dp.longestValidParentheses_stack(")"), 0);
+        assertEquals(dp.longestValidParentheses_stack("()"), 2);
+        assertEquals(dp.longestValidParentheses_stack("()(()"), 2);
     }
 
 }
