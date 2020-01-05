@@ -180,6 +180,20 @@ class DpTest {
     }
 
     @Test
+    void isSubsequence() {
+        assertEquals(dp.isSubsequence("123", "1234"), true);
+        assertEquals(dp.isSubsequence("124", "1234"), true);
+    }
+
+    @Test
+    void balancedString() {
+//        assertEquals(dp.balancedString("QWER"), 0);
+//        assertEquals(dp.balancedString("QQWE"), 1);
+//        assertEquals(dp.balancedString("QQQW"), 2);
+//        assertEquals(dp.balancedString("QQQQ"), 3);
+        assertEquals(dp.balancedString("WWEQERQWQWWRWWERQWEQ"), 4);
+    }
+    @Test
     void isMatchRecursive() {
         assertEquals(dp.isMatchRecursive("aa", "a"), false);
         assertEquals(dp.isMatchRecursive("aa", "a*"), true);

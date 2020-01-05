@@ -556,4 +556,58 @@ public class Dp {
         return max;
     }
 
+    public boolean isSubsequence(String s, String t) {
+        int i = 0;
+        for (int j = 0 ; i < s.length() && j < t.length();j++) {
+            if (s.charAt(i) == t.charAt(j)) {
+                i++;
+            }
+        }
+        if (i == s.length()) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 有一个只含有 'Q', 'W', 'E', 'R' 四种字符，且长度为 n 的字符串。
+     * 假如在该字符串中，这四个字符都恰好出现 n/4 次，那么它就是一个「平衡字符串」
+     *
+     * 给你一个这样的字符串 s，请通过「替换一个子串」的方式，使原字符串 s 变成一个「平衡字符串」。
+     * 你可以用和「待替换子串」长度相同的 任何 其他字符串来完成替换。
+     * 请返回待替换子串的最小可能长度。
+     *
+     * 1 <= s.length <= 10^5
+     * s.length 是 4 的倍数
+     * s 中只含有 'Q', 'W', 'E', 'R' 四种字符
+     */
+    public int balancedString(String s) {
+        int[] num = new int[4];
+        final int QIndex = 0;
+        final int WIndex = 1;
+        final int EIndex = 2;
+        final int RIndex = 3;
+        for (int i = 0; i < s.length(); i++) {
+            switch (s.charAt(i)) {
+                case 'Q':
+                    num[QIndex]++;
+                    break;
+                case 'W':
+                    num[WIndex]++;
+                    break;
+                case 'E':
+                    num[EIndex]++;
+                    break;
+                case 'R':
+                    num[RIndex]++;
+                    break;
+            }
+        }
+        int length = s.length() >> 2;
+        return (Math.abs(length - num[QIndex])
+                + Math.abs(length - num[WIndex])
+                + Math.abs(length - num[EIndex])
+                + Math.abs(length - num[RIndex])) / 2;
+    }
+
 }
