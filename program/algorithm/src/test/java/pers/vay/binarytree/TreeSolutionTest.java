@@ -1,7 +1,7 @@
 package pers.vay.binarytree;
 
 import org.junit.jupiter.api.Test;
-import pers.vay.bean.TreeNode;
+import pers.vay.structure.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

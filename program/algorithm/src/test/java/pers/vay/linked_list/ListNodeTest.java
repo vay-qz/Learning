@@ -1,7 +1,7 @@
 package pers.vay.linked_list;
 
 import org.junit.jupiter.api.Test;
-import pers.vay.bean.ListNode;
+import pers.vay.structure.ListNode;
 
 
 class ListNodeTest {

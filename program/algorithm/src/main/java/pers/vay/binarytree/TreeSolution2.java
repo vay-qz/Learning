@@ -1,6 +1,7 @@
 package pers.vay.binarytree;
 
-import pers.vay.bean.TreeNode;
+import pers.vay.structure.ListNode;
+import pers.vay.structure.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -109,6 +110,32 @@ public class TreeSolution2 {
             }
         }
         return res;
+    }
+
+    public List<String> binaryTreePaths(TreeNode root) {
+        if (root == null) {
+            return null;
+        }
+        List<String> paths = new ArrayList<>();
+        getPath(paths, Integer.toString(root.val), root);
+        return paths;
+    }
+
+    private void getPath(List<String> paths, String oldPath, TreeNode root) {
+        if (root.left == null && root.right == null) {
+            paths.add(oldPath);
+            return;
+        }
+        if (root.left != null) {
+            String path = oldPath + "->";
+            path += Integer.toString(root.left.val);
+            getPath(paths, path, root.left);
+        }
+        if (root.right != null) {
+            String path = oldPath + "->";
+            path += Integer.toString(root.right.val);
+            getPath(paths, path, root.right);
+        }
     }
 
 }

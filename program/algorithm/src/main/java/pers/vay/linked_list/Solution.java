@@ -1,6 +1,6 @@
 package pers.vay.linked_list;
 
-import pers.vay.bean.ListNode;
+import pers.vay.structure.ListNode;
 
 import java.util.*;
 

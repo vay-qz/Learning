@@ -1,7 +1,7 @@
 package pers.vay.binarytree;
 
-import pers.vay.bean.ListNode;
-import pers.vay.bean.TreeNode;
+import pers.vay.structure.ListNode;
+import pers.vay.structure.TreeNode;
 
 import java.util.*;
 

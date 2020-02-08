@@ -1,4 +1,4 @@
-package pers.vay.bean;
+package pers.vay.structure;
 
 /**
  * @author qiaozhe
