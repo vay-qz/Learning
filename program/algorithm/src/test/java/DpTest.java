@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 import pers.vay.Dp;
+import pers.vay.structure.ListNode;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -186,6 +187,47 @@ class DpTest {
         assertEquals(dp.isMatch("aa", ".*"), true);
         assertEquals(dp.isMatch("aab", "c*a*b*"), true);
         assertEquals(dp.isMatch("mississippi", "mis*is*p*."), false);
+    }
+
+
+    @Test
+    void replaceSpace() {
+        assertEquals(dp.replaceSpace("We are happy."), "We%20are%20happy.");
+    }
+
+    @Test
+    void reversePrint() {
+        ListNode a1 = new ListNode(1);
+        a1.next = new ListNode(3);
+        a1.next.next = new ListNode(2);
+        int[] res = {2,3,1};
+        assertArrayEquals(dp.reversePrint(a1), res);
+    }
+
+    @Test
+    void fib() {
+        assertEquals(dp.fib(2), 1);
+        assertEquals(dp.fib(5), 5);
+        System.out.println(dp.fib(94));
+        System.out.println(dp.fib(95));
+//        assertEquals(dp.fib(95), 407059028);
+        System.out.println(dp.fib(100));
+    }
+
+    @Test
+    void reverseLeftWords() {
+        assertArrayEquals(dp.reverseLeftWords("abcdefg", 2).toCharArray(), "cdefgab".toCharArray());
+    }
+
+    @Test
+    void reverseList() {
+        ListNode a1 = new ListNode(1);
+        a1.next = new ListNode(2);
+        a1.next.next = new ListNode(3);
+        a1.next.next.next = new ListNode(4);
+        a1.next.next.next.next = new ListNode(5);
+//        dp.reverseList(a1);
+        dp.reverseList(null);
     }
 
 }

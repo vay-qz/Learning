@@ -1,7 +1,11 @@
 package pers.vay;
 
-import java.util.ArrayList;
+
+import pers.vay.structure.ListNode;
+
+import java.util.Arrays;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * 动态规划算法
@@ -490,6 +494,122 @@ public class Dp {
      */
     public boolean isMatch(String s, String p) {
         return true;
+    }
+
+    public String replaceSpace(String s) {
+        char[] t = s.toCharArray();
+        StringBuilder builder = new StringBuilder();
+        for (char tt : t) {
+            if (tt == ' ') {
+                builder.append("%20");
+            } else {
+                builder.append(tt);
+            }
+        }
+        return builder.toString();
+    }
+
+    public int[] reversePrint(ListNode head) {
+        Stack<Integer> list = new Stack<>();
+        while (head != null) {
+            list.push(head.val);
+            head = head.next;
+        }
+        int[] t = new int[list.size()];
+        for (int i = 0; i < t.length; i++) {
+            t[i] = list.pop();
+        }
+        return t;
+    }
+
+    public ListNode getKthFromEnd(ListNode head, int k) {
+        ListNode res = head;
+        for (int i = 0; i < k; i++) {
+            head = head.next;
+        }
+        while (head != null) {
+            head = head.next;
+            res = res.next;
+        }
+        return res;
+    }
+
+    public int fib(int n) {
+        long[] dp = new long[n + 1];
+        if (n == 0) {
+            return 0;
+        }
+        if (n == 1) {
+            return 1;
+        }
+        dp[1] = 1;
+        for (int i = 2; i < n + 1; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
+            if (dp[i] > 1000000007) {
+                dp[i] %= 1000000007;
+            }
+        }
+        return (int)(dp[n] % 1000000007);
+    }
+
+    public String reverseLeftWords(String s, int n) {
+        char[] tt = s.toCharArray();
+        char[] t1 = Arrays.copyOfRange(tt, 0, n);
+        char[] t2 = Arrays.copyOfRange(tt, n, tt.length);
+        return new String(t2) + new String(t1);
+    }
+
+    public ListNode deleteNode(ListNode head, int val) {
+        if (head.val == val) {
+            return head.next;
+        }
+        ListNode t1 = head;
+        ListNode t2 = head.next;
+        while (t2 != null) {
+            if (t2.val == val) {
+                t1.next = t2.next;
+                break;
+            }
+            t1 = t1.next;
+            t2 = t2.next;
+        }
+        return head;
+    }
+
+    public ListNode reverseList(ListNode head) {
+        Stack<ListNode> listNodes = new Stack<>();
+        while (head!=null) {
+            listNodes.push(head);
+            head = head.next;
+        }
+        if (listNodes.isEmpty()) {
+            return null;
+        }
+        ListNode newHead = listNodes.pop();
+        ListNode node = newHead;
+        while (!listNodes.isEmpty()) {
+            node.next = listNodes.pop();
+            node = node.next;
+        }
+        node.next = null;
+        return newHead;
+    }
+
+    public int[] printNumbers(int n) {
+        int t = 1;
+        for (int i = 0; i < n; i++) {
+            t *= 10;
+        }
+        int[] res = new int[t - 1];
+        for (int i = 0, j = 1; i < t - 1; i++, j++) {
+            res[i] = j;
+        }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        Dp dp = new Dp();
+        dp.printNumbers(1);
     }
 
 }
