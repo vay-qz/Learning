@@ -1,11 +1,12 @@
 import org.junit.jupiter.api.Test;
 import pers.vay.Dp;
+import pers.vay.structure.ListNode;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 class DpTest {
 
@@ -180,56 +181,53 @@ class DpTest {
     }
 
     @Test
-    void isSubsequence() {
-        assertEquals(dp.isSubsequence("123", "1234"), true);
-        assertEquals(dp.isSubsequence("124", "1234"), true);
+    void isMatch() {
+        assertEquals(dp.isMatch("aa", "a"), false);
+        assertEquals(dp.isMatch("aa", "a*"), true);
+        assertEquals(dp.isMatch("aa", ".*"), true);
+        assertEquals(dp.isMatch("aab", "c*a*b*"), true);
+        assertEquals(dp.isMatch("mississippi", "mis*is*p*."), false);
+    }
+
+
+    @Test
+    void replaceSpace() {
+        assertEquals(dp.replaceSpace("We are happy."), "We%20are%20happy.");
     }
 
     @Test
-    void balancedString() {
-//        assertEquals(dp.balancedString("QWER"), 0);
-//        assertEquals(dp.balancedString("QQWE"), 1);
-//        assertEquals(dp.balancedString("QQQW"), 2);
-//        assertEquals(dp.balancedString("QQQQ"), 3);
-        assertEquals(dp.balancedString("WWEQERQWQWWRWWERQWEQ"), 4);
-    }
-    @Test
-    void isMatchRecursive() {
-        assertEquals(dp.isMatchRecursive("aa", "a"), false);
-        assertEquals(dp.isMatchRecursive("aa", "a*"), true);
-        assertEquals(dp.isMatchRecursive("ab", ".*"), true);
-        assertEquals(dp.isMatchRecursive("aab", "c*a*b"), true);
-        assertEquals(dp.isMatchRecursive("mississippi", "mis*is*p*."), false);
-        assertEquals(dp.isMatchRecursive("abcd", "d*"), false);
-        assertEquals(dp.isMatchRecursive("ab", ".*c"), false);
-        assertEquals(dp.isMatchRecursive("aaa", "aaaa"), false);
-        assertEquals(dp.isMatchRecursive("aaa", "a*a"), true);
-        assertEquals(dp.isMatchRecursive("", "a*a*"), true);
+    void reversePrint() {
+        ListNode a1 = new ListNode(1);
+        a1.next = new ListNode(3);
+        a1.next.next = new ListNode(2);
+        int[] res = {2,3,1};
+        assertArrayEquals(dp.reversePrint(a1), res);
     }
 
     @Test
-    void longestValidParentheses() {
-        assertEquals(dp.longestValidParentheses_dp("(()())"), 6);
-        assertEquals(dp.longestValidParentheses_dp("())"), 2);
-        assertEquals(dp.longestValidParentheses_dp("(()"), 2);
-        assertEquals(dp.longestValidParentheses_dp(")()())"), 4);
-        assertEquals(dp.longestValidParentheses_dp(""), 0);
-        assertEquals(dp.longestValidParentheses_dp(")"), 0);
-        assertEquals(dp.longestValidParentheses_dp("()"), 2);
-        assertEquals(dp.longestValidParentheses_dp("()(()"), 2);
+    void fib() {
+        assertEquals(dp.fib(2), 1);
+        assertEquals(dp.fib(5), 5);
+        System.out.println(dp.fib(94));
+        System.out.println(dp.fib(95));
+//        assertEquals(dp.fib(95), 407059028);
+        System.out.println(dp.fib(100));
     }
 
     @Test
-    void longestValidParentheses_stack() {
-        assertEquals(dp.longestValidParentheses_stack(")()())()()("), 4);
-        assertEquals(dp.longestValidParentheses_stack("(()())"), 6);
-        assertEquals(dp.longestValidParentheses_stack("())"), 2);
-        assertEquals(dp.longestValidParentheses_stack("(()"), 2);
-        assertEquals(dp.longestValidParentheses_stack(")()())"), 4);
-        assertEquals(dp.longestValidParentheses_stack(""), 0);
-        assertEquals(dp.longestValidParentheses_stack(")"), 0);
-        assertEquals(dp.longestValidParentheses_stack("()"), 2);
-        assertEquals(dp.longestValidParentheses_stack("()(()"), 2);
+    void reverseLeftWords() {
+        assertArrayEquals(dp.reverseLeftWords("abcdefg", 2).toCharArray(), "cdefgab".toCharArray());
+    }
+
+    @Test
+    void reverseList() {
+        ListNode a1 = new ListNode(1);
+        a1.next = new ListNode(2);
+        a1.next.next = new ListNode(3);
+        a1.next.next.next = new ListNode(4);
+        a1.next.next.next.next = new ListNode(5);
+//        dp.reverseList(a1);
+        dp.reverseList(null);
     }
 
 }

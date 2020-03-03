@@ -1,5 +1,9 @@
 package pers.vay;
 
+
+import pers.vay.structure.ListNode;
+
+import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
 
@@ -482,132 +486,130 @@ public class Dp {
         return dp[n];
     }
 
-    public boolean isMatchRecursive(String s, String p) {
-        char[] ss = s.toCharArray();
-        char[] pp = p.toCharArray();
-        return match(0, 0, ss, pp);
-    }
-
-    private boolean match(int si, int pi, char[] s, char[] p) {
-        if (pi >= p.length) {
-            return si >=s.length;
-        }
-        boolean flag = si < s.length && pi < p.length && (s[si] == p[pi] || p[pi] == '.');
-        if (pi < p.length - 1 && p[pi + 1] == '*') {
-            return match(si, pi + 2, s, p) || flag && match(si + 1, pi, s, p);
-        } else {
-            return flag && match(si + 1, pi + 1, s, p);
-        }
-    }
-
-    public int longestValidParentheses_dp(String s) {
-       if (s.length() < 2) {
-           return 0;
-       }
-       int[] dp = new int[s.length()];
-       if (s.startsWith("()")) {
-           dp[1] = 2;
-       }
-       for (int i = 2; i < s.length(); i++) {
-           if (s.charAt(i) == '(') {
-               dp[i] = 0;
-           } else {
-               if (s.charAt(i - 1) == '(') {
-                   if (i > 1) {
-                       dp[i] = dp[i - 2] + 2;
-                   } else {
-                       dp[i] = 2;
-                   }
-               } else {
-                   if (i - dp[i - 1] - 1 >= 0 && s.charAt(i - dp[i - 1] -1) == '(') {
-                       if (i - dp[i - 1] - 2 > 0) {
-                           dp[i] = dp[i - 1] + 2 + dp[i - dp[i - 1] - 2];
-                       } else {
-                           dp[i] = dp[i - 1] + 2;
-                       }
-                   }
-               }
-           }
-       }
-       int max = 0;
-       for (int i = 0; i < dp.length; i++) {
-           if (max < dp[i]) {
-               max = dp[i];
-           }
-       }
-       return max;
-    }
-
-    public int longestValidParentheses_stack(String s) {
-        int max = 0;
-        Stack<Integer> stack = new Stack();
-        stack.push(-1);
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '(') {
-                stack.push(i);
-            } else {
-                stack.pop();
-                if (stack.isEmpty()) {
-                    stack.push(i);
-                }
-                max = max > i - stack.peek() ? max : i - stack.peek();
-            }
-        }
-        return max;
-    }
-
-    public boolean isSubsequence(String s, String t) {
-        int i = 0;
-        for (int j = 0 ; i < s.length() && j < t.length();j++) {
-            if (s.charAt(i) == t.charAt(j)) {
-                i++;
-            }
-        }
-        if (i == s.length()) {
-            return true;
-        }
-        return false;
-    }
-
     /**
-     * 有一个只含有 'Q', 'W', 'E', 'R' 四种字符，且长度为 n 的字符串。
-     * 假如在该字符串中，这四个字符都恰好出现 n/4 次，那么它就是一个「平衡字符串」
-     *
-     * 给你一个这样的字符串 s，请通过「替换一个子串」的方式，使原字符串 s 变成一个「平衡字符串」。
-     * 你可以用和「待替换子串」长度相同的 任何 其他字符串来完成替换。
-     * 请返回待替换子串的最小可能长度。
-     *
-     * 1 <= s.length <= 10^5
-     * s.length 是 4 的倍数
-     * s 中只含有 'Q', 'W', 'E', 'R' 四种字符
+     * 给你一个字符串 s 和一个字符规律 p，请你来实现一个支持 '.' 和 '*' 的正则表达式匹配
+     * @param s
+     * @param p
+     * @return
      */
-    public int balancedString(String s) {
-        int[] num = new int[4];
-        final int QIndex = 0;
-        final int WIndex = 1;
-        final int EIndex = 2;
-        final int RIndex = 3;
-        for (int i = 0; i < s.length(); i++) {
-            switch (s.charAt(i)) {
-                case 'Q':
-                    num[QIndex]++;
-                    break;
-                case 'W':
-                    num[WIndex]++;
-                    break;
-                case 'E':
-                    num[EIndex]++;
-                    break;
-                case 'R':
-                    num[RIndex]++;
-                    break;
+    public boolean isMatch(String s, String p) {
+        return true;
+    }
+
+    public String replaceSpace(String s) {
+        char[] t = s.toCharArray();
+        StringBuilder builder = new StringBuilder();
+        for (char tt : t) {
+            if (tt == ' ') {
+                builder.append("%20");
+            } else {
+                builder.append(tt);
             }
         }
-        int length = s.length() >> 2;
-        return (Math.abs(length - num[QIndex])
-                + Math.abs(length - num[WIndex])
-                + Math.abs(length - num[EIndex])
-                + Math.abs(length - num[RIndex])) / 2;
+        return builder.toString();
+    }
+
+    public int[] reversePrint(ListNode head) {
+        Stack<Integer> list = new Stack<>();
+        while (head != null) {
+            list.push(head.val);
+            head = head.next;
+        }
+        int[] t = new int[list.size()];
+        for (int i = 0; i < t.length; i++) {
+            t[i] = list.pop();
+        }
+        return t;
+    }
+
+    public ListNode getKthFromEnd(ListNode head, int k) {
+        ListNode res = head;
+        for (int i = 0; i < k; i++) {
+            head = head.next;
+        }
+        while (head != null) {
+            head = head.next;
+            res = res.next;
+        }
+        return res;
+    }
+
+    public int fib(int n) {
+        long[] dp = new long[n + 1];
+        if (n == 0) {
+            return 0;
+        }
+        if (n == 1) {
+            return 1;
+        }
+        dp[1] = 1;
+        for (int i = 2; i < n + 1; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
+            if (dp[i] > 1000000007) {
+                dp[i] %= 1000000007;
+            }
+        }
+        return (int)(dp[n] % 1000000007);
+    }
+
+    public String reverseLeftWords(String s, int n) {
+        char[] tt = s.toCharArray();
+        char[] t1 = Arrays.copyOfRange(tt, 0, n);
+        char[] t2 = Arrays.copyOfRange(tt, n, tt.length);
+        return new String(t2) + new String(t1);
+    }
+
+    public ListNode deleteNode(ListNode head, int val) {
+        if (head.val == val) {
+            return head.next;
+        }
+        ListNode t1 = head;
+        ListNode t2 = head.next;
+        while (t2 != null) {
+            if (t2.val == val) {
+                t1.next = t2.next;
+                break;
+            }
+            t1 = t1.next;
+            t2 = t2.next;
+        }
+        return head;
+    }
+
+    public ListNode reverseList(ListNode head) {
+        Stack<ListNode> listNodes = new Stack<>();
+        while (head!=null) {
+            listNodes.push(head);
+            head = head.next;
+        }
+        if (listNodes.isEmpty()) {
+            return null;
+        }
+        ListNode newHead = listNodes.pop();
+        ListNode node = newHead;
+        while (!listNodes.isEmpty()) {
+            node.next = listNodes.pop();
+            node = node.next;
+        }
+        node.next = null;
+        return newHead;
+    }
+
+    public int[] printNumbers(int n) {
+        int t = 1;
+        for (int i = 0; i < n; i++) {
+            t *= 10;
+        }
+        int[] res = new int[t - 1];
+        for (int i = 0, j = 1; i < t - 1; i++, j++) {
+            res[i] = j;
+        }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        Dp dp = new Dp();
+        dp.printNumbers(1);
     }
 
 }
