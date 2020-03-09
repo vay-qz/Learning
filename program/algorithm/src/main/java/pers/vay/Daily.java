@@ -60,4 +60,26 @@ public class Daily {
         return rr;
     }
 
+    public int maxProfit(int[] prices) {
+        if (prices.length < 2) {
+            return 0;
+        }
+        int[] dp = new int[prices.length];
+        dp[0] = prices[0];
+        for (int i = 1; i < prices.length; i++) {
+            dp[i] = dp[i - 1] < prices[i - 1] ? dp[i - 1] : prices[i - 1];
+        }
+        int max = 0;
+        for (int i = 1; i < prices.length; i++) {
+            if ((prices[i] - dp[i]) > max) {
+                max = prices[i] - dp[i];
+            }
+        }
+        return max;
+    }
+
+    public int maxProfit2(int[] prices) {
+        return 1;
+    }
+
 }

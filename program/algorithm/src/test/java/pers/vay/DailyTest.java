@@ -22,4 +22,12 @@ class DailyTest {
         daily.findContinuousSequence(98160);
     }
 
+    @Test
+    void maxProfit() {
+        int[] test1 = {7,1,5,3,6,4};
+        assertEquals(daily.maxProfit(test1), 5);
+        int[] test2 = {7,6,4,3,1};
+        assertEquals(daily.maxProfit(test2), 0);
+    }
+
 }
