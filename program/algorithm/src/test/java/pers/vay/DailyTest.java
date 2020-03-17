@@ -30,4 +30,13 @@ class DailyTest {
         assertEquals(daily.maxProfit(test2), 0);
     }
 
+    @Test
+    void gcdOfStrings() {
+        assertEquals(daily.gcdOfStrings("TAUXXTAUXXTAUXXTAUXXTAUXX", "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX"), "TAUXX");
+        assertEquals(daily.gcdOfStrings("ABCDEF", "ABC"), "");
+        assertEquals(daily.gcdOfStrings("ABCABC", "ABC"), "ABC");
+        assertEquals(daily.gcdOfStrings("ABABAB", "ABAB"), "AB");
+        assertEquals(daily.gcdOfStrings("LEET", "CODE"), "");
+    }
+
 }
