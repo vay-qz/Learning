@@ -1,6 +1,7 @@
 package pers.vay.thread;
 
 import java.util.concurrent.locks.LockSupport;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class ThreadTest {
 
@@ -36,9 +37,45 @@ public class ThreadTest {
 
     public static void main(String[] args) {
         ThreadTest test = new ThreadTest();
-        test.waitTiming();
-        test.parkTiming();
-        LockSupport.park();
+        test.test1();
+    }
+
+
+    public Object obj = new Object();
+
+    public void syncLock () {
+        synchronized (obj) {
+            while (true);
+        }
+    }
+
+    public void test1 () {
+        Thread a = new Thread(()->{
+            syncLock();
+        });
+        Thread b = new Thread(()->{
+            syncLock();
+        });
+        a.start();
+        park1s();
+        b.start();
+//        b.interrupt();
+        park1s();
+        System.out.println(a.getState());
+        System.out.println(b.getState());
+    }
+
+    public void test2() {
+        ReentrantLock lock = new ReentrantLock();
+
+    }
+
+    public void park1s() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 }

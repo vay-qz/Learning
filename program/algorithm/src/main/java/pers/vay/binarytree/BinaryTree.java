@@ -97,6 +97,7 @@ public class BinaryTree {
         node.right = new TreeNode(3);
         node.left.right = new TreeNode(4);
         node.right.left = new TreeNode(5);
+        TreeNode node11 = tree.binaryMirror(node);
         tree.inorder(node);
         System.out.println();
         tree.preorder(node);
@@ -108,6 +109,19 @@ public class BinaryTree {
         tree.inorder_xh(node);
         System.out.println();
         tree.postorder_xh(node);
+    }
+
+    public TreeNode binaryMirror(TreeNode root) {
+        if (root == null) {
+            return null;
+        }
+        if (root.left == null && root.right == null) {
+            return root;
+        }
+        TreeNode left = binaryMirror(root.left);
+        root.left = binaryMirror(root.right);
+        root.right = left;
+        return root;
     }
 
 }

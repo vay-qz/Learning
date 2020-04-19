@@ -2,6 +2,10 @@ package pers.vay;
 
 import pers.vay.structure.TreeNode;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * @author VAY
  * 深度优先遍历
@@ -63,7 +67,27 @@ public class DFS {
         }
     }
 
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        List<Integer> source = new ArrayList<>();
+        for (int i : nums) {
+            source.add(i);
+        }
+        back(res, source, 0);
+        return res;
+    }
 
+    private void back(List<List<Integer>> res, List<Integer> source, int index) {
+        if (index == source.size()) {
+            res.add(new ArrayList<>(source));
+            return;
+        }
+        for (int i = index; i < source.size(); i++) {
+            Collections.swap(source, i, index);
+            back(res, source, index + 1);
+            Collections.swap(source, i, index);
+        }
+    }
 
 
 }

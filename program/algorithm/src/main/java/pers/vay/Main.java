@@ -3,6 +3,8 @@ package pers.vay;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
+import java.util.concurrent.Semaphore;
+import java.util.concurrent.locks.LockSupport;
 
 public class Main {
 
@@ -559,6 +561,37 @@ public class Main {
         return res;
     }
 
+    /**
+     * 最长不重复子串
+     * @param s
+     * @return
+     */
+    public int lengthOfLongestSubstring(String s) {
+        if (s == null || s.length() == 0) {
+            return 0;
+        }
+        int subLength = 1, maxLength = 0;
+        int head = 0, to = 1;
+        String res = null;
+        for (int i = 0; i < s.length(); i++) {
+            int site = s.substring(head, to).indexOf(s.charAt(i));
+            if (site != -1) {
+                subLength = to - head;
+                if (subLength > maxLength) {
+                    res = s.substring(head, to);
+                    maxLength = subLength;
+                }
+                head = to;
+            }
+            to++;
+        }
+        if (to - head > maxLength) {
+            maxLength = to - head;
+        }
+        System.out.println(res);
+        return maxLength;
+    }
+
     private boolean isSXH(int t) {
         List<Integer> ss = new ArrayList<>();
         int p = t;
@@ -601,6 +634,13 @@ public class Main {
             begin *= 10;
         }
         return begin;
+    }
+
+    private static Thread a1 = null;
+    private static Thread a2 = null;
+    public static void main(String[] args) {
+        Main main = new Main();
+        System.out.println(main.lengthOfLongestSubstring("abcabcbb"));
     }
 
 }

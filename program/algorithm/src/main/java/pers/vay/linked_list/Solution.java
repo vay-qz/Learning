@@ -434,4 +434,30 @@ public class Solution {
         return same(row, i);
     }
 
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        int num1 = getNum(l1);
+        int num2 = getNum(l2);
+        int sum = num1 + num2;
+        Stack<Integer> stack = new Stack<>();
+        while (sum != 0) {
+            stack.push(sum % 10);
+            sum /= 10;
+        }
+        if (stack.size() == 0) {
+            return new ListNode(0);
+        }
+        ListNode head = new ListNode(stack.pop());
+        ListNode temp = head;
+        while (stack.size() > 0) {
+            temp.next = new ListNode(stack.pop());
+        }
+        return head;
+    }
+
+    private int getNum(ListNode l1) {
+        Stack<Integer> stack = new Stack<>();
+        while (l1 != null) {
+
+        }
+    }
 }
