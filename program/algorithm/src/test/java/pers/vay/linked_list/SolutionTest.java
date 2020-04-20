@@ -9,6 +9,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SolutionTest {
 
+    Solution solution = new Solution();
+
     @Test
     void addTwoNumbers() {
         ListNode a = new ListNode(2);
@@ -109,6 +111,26 @@ class SolutionTest {
         assertEquals(solution.beveled(2, 3, 1, 2), false);
     }
 
+    @Test
+    public void addTwoNumbers2() {
+//        ListNode node = new ListNode(3);
+//        node.next = new ListNode(9);
+//        node.next.next = new ListNode(9);
+//        node.next.next.next = new ListNode(9);
+//        node.next.next.next.next = new ListNode(9);
+//        node.next.next.next.next.next = new ListNode(9);
+//        node.next.next.next.next.next.next = new ListNode(9);
+//        node.next.next.next.next.next.next.next = new ListNode(9);
+//        node.next.next.next.next.next.next.next.next = new ListNode(9);
+//        node.next.next.next.next.next.next.next.next.next = new ListNode(9);
+//        ListNode node2 = new ListNode(7);
+//        solution.addTwoNumbers(node, node2);
 
+        ListNode node11 = new ListNode(0);
+        ListNode node12 = new ListNode(7);
+        node12.next = new ListNode(3);
+        solution.addTwoNumbers(node11, node12);
+
+    }
 
 }

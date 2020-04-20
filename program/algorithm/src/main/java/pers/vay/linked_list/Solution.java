@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Solution {
 
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public ListNode addTwoNumbers1(ListNode l1, ListNode l2) {
         ListNode a = ListNode.reverse(l1);
         ListNode b = ListNode.reverse(l2);
         ListNode c = add(a, b);
@@ -435,29 +435,53 @@ public class Solution {
     }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        int num1 = getNum(l1);
-        int num2 = getNum(l2);
-        int sum = num1 + num2;
-        Stack<Integer> stack = new Stack<>();
-        while (sum != 0) {
-            stack.push(sum % 10);
-            sum /= 10;
+        Stack<Integer> stack1 = getNum(l1);
+        Stack<Integer> stack2 = getNum(l2);
+        int ten = 0;
+        int tempSum = stack1.pop() + stack2.pop();
+        if (tempSum > 9) {
+            ten = 1;
+            tempSum %= 10;
         }
-        if (stack.size() == 0) {
-            return new ListNode(0);
+        Stack<Integer> res = new Stack<>();
+        res.push(tempSum) ;
+        while (!stack1.isEmpty() && !stack2.isEmpty()) {
+            tempSum = stack1.pop() + stack2.pop() + ten;
+            ten = 0;
+            if (tempSum > 9) {
+                ten = 1;
+                tempSum %= 10;
+            }
+            res.push(tempSum);
         }
-        ListNode head = new ListNode(stack.pop());
+        Stack<Integer> last = stack1.isEmpty() ? stack2 : stack1;
+        while (!last.isEmpty()) {
+            tempSum = last.pop() + ten;
+            ten = 0;
+            if (tempSum > 9) {
+                ten = 1;
+                tempSum %= 10;
+            }
+            res.push(tempSum);
+        }
+        if (ten == 1) {
+            res.push(1);
+        }
+        ListNode head = new ListNode(res.pop());
         ListNode temp = head;
-        while (stack.size() > 0) {
-            temp.next = new ListNode(stack.pop());
+        while (!res.isEmpty()) {
+            temp.next = new ListNode(res.pop());
+            temp = temp.next;
         }
         return head;
     }
 
-    private int getNum(ListNode l1) {
+    private Stack<Integer> getNum(ListNode l1) {
         Stack<Integer> stack = new Stack<>();
         while (l1 != null) {
-
+            stack.push(l1.val);
+            l1 = l1.next;
         }
+        return stack;
     }
 }

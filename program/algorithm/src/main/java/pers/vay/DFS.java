@@ -2,9 +2,8 @@ package pers.vay;
 
 import pers.vay.structure.TreeNode;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import javax.annotation.PostConstruct;
+import java.util.*;
 
 /**
  * @author VAY
@@ -29,6 +28,43 @@ public class DFS {
             }
         }
         return sum;
+    }
+
+    public int maxAreaOfIsland(int[][] grid) {
+        if (grid == null) {
+            return 0;
+        }
+        int max = 0;
+        int[][] flag = new int[grid[0].length][grid.length];
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == 1 && flag[i][j] == 0) {
+                    int k = dfs2(grid, flag, i, j);
+                    if (max < k) {
+                        max = k;
+                    }
+                }
+            }
+        }
+        return max;
+    }
+
+    private int dfs2(int[][] grid, int[][] flag, int i, int j) {
+        if (i < 0 || i >= grid.length) {
+            return 0;
+        }
+        if (j < 0 || j > grid[0].length) {
+            return 0;
+        }
+        if (flag[i][j] == 1) {
+            return 0;
+        }
+        if (grid[i][j] == 1) {
+            flag[i][j] = 1;
+            return 1 + dfs2(grid, flag, i + 1, j) + dfs2(grid, flag,  i, j + 1) + dfs2(grid, flag, i - 1, j) + dfs2(grid, flag, i, j - 1);
+        } else {
+            return 0;
+        }
     }
 
     private void find(int i, int j, char[][] grid, char[][] flag) {
