@@ -3,8 +3,10 @@ package pers.vay;
 import pers.vay.structure.ListNode;
 import pers.vay.structure.TreeNode;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Queue;
 
 public class BFS {
     public List<Integer> rightSideView(TreeNode root) {
@@ -81,6 +83,58 @@ public class BFS {
         node.right.right = new TreeNode(7);
         BFS b = new BFS();
         b.levelOrder(node);
+    }
+
+    public int maxDistance(int[][] grid) {
+        int L = 100;
+        Queue<Integer> queue = new ArrayDeque<>();
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == 0) {
+                    queue.add(i * 100 + j);
+                }
+            }
+        }
+        if (queue.size() == grid.length * grid[0].length || queue.isEmpty()) {
+            return -1;
+        }
+        int max = 0;
+        int time = 1;
+        while (!queue.isEmpty()) {
+            int length = queue.size();
+            Queue<Integer> temp = new ArrayDeque<>();
+            for (int t = 0; t < length; t++) {
+                int num = queue.peek();
+                int ii = num / L;
+                int jj = num % L;
+                int minx = ii - time;
+                int miny = jj - time;
+                int maxx = ii + time;
+                int maxy = jj + time;
+                boolean conti = true;
+                for (int i = minx; i <= maxx; i++) {
+                    for (int j = miny; j <= maxy; j++) {
+                        if (i >= 0 && j >= 0 && i < grid.length && j < grid[0].length
+                                && grid[i][j] == 1
+                                && (Math.abs(i - ii) + Math.abs(j - jj)) == time) {
+                            conti = false;
+                            break;
+                        }
+                    }
+                    if (!conti) {
+                        queue.remove();
+                        break;
+                    }
+                }
+                if (conti) {
+                    temp.add(queue.poll());
+                }
+            }
+            queue = temp;
+            max++;
+            time++;
+        }
+        return max;
     }
 
 }

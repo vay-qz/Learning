@@ -26,4 +26,25 @@ class BFSTest {
         }
         assertArrayEquals(pp, except);
     }
+
+    @Test
+    void maxDistance() {
+        int[][] test1 = {
+                {1,0,1},
+                {0,0,0},
+                {1,0,1}};
+        assertEquals(bfs.maxDistance(test1), 2);
+        int[][] test2 = {
+                {1,0,0},
+                {0,0,0},
+                {0,0,0}};
+        assertEquals(bfs.maxDistance(test2), 4);
+        int[][] test3 = {
+                {0,0,1,1,1},
+                {0,1,1,0,0},
+                {0,0,1,1,0},
+                {1,0,0,0,0},
+                {1,1,0,0,1}};
+        assertEquals(bfs.maxDistance(test3), 2);
+    }
 }
