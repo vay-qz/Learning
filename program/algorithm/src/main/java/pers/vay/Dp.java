@@ -626,37 +626,24 @@ public class Dp {
         return max;
     }
 
-    public static void main(String[] args) {
-        Dp dp = new Dp();
-        int[] nums = {2,3,-2,4,-2};
-        System.out.println(dp.maxProduct(nums));;
-    }
-
-    class CQueue {
-
-        public Stack<Integer> stack1;
-        public Stack<Integer> stack2;
-
-        public CQueue() {
-            stack1 = new Stack<>();
-            stack2 = new Stack<>();
+    public int coinChange(int[] coins, int amount) {
+        if (coins == null || coins.length == 0) {
+            return -1;
         }
-
-        public void appendTail(int value) {
-            stack1.push(value);
-        }
-
-        public int deleteHead() {
-            if (stack2.isEmpty()) {
-                if (stack1.isEmpty()) {
-                    return -1;
-                }
-                while (!stack1.isEmpty()) {
-                    stack2.push(stack1.pop());
+        int[] dp = new int[amount + 1];
+        for (int i = 1; i <= amount; i++) {
+            dp[i] = Integer.MAX_VALUE;
+            for (int j = 0; j < coins.length; j++) {
+                if (i >= coins[j]) {
+                    if (dp[i - coins[j]] == Integer.MAX_VALUE) {
+                        continue;
+                    } else {
+                        dp[i] = dp[i] < dp[i - coins[j]]  + 1 ? dp[i] : dp[i - coins[j]] + 1;
+                    }
                 }
             }
-            return stack2.pop();
         }
+        return dp[amount] == Integer.MAX_VALUE ? -1 : dp[amount];
     }
 
 }

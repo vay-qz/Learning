@@ -2,8 +2,9 @@ package pers.vay;
 
 import pers.vay.structure.TreeNode;
 
-import javax.annotation.PostConstruct;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * @author VAY
@@ -125,41 +126,4 @@ public class DFS {
         }
     }
 
-    public int orangesRotting(int[][] grid) {
-        int[] dr = {1, -1, 0, 0};
-        int[] dc = {0, 0, 1, -1};
-
-        Queue<Integer> queue = new ArrayDeque<>();
-        int L = 10;
-        for (int i = 0; i < grid.length; i++) {
-            for (int j = 0; j < grid[0].length; j++) {
-                if (grid[i][j] == 2) {
-                    queue.offer(i * L + j);
-                }
-            }
-        }
-        int res = 0;
-        while (!queue.isEmpty()) {
-            int t = queue.poll();
-            int x = t / L;
-            int y = t % L;
-            for (int i = 0; i < 4; i++) {
-                int nx = x + dr[i];
-                int ny = y + dc[i];
-                if (nx >= 0 && ny >= 0 && nx < grid.length && ny < grid[0].length && grid[nx][ny] == 1) {
-                    queue.add(nx * L + ny);
-                    grid[nx][ny] = grid[x][y] + 1;
-                    res = grid[nx][ny];
-                }
-            }
-        }
-        for (int i = 0; i < grid.length; i++) {
-            for (int j = 0; j < grid[0].length; j++) {
-                if (grid[i][j] == 1) {
-                    return -1;
-                }
-            }
-        }
-        return res == 0 ? 0 : res - 2;
-    }
 }

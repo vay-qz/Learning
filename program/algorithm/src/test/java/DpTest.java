@@ -230,4 +230,16 @@ class DpTest {
         dp.reverseList(null);
     }
 
+    @Test
+    void coinChange() {
+        int[] test1 = {1,2,5};
+        int[] test2 = {2};
+        int[] test3 = {};
+        int[] test4 = {2,5,10,1};
+        assertEquals(dp.coinChange(test1, 11), 3);
+        assertEquals(dp.coinChange(test2, 3), -1);
+        assertEquals(dp.coinChange(test3, 3), -1);
+        assertEquals(dp.coinChange(test4, 27), 4);
+    }
+
 }
